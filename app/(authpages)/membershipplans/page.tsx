@@ -5,7 +5,7 @@ import Join from './components/Join'
 
 export default function page() {
   return (
-    <div className='bg-[#fcfdff] max-w-[90rem]'>
+    <div className='bg-[#fcfdff] max-w-[90rem] mx-auto'>
         <Membership />
         <Table />
         <Join />

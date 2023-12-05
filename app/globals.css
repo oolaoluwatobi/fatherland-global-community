@@ -86,11 +86,12 @@
 
 .hero_background {
   height: 100%;
-  background-image: url(../public/assets/hero-background.svg);
+  background-image: url(../public/herobk.png);
   background-size: 100% 100%;
   -o-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: cover;
+  background-position: bottom;
 }
 
 .cultural_learning_bg {

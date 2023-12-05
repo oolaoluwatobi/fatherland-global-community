@@ -3,7 +3,7 @@ import Bookaticket from './components/Bookaticket'
 
 export default function page() {
   return (
-    <div className='mxauto max-w-[90rem] bg-[#fcfdff]'>
+    <div className='mx-auto max-w-[90rem] bg-[#fcfdff]'>
         <Bookaticket />
     </div>
   )

@@ -7,7 +7,7 @@ export default function Features() {
        <div className='mt-5 font-bold px-20 text-2xl '>Feature Your Adverts on:</div>
 
        {FEATURE.map((feat)=>(
-        <div className=' mx-12 flex justify-around max-w-7xl overflow-x-auto'>
+        <div className=' ms-20 flex justify-around max-w-[90rem] overflow-x-auto no-scrollbar'>
          
           
              <Image src={feat.t1.image} alt=''  className='  '/>
@@ -19,11 +19,14 @@ export default function Features() {
              <Image src={feat.t3.image} alt=''  className='  '/>
              <Image src={feat.t4.image} alt=''  className='  '/>
              <Image src={feat.t5.image} alt=''  className='  '/>
-             <Image src={feat.t6.image} alt=''  className='  '/>             <Image src={feat.t3.image} alt=''  className='  '/>
+             <Image src={feat.t6.image} alt=''  className='  '/>             
              <Image src={feat.t4.image} alt=''  className='  '/>
              <Image src={feat.t5.image} alt=''  className='  '/>
              <Image src={feat.t6.image} alt=''  className='  '/>
-             
+             <Image src={feat.t3.image} alt=''  className='  '/>
+
+
+           
              
             
      

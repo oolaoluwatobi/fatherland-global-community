@@ -5,7 +5,7 @@ import Solution from './component/Solution'
 
 export default function AdvertPage() {
   return (
-    <section>
+    <section className='mx-auto max-w-[90rem]'>
         <Advertising />
         <Features />
         <Solution />

@@ -14,7 +14,7 @@ export default function page({ params }: { params: { travelId: string } }) {
     const renderTravel = SPECIAL_OFFER.find((special) => special.id === params.travelId);
     console.log(renderTravel);
   return (
-    <div className='mxauto max-w-[90rem] pt-[7rem] bg-whit bg-[#fcfdff]'> 
+    <div className='mx-auto max-w-[90rem] pt-[7rem] bg-whit bg-[#fcfdff]'> 
         
         <section className='mx-auto container lg:flex justify-around pb-[3.188rem]'>
         <Image src={renderTravel?.image!!} alt="" className="rounded-t-md" />

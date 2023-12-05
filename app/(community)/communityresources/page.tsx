@@ -10,7 +10,7 @@ import Africans from './component/Africans'
 
 export default function CommunityPage() {
   return (
-    <div className='max-w-[90rem] bg-white '>
+    <div className='max-w-[90rem] bg-white mx-auto'>
       <Community />
       <Casestudy />
       <Bloog />

@@ -15,7 +15,7 @@ const raleway = Raleway({
 
 export default function Hero() {
   return (
-    <section className="bg-red-10 py[7rem] pt-[4rem] pb-[5rem]   hero_background max-w-7xl mx-auto ">
+    <section className="bg-red-10 py[7rem] pt-[4rem] pb-[5rem]   hero_background max-w-[90rem] mx-auto ">
       <div className="hero_backgroun pt5 bg-red-20">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10  px-4 sm:px-6 lg:px-20 py20  bg-red-20">
           <div className="grid gap-10 lg:py20">
