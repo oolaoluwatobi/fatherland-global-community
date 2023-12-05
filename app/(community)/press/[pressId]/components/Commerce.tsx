@@ -40,7 +40,7 @@ export default function Commerce() {
            <div className='mt-5 mx-auto'>
                <div className=' w-full grid lg:grid-cols-3 gap-4 max-w-7xl  mx-auto'>
                {Commerces.map((entt)=>(
-                  <div className=' bg-white border border-red-200 rounded-[10px]  hover:border-primary  active:border-primary shadow-lg shadow-blue-100 mx-auto w-full lg:w-[23.625rem'>
+                  <div key={entt.id} className=' bg-white border border-red-200 rounded-[10px]  hover:border-primary  active:border-primary shadow-lg shadow-blue-100 mx-auto w-full lg:w-[23.625rem'>
                     <Image src={entt.image} alt='' className='object-cover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 lg:w-[21.5rem' ></Image>
 
 

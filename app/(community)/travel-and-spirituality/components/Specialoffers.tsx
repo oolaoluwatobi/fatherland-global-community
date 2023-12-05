@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Specialoffers() {
   const renderOffer = SPECIAL_OFFER.map((offer) => (
-    <div>
+    <div key={offer.id}>
       <div
         key={offer.id}
         className=" upcoming_events_card px-0 hover:border hover:border-  active:border-primary cursor-pointer lg:w-[24.25rem] lg:h-[26.188rem] mx-auto container mb-12"

@@ -39,7 +39,7 @@ import React from 'react'
              <div className='mt-5 mx-auto pb-32'>
                    <div className=' w-full grid lg:grid-cols-3 gap-4 max-w-7xl  mx-auto'>
                    {Entertainment.map((enter)=>(
-                      <div className=' bg-white border border-red-200 rounded-[10px] mx-auto w-full lg:w-[23.625rem'>
+                      <div key={enter.id} className=' bg-white border border-red-200 rounded-[10px] mx-auto w-full lg:w-[23.625rem'>
                         <Image src={enter.image} alt='' className='object-cover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 lg:w-[21.5rem' ></Image>
 
 

@@ -19,7 +19,7 @@ export default function Event() {
                    
                   <div className=' w-full grid lg:grid-cols-3 gap-4 max-w7xl box-border mx-auto'>
                       {EVENT.map((vent)=>(
-                          <div className={`bgwhite border  mx-auto wfull lg:w[23.625rem  rounded-[10px] upcoming_events_card hover:border hover:border-primary active:border active:border-primary cursor-pointer`}>
+                          <div key={vent.id} className={`bgwhite border  mx-auto wfull lg:w[23.625rem  rounded-[10px] upcoming_events_card hover:border hover:border-primary active:border active:border-primary cursor-pointer`}>
                              <Image src={vent.image} alt='' className='mb-6 w-full' ></Image>
                              <div className={`${monserat.className} ml-5 bg-[#f1e3bd] text-[#FFB612]  mb-4 inline text-sm px-5 py-2 font-[400] rounded-full`}>
                                 {vent.text1}</div>

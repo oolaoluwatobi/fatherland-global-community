@@ -30,7 +30,7 @@ export default function Chubs() {
   return (
     <div className={`${style.bgg}  mb-32 mt-40 bg-red-500 lg:h[578px]` } >
       {CHUB.map((chum)=>(
-      <main className='lg:flex items-center justifyaround container'>
+      <main className='lg:flex items-center justifyaround container' key={chum.id}>
         <div className='mx-auto container'>
          <div className='  border-[10px] border-primary ps-[2.438rem] border-t-0 border-b-0 border-r-0 rounded-t-[10px] rounded-b-[10px] lg:h-[23.125rem] container mx-auto lg:ml-[3rem'>
              <div className='text-white pt-12  '>{chum.text}</div>

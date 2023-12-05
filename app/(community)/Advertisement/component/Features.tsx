@@ -7,7 +7,7 @@ export default function Features() {
        <div className='mt-5 font-bold px-20 text-2xl '>Feature Your Adverts on:</div>
 
        {FEATURE.map((feat)=>(
-        <div className=' ms-20 flex justify-around max-w-[90rem] overflow-x-auto no-scrollbar'>
+        <div key={""} className=' ms-20 flex justify-around max-w-[90rem] overflow-x-auto no-scrollbar'>
          
           
              <Image src={feat.t1.image} alt=''  className='  '/>

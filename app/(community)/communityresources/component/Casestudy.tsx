@@ -21,7 +21,7 @@ export default function Casestudy() {
                    
                   <div className=' w-full grid lg:grid-cols-3 gap-4 max-w7xl  mx-auto '>
                       {Case.map((enter)=>(
-                          <div className={`bgwhite border  mx-auto wfull lg:w[23.625rem rounded-[10px] hover:border-primary active:border-primary shadow-lg shadow-blue-100`}>
+                          <div key={enter.id} className={`bgwhite border  mx-auto wfull lg:w[23.625rem rounded-[10px] hover:border-primary active:border-primary shadow-lg shadow-blue-100`}>
                              <Image src={enter.image} alt='' className='mb-7 w-full' ></Image>
                              <div className={`${monserat.className}text-[#26499D] ml-5 bg-[#dce0e6]  mb-4 inline text-sm px-5 py-2 font-[550] rounded-full`}>
                                 {enter.text1}</div>

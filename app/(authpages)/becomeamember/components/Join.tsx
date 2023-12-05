@@ -82,7 +82,7 @@ export default function Join() {
 
             <div className=''>
                 <p className=' pb-[3px] text-[#14202D] text-xl font-normal leading-7 text-center'>Your Membership Card</p>
-                <p className='text-[#14202D] text-sm font-normal leading-7 w-full lg:w-[26.5rem] mb-[3.625rem] '>Your membership card will look like this. It's important that the name on your
+                <p className='text-[#14202D] text-sm font-normal leading-7 w-full lg:w-[26.5rem] mb-[3.625rem] '>Your membership card will look like this. It&apos;s important that the name on your
                      membership card is correct, as they will
                      be required to gain access to community hubs in your location</p>
 

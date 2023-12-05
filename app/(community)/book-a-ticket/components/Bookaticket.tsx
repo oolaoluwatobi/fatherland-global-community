@@ -43,7 +43,7 @@ const plus = ()=>{
               </p>
               
             </div>
-            <p className='mx-auto container pl-12 pb-[3.125rem] text-[#14202D] text-base font-normal leading-5'>We'll use this information to send you confirmation and updates about your booking </p>
+            <p className='mx-auto container pl-12 pb-[3.125rem] text-[#14202D] text-base font-normal leading-5'>We&apos;ll use this information to send you confirmation and updates about your booking </p>
             <form action="" className="mxauto px-[2.25rem] pb-[2.914rem]">
             <div className="lg:flex justify-between pb-[2.688rem] gap-4 mx-auto">
                 <div>

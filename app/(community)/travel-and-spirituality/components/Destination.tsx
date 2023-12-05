@@ -66,7 +66,7 @@ export default function Destination() {
               rhythm of history, culture, and diversity. Join us on a
               captivating journey as we explore the vibrant past of this
               metropolis, tracing its roots from humble beginnings to becoming
-              one of Africa's most dynamic and cosmopolitan centers..
+              one of Africa&apos;s most dynamic and cosmopolitan centers..
             </p>
           </div>
         </div>
