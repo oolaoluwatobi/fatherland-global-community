@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="hero_backgroun pt5 bg-red-20">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10  px-4 sm:px-6 lg:px-20 py20  bg-red-20">
           <div className="grid gap-10 lg:py20">
-            <article className="text-black my-auto">
+            <article className="text-[#263238] my-auto">
               <h1
                 className={`hero-heading ${raleway.className} font-extrabold text-xl md:text-3xl lg:text-4xl
                  xl:text5xl 2xl:text6xl leading-[15rem]`}>

@@ -13,7 +13,7 @@ export default function Join() {
         {joinFatherlandCommunityBanner.map((list, i) => (
             <div
             key={i}
-            className={`pb-[5rem] lg:flex justify-around items-center`}
+            className={`pb-[4.438rem] pt-[3.25rem] lg:flex justify-around items-center`}
             >
             <Image src={list.image} alt='' className='mx-auto pt-12 '></Image>
             <div className={` mx-auto lg:w-[45rem] h[23.125rem] mb5 border-[10px] borderprimary border-l-0 border-t-0 border-b-0 lg:ps12 ${style.bfd} rounded-t-[10px] rounded-b-[10px]`}>
