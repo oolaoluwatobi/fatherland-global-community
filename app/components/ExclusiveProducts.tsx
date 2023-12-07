@@ -82,7 +82,7 @@ export default function ExclusiveProducts() {
   });
 
   return (
-    <section className="mt-20 p-20 max-w-7xl mx-auto bg-secondary-foreground bg-red-10">
+    <section className="mt-20 p-20 max-w-[90rem] mx-auto bg-secondary-foreground bg-red-10">
       <div>
         <h1 className={`${raleway.className} font-[700] text-muted text-3xl `}>
           EXCLUSIVE PRODUCTS & BENEFITS
