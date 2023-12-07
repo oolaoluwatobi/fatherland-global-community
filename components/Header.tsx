@@ -8,12 +8,12 @@ import Container from "./ui/container";
 import { Button } from "./ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  // NavigationMenuContent,
   // NavigationMenuIndicator,
   NavigationMenuItem,
-  NavigationMenuLink,
+  // NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  // NavigationMenuTrigger,
   // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
@@ -80,7 +80,7 @@ export default function Header() {
               <Image src={logo} alt="" className=""/>
             </Link>
           </div>
-              <Dropdown />
+             
           <div className="flex">
             <nav className="mx6 lg:flex items-center space-x4 lg:space-x6 hidden md:bloc">
               {routes.map((route, i) =>
@@ -89,12 +89,12 @@ export default function Header() {
                     <NavigationMenu>
                       <NavigationMenuList>
                         <NavigationMenuItem>
-                          <NavigationMenuTrigger>
-                            {/* {route.label} */}
+                          {/* <NavigationMenuTrigger>
+                            {route.label}
                             
-                          </NavigationMenuTrigger>
-                          <NavigationMenuContent>
-                            {/* {route.dropDown?.map((route, i) => (
+                          </NavigationMenuTrigger> */}
+                          {/* <NavigationMenuContent>
+                            {route.dropDown?.map((route, i) => (
                               <React.Fragment key={i}>
                                 <NavigationMenuLink>
                                   <Link
@@ -105,8 +105,11 @@ export default function Header() {
                                   </Link>
                                 </NavigationMenuLink>
                               </React.Fragment>
-                            ))} */}
-                          </NavigationMenuContent>
+                              
+                            ))}
+                            
+                          </NavigationMenuContent> */}
+                           <Dropdown />
                         </NavigationMenuItem>
                       </NavigationMenuList>
                     </NavigationMenu>
@@ -127,7 +130,7 @@ export default function Header() {
             </nav>
 
             <div className="space-x-2">
-              <Button>
+              <Button className="bg-[#FF8800] text-white">
                 <Link
                   href="/becomeamember"
                   className="text-sm font-medium transition-colors"
@@ -135,7 +138,7 @@ export default function Header() {
                   Become a Member
                 </Link>
               </Button>
-              <Button variant="outline">
+              <Button variant="outline" className="border-[#FF8800]">
                 <Link
                   href="/loginpage"
                   className="text-sm font-medium transition-colors    "
