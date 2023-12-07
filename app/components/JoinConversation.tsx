@@ -63,11 +63,11 @@ export default function JoinConversation() {
   
   return (
     <Container>
-      <div className='mt-20 '>
+      <div className='mt-[7.625rem] mx-auto  ml[6.125rem]'>
         <h4 className='text-3xl text-[#161915] font-[600]  '>Join Conversation</h4>
         <p className='text-muted text-[#14202d] text-lg '>Check out the most popular topics</p>
       </div>
-      <div className='mt-10 mb-20 border-[20px] border-[#26D44B33]  rounded-lg p-12'>
+      <div className='mt-10 mb-[9.5rem] border-[20px] border-[#26D44B33]  rounded-lg p-12'>
         <h5 className='text-[#000] font-[600] '>ALL TOPICS</h5>
         {renderComments}
       </div>
