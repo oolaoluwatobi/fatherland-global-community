@@ -4,6 +4,8 @@ import Embrace from './components/Embrace'
 import Amazingdeals from './components/Amazingdeals'
 import Partofcommunity from './components/Partofcommunity'
 import Howitworks from './components/Howitworks'
+import Findanafricantaste from './components/Findanafricantaste'
+import Join from './components/Join'
 
 export default function pageAfricantaste() {
   return (
@@ -13,6 +15,8 @@ export default function pageAfricantaste() {
         <Amazingdeals />
         <Partofcommunity />
         <Howitworks />
+        <Findanafricantaste />
+        <Join />
     </div>
   )
 }

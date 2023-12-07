@@ -36,7 +36,7 @@ export default function AfricanCommunity() {
             </p>
           </div>
         </div>
-        <div className="relative col-span-2 lg:col-span-1  ">
+        <div className="relative col-span-2 lg:col-span-1">
           <div className="bg-gradient-to-br from-[#ff8800] to-[#7fb432] absolute top-[-.5rem] -z-10 left-[-2rem] h-[15rem] w-[15rem] rounded-full blur-[10rem sm:w-[68.75rem dark:bg-[#946263"></div>
           <div className="bg-primary absolute top-[10rem] -z-20 left-[-2rem] h-[20rem] w-[20rem] rounded-full blur-[10rem] sm:w-[68.75rem dark:bg-[#946263"></div>
           <Image src={bgImg} alt="african-lady" className="w-full" />

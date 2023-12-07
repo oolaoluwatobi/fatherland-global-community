@@ -21,7 +21,7 @@ export default function Embrace() {
              {LIST.map((list, i) => (
             <div
             key={i}
-            className={` ${list.id === 2? style.specialStyle : ''} lg:w-[36.625rem] mx-auto container pt-[3rem] bg-[#f0f9fe] rounded-[10px] border border-[#26499D] mb-[8.125rem]`}
+            className={` ${list.id === 2? style.specialStyle : ''} lg:w-[36.625rem] mx-auto pt-[3rem] bg-[#f0f9fe] rounded-[10px] border border-[#26499D] mb-[8.125rem]`}
             >
                 
                 <p className='text-[#14202d] text-[2.5rem] font-bold leading-8 break-words text-center mb-[1.791rem]'>{list.label}</p>

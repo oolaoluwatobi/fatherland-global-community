@@ -72,7 +72,8 @@ const routes = [
 
 export default function Header() {
   return (
-    <header className="sm:flex sm:justify-between p-3  bg-red-20 bg-white sticky top-0">
+    <header className="sm:flex sm:justify-between p-3  bg-red-20 bg-white sticky top-0 z-50
+    ">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
           <div className="flex items-center ">
@@ -116,7 +117,7 @@ export default function Header() {
                   </React.Fragment>
                 ) : (
                   <React.Fragment key={i}>
-                    <Button asChild variant="navlink">
+                    <Button asChild variant="navlink" className="text-black hover:no-underline">
                       <Link
                         href={route.href}
                         className="text-sm font-medium transition-colors"
@@ -130,7 +131,7 @@ export default function Header() {
             </nav>
 
             <div className="space-x-2">
-              <Button className="bg-[#FF8800] text-white">
+              <Button className="bg-[#FF8800] text-white hover:bg-[#ff8800d9]">
                 <Link
                   href="/becomeamember"
                   className="text-sm font-medium transition-colors"
@@ -138,10 +139,10 @@ export default function Header() {
                   Become a Member
                 </Link>
               </Button>
-              <Button variant="outline" className="border-[#FF8800]">
+              <Button variant="outline" className="border-[#FF8800] hover:bg-white">
                 <Link
                   href="/loginpage"
-                  className="text-sm font-medium transition-colors    "
+                  className="text-sm font-medium transition-colors text-[#ff8800] "
                 >
                   Log In
                 </Link>

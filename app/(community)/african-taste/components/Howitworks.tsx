@@ -4,6 +4,12 @@ import Image from 'next/image'
 import guy from '@/public/Rectangle 5707 (1).png'
 import { DividerVerticalIcon } from '@radix-ui/react-icons'
 import { FaPeopleGroup } from 'react-icons/fa6'
+import { FaCreditCard, FaGlobe,  } from 'react-icons/fa'
+import { BiMapPin } from 'react-icons/bi'
+
+
+
+
 
 
 export default function Howitworks() {
@@ -23,8 +29,8 @@ export default function Howitworks() {
 
 
             <div className=' pt-12 lg:pt-0'>
-                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[2.375rem] rounded-[7px] flex justifyevenly items-center bg-white'>
-                    <FaPeopleGroup className='mr-[4.813rem] ml-[1.625rem] lg:text-[42px] text-[#0BA1BA]'/>  Become a Member by Registering</p>
+                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex justifyevenly items-center bg-white'>
+                    <FaPeopleGroup className='mr-[4.813rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>  Become a Member by Registering</p>
 
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div className=''>
@@ -36,8 +42,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[2.375rem] rounded-[7px] flex justifyevenly items-center bg-white'>
-                <FaPeopleGroup className='mr-[4.813rem] ml-[1.625rem] lg:text-[42px] text-[#0BA1BA]'/>Get your membership card</p>
+                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex justifyevenly items-center bg-white'>
+                <FaCreditCard className='mr-[4.813rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Get your membership card</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -48,8 +54,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <div className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[2.375rem] rounded-[7px] flex justifyevenly items-center py3 px12  bg-white'>
-                    <FaPeopleGroup className='mr-[4.813rem] ml-[1.625rem] lg:text-[42px] text-[#0BA1BA]'/>Explore the website to see offers and partners</div>
+                <div className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex justifyevenly items-center py3 px12  bg-white'>
+                    <FaGlobe className='mr-[0.9rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Explore the website to see offers and partners</div>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -60,7 +66,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem] lg:py-[2.375rem] rounded-[7px]  bg-white'>Easy & Convenient Booking</p>
+                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex items-center  bg-white'>
+                <BiMapPin className='mr-[0.9rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Visit the nearest restaurant in your location</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -71,7 +78,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem] lg:py-[2.375rem] rounded-[7px]  bg-white'>Expert Tour Managers</p>
+                <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex items-center bg-white'>
+                <FaCreditCard className='mr-[0.9rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Show them your Fatherland Membership card</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -82,7 +90,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='w-full text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem] lg:py-[2.375rem] rounded-[7px]  bg-white'>Private Airport Transfers</p>
+                <p className='w-full text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem] lg:py-[1.9rem] rounded-[7px] flex items-center bg-white'>
+                Sit back & Enjoy your Meal!</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>

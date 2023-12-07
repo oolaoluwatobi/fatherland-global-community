@@ -47,3 +47,23 @@
     background-size: cover;
     background-position: center;
 }
+
+.fb{
+  background-image: url(../../../../public/Rectangle\ 5765\ \(2\).png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.fb1 {
+  background: linear-gradient(90deg, #0A9FBF 0%, #28D744 100%, #28D744 100%);
+ }
+
+ .bfd {
+  border-right: 13px solid transparent;
+   border-image-source: url(../../../../public/Rectangle\ rec.png);
+   border-image-slice: 10;
+   border-image-repeat: round;
+ }

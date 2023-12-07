@@ -1,7 +1,8 @@
 import img1 from "@/public/Rectangle 5780.png";
 import img2 from "@/public/Rectangle 5781.png";
-import meal1 from '@/public/Rectangle 5817.png'
-import meal2 from '@/public/Rectangle 5818.png'
+import join from '@/public/joingroup.png'
+// import meal1 from '@/public/Rectangle 5817.png'
+// import meal2 from '@/public/Rectangle 5818.png'
 
 
 
@@ -46,7 +47,12 @@ export const EMBRACEMEAL=[
         text:'Enjoy 50% discount on delectable food and refreshing drinks when you buy for two people',
         
     }
-
-
-
+]
+export const joinFatherlandCommunityBanner=[
+  {
+    image:join,
+    label:'Join Fatherland Comunity',
+    label2:'We bridge divides by bringing people together',
+    text:'Our community delivers exclusive benefits and brands to the global members of African Descent and Non-Africans, targeting over 100 million members. Enjoy exclusive benefits across travel, lifestyle, heritage, history, spirituality, culture, entertainment, education, investment, social & business networking & attractive tangible business possibilities when you join.',
+  }
 ]
