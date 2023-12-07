@@ -1,5 +1,7 @@
 "use client";
-
+import Image from "next/image";
+import logo from '@/public/WhatsApp_Image_2023-11-15_at_09.58 1 (1).png'
+import Dropdown from "./ui/dropdown";
 import React from "react";
 import Link from "next/link";
 import Container from "./ui/container";
@@ -17,46 +19,54 @@ import {
 
 const routes = [
   {
-    href: "/whoweare",
-    label: "Who We Are",
+    href: "/welcome-page",
+    label: "Welcome Page",
   },
   {
     href: "/community",
-    label: "Community",
+    label: "Work in progress",
     dropDown: [
       {
-        href: "/community/joinconversation",
-        label: "Join ",
+        href: "/about-us",
+        label: "About us ",
       },
       {
-        href: "/community/store",
-        label: "Store",
+        href: "/african-taste",
+        label: "African Taste",
       },
       {
-        href: "/community/africantaste ",
-        label: "African ",
+        href: "/book-a-ticket ",
+        label: "Book a ticket ",
       },
       {
-        href: "/community/travelandspirituality",
-        label: "Travel",
+        href: "/communityresources",
+        label: "Community Resources",
       },
       {
-        href: "/community/ticketsandevents",
-        label: "Tickets",
+        href: "/corporation",
+        label: "Corporation",
       },
       {
-        href: "/community/advertise",
-        label: "Advertise",
+        href: "/press",
+        label: "Press",
       },
       {
-        href: "/community/fameet",
-        label: "Fameet",
+        href: "/tickets-and-events",
+        label: "Tickets and events",
+      },
+      {
+        href: "/travel-and-spirituality",
+        label: "Travel and spirituality",
       },
     ],
   },
   {
-    href: "/benefitsandbrands",
-    label: "Benefits & Brands",
+    href: "/membershipplans",
+    label: "Membership Plans",
+  },
+  {
+    href: "/payment-details",
+    label: "Payment Details",
   },
 ];
 
@@ -67,10 +77,10 @@ export default function Header() {
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
           <div className="flex items-center ">
             <Link href="/" className="ml-4 lg:ml-0">
-              <h1 className="text-xl text-[#26D44B] font-bold">Fatherland</h1>
+              <Image src={logo} alt="" className=""/>
             </Link>
           </div>
-
+              <Dropdown />
           <div className="flex">
             <nav className="mx6 lg:flex items-center space-x4 lg:space-x6 hidden md:bloc">
               {routes.map((route, i) =>
@@ -80,10 +90,11 @@ export default function Header() {
                       <NavigationMenuList>
                         <NavigationMenuItem>
                           <NavigationMenuTrigger>
-                            {route.label}
+                            {/* {route.label} */}
+                            
                           </NavigationMenuTrigger>
                           <NavigationMenuContent>
-                            {route.dropDown?.map((route, i) => (
+                            {/* {route.dropDown?.map((route, i) => (
                               <React.Fragment key={i}>
                                 <NavigationMenuLink>
                                   <Link
@@ -94,7 +105,7 @@ export default function Header() {
                                   </Link>
                                 </NavigationMenuLink>
                               </React.Fragment>
-                            ))}
+                            ))} */}
                           </NavigationMenuContent>
                         </NavigationMenuItem>
                       </NavigationMenuList>
