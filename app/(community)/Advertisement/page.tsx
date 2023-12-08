@@ -3,6 +3,7 @@ import Advertising from './component/Advertising'
 import Features from './component/Features'
 import AdevertSolution from './component/AdvertSolution'
 import Faturesfatherland from './component/Faturesfatherland'
+import AdvertCreative from './component/AdvertCreative'
 
 export default function AdvertPage() {
   return (
@@ -11,6 +12,7 @@ export default function AdvertPage() {
         <Features />
         <Faturesfatherland />
         <AdevertSolution />
+        <AdvertCreative/>
         
 
     </section>
