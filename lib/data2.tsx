@@ -1,6 +1,8 @@
 import img1 from "@/public/Rectangle 5780.png";
 import img2 from "@/public/Rectangle 5781.png";
 import join from '@/public/joingroup.png'
+import food1 from '@/public/Rectangle 234.png'
+import food2 from '@/public/Rectangle 234 (1).png'
 // import meal1 from '@/public/Rectangle 5817.png'
 // import meal2 from '@/public/Rectangle 5818.png'
 
@@ -55,4 +57,165 @@ export const joinFatherlandCommunityBanner=[
     label2:'We bridge divides by bringing people together',
     text:'Our community delivers exclusive benefits and brands to the global members of African Descent and Non-Africans, targeting over 100 million members. Enjoy exclusive benefits across travel, lifestyle, heritage, history, spirituality, culture, entertainment, education, investment, social & business networking & attractive tangible business possibilities when you join.',
   }
+]
+
+export const foodSection=[
+    {
+      id:'1',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+
+    },
+    {
+      id:'2',
+      image:food2,
+      location:'Birmingham',
+      label:'African Village Restaurant',
+      text:'Buy for 2, Pay for 1',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'3',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'4',
+      image:food1,
+      location:'Lagos State',
+      label:'Chicken Republic',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'5',
+      image:food2,
+      location:'Birmingham',
+      label:'African Village Restaurant',
+      text:'Buy for 2, Pay for 1',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'6',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'7',
+      image:food2,
+      location:'Birmingham',
+      label:'African Village Restaurant',
+      text:'Buy for 2, Pay for 1',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'8',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'9',
+      image:food2,
+      location:'Birmingham',
+      label:'African Village Restaurant',
+      text:'Buy for 2, Pay for 1',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'10',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'11',
+      image:food2,
+      location:'Birmingham',
+      label:'African Village Restaurant',
+      text:'Buy for 2, Pay for 1',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+    {
+      id:'12',
+      image:food1,
+      location:'Lagos State',
+      label:'Terra Kulture',
+      text:'50% off any african dish',
+      label2:'Enjoy Exclusive Discounts in African Village Restaurant',
+      text2:'Get yourself down to African Village Restaurant for some great quality African food, and save money while you’re at it with our seriously tasty 50% discount offer. The chefs at African Village use the finest seasonal products available, many of which are imported directly from Italy for a truly authentic taste. As a Fatherland Community member, you can enjoy 50% Discount deals every Sunday to Thursday…that’s a deal you won’t want to miss! Make any occasion a celebration with African Village. Everything on the African Village menu celebrates the rich and varied flavours of Africa. With plenty of gluten-free, veggie and vegan options available, there’s really something for everyone to enjoy. Dine out and save at your local African Village restaurant today!',
+      phone:'+1 908 334 1972',
+      email:'investment@fatherlandglobal.com',
+      website:'www.fatherlandinvestment.com',
+      location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
+    },
+
 ]
