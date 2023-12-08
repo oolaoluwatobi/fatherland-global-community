@@ -159,7 +159,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer
-      className={`${raleway.className} bg-[#14202D] bg-red-20 text-white max-w-[90rem] mx-auto`}
+      className={`${raleway.className} bg-[#14202D] bg-red-20 text-white max-w-[90rem w-full mxauto`}
     >
       <Container>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-start px-6 py-8 md:py-12 min-w-full  text-[] ">
