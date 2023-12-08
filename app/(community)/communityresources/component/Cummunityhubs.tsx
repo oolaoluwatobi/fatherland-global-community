@@ -27,15 +27,15 @@ const Communtyhubs = [
 export default function Communityhub() {
   return (
     <div className={`${style.bgg}   mb32 mt-40 lg:h[578px`}>
-      {Communtyhubs.map((Hubs) => (
-        <main className=" flex flex-row lg:flex itemscenter justifyaround contaier">
-          <div className="mx-auto containr">
-            <div className="mt-[-10]  border-[10px] border-primary ps-[2.438rem] mt7 border-t-0 border-b-0 border-r-0 rounded-t-[10px] rounded-b-[10px] lg:h-[22.125rem]  container mx-auto lg:ml-[3rem  bg-red-500 ">
+      {Communtyhubs.map((Hubs,i) => (
+        <main key={i} className=" flex flex-row lg:flex itemscenter justifyaround contaier">
+          <div className="mx-auto pt-5 container">
+            <div className=" ml-10 pt-6 border-[10px] border-primary ps-[2.438rem] border-t-0 border-b-0 border-r-0 rounded-t-[10px] rounded-b-[10px] lg:h-[22.125rem]  container mx-auto lg:ml-[3rem  ">
               <p className="text-white">{Hubs.text}</p>
-              <p className="mt-6 text-primary font-[700]  lg:text-3xl  lg:w-[36rem] mb-5">
+              <p className="mt6 text-primary font-[700] pt-2 lg:text-3xl  lg:w-[36rem] mb">
                 {Hubs.text1}
               </p>
-              <p className="text-white ml28 font-[600] text-[16px] leading-7 break-words py-[1.063rem] lg:w-[45rem]">
+              <p className="text-white font-[600] text-2xl text-[16px] leading-7 break-words py-[1.063rem] lg:w-[47rem]">
                 {Hubs.content}
               </p>
 
@@ -45,7 +45,7 @@ export default function Communityhub() {
              </div>
            
           </div>
-          <Image src={hwx} alt="" className="max-h-[rem] max-w-[10rem]]"/>
+          <Image src={hwx} alt="" className="max-h-[26rem] max-w-[2rem]]"/>
         </main>
       ))}
     </div>

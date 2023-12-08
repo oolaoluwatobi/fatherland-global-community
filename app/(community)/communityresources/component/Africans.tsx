@@ -21,11 +21,11 @@ export default function Africans() {
       {AFRICAN.map((Afro)=>(
       <div className='px-14 py-10 flex flex-rows-' key={Afro.id}>
          <div className=' mx-auto lg:ml-[3rem]'>
-             <div className='text-white pt-12 font-bold text-2xl '>{Afro.text}</div>
-             <div  className='text-white mt-5 font-[600] text-[16px] w-[27rem] text-cover'>{Afro.content}</div>
+             <div className='text-white pt-12 font-bold text-3xl '>{Afro.text}</div>
+             <div  className='text-white mt-7 font-[600] text-[16px] w-[27rem] text-cover'>{Afro.content}</div>
           </div>
           <div>
-               <Image src={Rectangle5825} alt="" />
+               <Image src={Rectangle5825} alt=""  className=''/>
             </div>
        </div>
       ))}

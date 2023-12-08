@@ -12,13 +12,13 @@ export default function Faturesfatherland() {
 
         <div className="ps[2.438rem] mt7 col-span-2 p-4 rounded-t-0 rounded-b-[10px] mx-auto pr-4">
           <p className="mt-3 font-bold text-4xl  ">
-            Fatherland’s Global Reach
+            Fatherland&apos;s Global Reach
           </p>
           <p className="text-xl my-3 ">
             With our extensive network of advertising channels and platforms, we
             ensure that your brand message reaches audiences across continents.
-            Whether you're targeting specific regions or aiming for a worldwide
-            presence, our tailored strategies guarantee maximum exposure. We'll
+            Whether you&apos;re targeting specific regions or aiming for a worldwide
+            presence, our tailored strategies guarantee maximum exposure. We&apos;ll
             work closely with you to develop a customized strategy that aligns
             with your business objectives and maximizes your return on
             investment.

@@ -28,6 +28,8 @@ import local from '@/public/local-shipping.png'
 import movie from '@/public/movie-creation.png'
 import search from '@/public/image-search.png'
 import trending from '@/public/trending-up.png'
+import teacher from '@/public/teacher.png'
+import lamp from '@/public/lamp.png'
 
 import rect from "@/public/rect.png"
 // import imag6 from "@/public/assets/imag6.png";
@@ -766,16 +768,28 @@ export const Case = [
           image2:search,
           image3:local,
         },
-   
+      ]
+
+
+      export const Advertsolution2=[
         {
-          id:'2',
-          image:imag2 ,
+          id:'1',
+          image:teacher ,
           image2:trending,
           image3:movie,
         },
         
     ]
-    
+
+    export const Advertcreative = [
+      {
+        id:'1',
+        image:lamp,
+        heading:"In-house Creative Studio",
+        content:"Video is a powerful medium for storytelling. Our videographers and animators will create captivating videos that showcase your brand, products, or services in an engaging and memorable way.With our in-house studio, we maintain full control over the creative process, ensuring efficiency, quality, and a cohesive brand experience. "
+      }
+    ]
+  
     
     
     
