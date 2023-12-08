@@ -7,3 +7,11 @@
     background-position: center;
     
 }
+.bggg{
+    height: 430px;
+    background-image: url(../../../../public/ammm.png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+}

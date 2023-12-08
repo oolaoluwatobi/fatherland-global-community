@@ -8,7 +8,7 @@
 }
 .bgg{
     height: 430px;
-    background-image: url(../../../../public/fffrr.png);
+    background-image: url(../../../../public/Rectangle\ 275.png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;
     background-size: cover;
@@ -25,3 +25,12 @@
     background-position: center;
     
 }
+/* .hwx{
+    height: 430px;
+  
+    background-image: url(../../../../public/Rectangle\ 5765.png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+} */
