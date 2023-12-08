@@ -25,7 +25,7 @@ const plus = ()=>{
   }
 
   return (
-    <div className="pt-[5.563rem bg-[#fcfdff]">
+    <div className="pt-[5.563rem bg-[#fcfdff max-w-[90rem] bg-green-600">
       <div className="bg-[#2B3449] mx-auto mb-[3.813rem]">
         <p className="text-white text-[40px] font-bold leading-[56px] break-words mx-auto container ps-[5rem] py-[6.5rem]">
           Book a Ticket
