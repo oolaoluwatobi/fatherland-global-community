@@ -72,7 +72,7 @@ const routes = [
 
 export default function Header() {
   return (
-    <header className="sm:flex sm:justify-between p-3 bg-red-20 bg-red-500 max-w-[90rem] container max-auto sticky top-0 z-50
+    <header className="sm:flex sm:justify-between p-3 bg-red-20 bg-white w-full sticky top-0 z-50
     ">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
