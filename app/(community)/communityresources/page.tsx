@@ -4,8 +4,9 @@ import Casestudy from './component/Casestudy'
 import Bloog from './component/Bloog'
 import Media from './component/Media'
 import Event from './component/Event'
-import Chubs from './component/Chubs'
+// import Chubs from './component/Chubs'
 import Africans from './component/Africans'
+import Communityhub from './component/Cummunityhubs'
 
 
 export default function CommunityPage() {
@@ -16,7 +17,7 @@ export default function CommunityPage() {
       <Bloog />
       <Media />
       <Event />
-      <Chubs /> 
+      <Communityhub /> 
       <Africans />     
     </div>
   )

@@ -23,6 +23,11 @@ import fatherstore from "@/public/fatherstore.png"
 import hub from "@/public/hub.png";
 import fatherland from "@/public/fatherland.png";
 import image38 from "@/public/image 38.png";
+import live from '@/public/live-tv.png';
+import local from '@/public/local-shipping.png'
+import movie from '@/public/movie-creation.png'
+import search from '@/public/image-search.png'
+import trending from '@/public/trending-up.png'
 
 import rect from "@/public/rect.png"
 // import imag6 from "@/public/assets/imag6.png";
@@ -744,53 +749,38 @@ export const Case = [
     }
   ]
   export const FEATURE=[
+    
     {
-      t1:{
-        id:'1',
-      image:hub,
-      },
-      t2:{
-        id:'2',
-        image:fatherland,
-      },
-      t3:{
-        id:'3',
-        image:layer,
-      },
-      t4:{
-        id:'4',
-        image:fatherstore,
-      },
-      t5:{
-        id:'5',
-        image:fatherstore,
-      },
-      t6:{
-        id:'6',
-        image:image38,
-      },
-      t7:{
-        id:'3',
-        image:layer,
-      },
-      t8:{
-        id:'4',
-        image:fatherstore,
-      },
-      t9:{
-        id:'5',
-        image:fatherstore,
-      },
-      t10:{
-        id:'6',
-        image:image38,
-      },
+    image:hub,
+    image1:fatherland,
+    image2:layer,
+    image3:fatherstore,
+    image4:fatherstore,
+    image5:image38,
     },
+  ] 
+    export const AdvertSolutions= [
+        {
+          id:'1',
+          image1:live,
+          image2:search,
+          image3:local,
+        },
+   
+        {
+          id:'2',
+          image:imag2 ,
+          image2:trending,
+          image3:movie,
+        },
+        
+    ]
     
     
     
     
     
     
-  ]
+    
+  
   
