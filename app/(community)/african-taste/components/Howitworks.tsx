@@ -5,7 +5,8 @@ import guy from '@/public/Rectangle 5707 (1).png'
 import { DividerVerticalIcon } from '@radix-ui/react-icons'
 import { FaPeopleGroup } from 'react-icons/fa6'
 import { FaCreditCard, FaGlobe,  } from 'react-icons/fa'
-import { BiMapPin } from 'react-icons/bi'
+// import { BiMapPin } from 'react-icons/bi'
+import { FaLocationPin } from "react-icons/fa6";
 
 
 
@@ -67,7 +68,7 @@ export default function Howitworks() {
                     </div>
                 </div>
                 <p className='text-black text-xl font-normal leading-5 break-words lg:px-[9.563rem lg:py-[1.9rem] rounded-[7px] flex items-center  bg-white'>
-                <BiMapPin className='mr-[0.9rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Visit the nearest restaurant in your location</p>
+                <FaLocationPin className='mr-[0.9rem] ml-[1.625rem] lg:text-[30px] text-[#0BA1BA] text-center'/>Visit the nearest restaurant in your location</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
