@@ -20,7 +20,7 @@ export default function Getanswer() {
         </div>
         <main className="mx-auto container  lg:pb-[6.07rem] pb-4 mt-4 lg:mt-[11.553rem] max-w-7xl">
             <p className="text-[#14202D] text-base lg:text-4xl font-bold leading-[56px] break-words">Our Communication Channels</p>
-            <p className='max-w-[76.375rem] text-xl  font-normal pb-[2.494rem]'>Our Communication channels include newsletters, email updates,
+            <p className='max-w-[76.375rem] text-sm lg:text-xl  font-normal pb-[2.494rem]'>Our Communication channels include newsletters, email updates,
                  social media platforms, and a dedicated community <br /> website. </p>
         {channels.map((channel, index) => (
           <div key={index} className="lg:grid grid-cols-2 gap-4 ">
