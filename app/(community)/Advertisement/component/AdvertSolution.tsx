@@ -1,5 +1,5 @@
 import React from 'react'
-// import React from 'react'
+import Link from 'next/link'
 import style from './styles.module.css'
 import Image from 'next/image'
 import { AdvertSolutions } from '@/lib/data'
@@ -43,7 +43,7 @@ export default function AdevertSolution() {
              </div>
       ))}
     </div>
-     <div className='flex justify-center'><Button className='py-5 px-5 mt-3 '>Find Out More</Button></div>
+    <Link href={`advertlink`} className='flex justify-center'><Button className='py-5 px-5 mt-3 '>Find Out More</Button></Link>
 
  </div>
   )

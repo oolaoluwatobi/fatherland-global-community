@@ -6,6 +6,7 @@ import imag12 from "@/public/assets/imag12.png";
 import Link from 'next/link';
 import { GoClock } from "react-icons/go"
 export default function Commerce() {
+  
   const Commerces=[
 {
   id:'1',
