@@ -1,12 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-// import imag1 from "@/public/assets/imag1.png";
-// import imag2 from "@/public/assets/imag2.png";
-// import imag3 from "@/public/assets/imag3.png";
-
-// import imag7 from "@/public/assets/imag7.png";
-// import imag8 from "@/public/assets/imag8.png";
-// import imag9 from "@/public/assets/imag9.png";
 import Group from "@/public/assets/Group.png";
 import Link from 'next/link';
 import { GoClock } from "react-icons/go"
