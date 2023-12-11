@@ -219,3 +219,84 @@ export const foodSection=[
     },
 
 ]
+
+export const Questions=[
+  {
+    id:'1',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'2',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'3',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'4',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'5',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'6',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'7',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'8',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'9',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'10',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'11',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'12',
+    label:'What is Fatherland Community',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+]
+
+export const Contactdetails=[
+  {
+    email:'office@fatherlandglobal.com',
+    phoneNumber:'+1 908 334 1972',
+    website:'www.fatherlandcommunity.com',
+    address:'1180 Avenue of the Americas, New York 10036, United States',
+  },
+]
+
+export const channels=[
+  {
+    twitter:'Twitter',
+    instagram:'Instagram',
+    facebook:'Facebook',
+    youtube:'Youtube'
+  },
+]
