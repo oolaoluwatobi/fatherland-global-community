@@ -50,6 +50,14 @@ const Dropdown = () => {
       href: "/travel-and-spirituality",
       label: "Travel and spirituality",
     },
+    {
+      href: "/contact-us",
+      label: "Contact Us",
+    },
+    {
+      href: "/help-and-support",
+      label: "Help and Support",
+    },
   ];
 
   return (
