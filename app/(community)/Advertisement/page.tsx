@@ -4,6 +4,8 @@ import Features from './component/Features'
 import AdevertSolution from './component/AdvertSolution'
 import Faturesfatherland from './component/Faturesfatherland'
 import AdvertCreative from './component/AdvertCreative'
+import Advertwork from './component/Advertwork'
+import AdvertLevel from './component/AdvertLevel'
 
 export default function AdvertPage() {
   return (
@@ -13,6 +15,8 @@ export default function AdvertPage() {
         <Faturesfatherland />
         <AdevertSolution />
         <AdvertCreative/>
+        <Advertwork />
+        <AdvertLevel />
         
 
     </section>

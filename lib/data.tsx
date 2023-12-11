@@ -30,6 +30,15 @@ import search from '@/public/image-search.png'
 import trending from '@/public/trending-up.png'
 import teacher from '@/public/teacher.png'
 import lamp from '@/public/lamp.png'
+import Rectangle5776 from '@/public/Rectangle 5776.png'
+import Rectangle5794 from '@/public/Rectangle 5794.png'
+import rainbow from '@/public/rainbow.png'
+import carton from '@/public/carton.png'
+import Group37016 from '@/public/Group 37016.png'
+import  Rectanglell from '@/public/Rectanglell.png'
+import asdfghjkl from '@/public/asdfghjkl.png'
+
+ 
 
 import rect from "@/public/rect.png"
 // import imag6 from "@/public/assets/imag6.png";
@@ -44,6 +53,7 @@ import splash from "@/public/splash.png"
 import special1 from '@/public/special 1.png'
 import special2 from '@/public/special 2.png'
 import special3 from '@/public/special 3.png' 
+import { text } from 'stream/consumers'
 // import des1 from '@/public/des1.png'
 // import des2 from '@/public/des2.png'
 // import des3 from '@/public/des3.png'
@@ -790,9 +800,83 @@ export const Case = [
       }
     ]
   
+    export const AdvertWork=[
+     {
+      id:'1',
+      image:Rectangle233,
+      text:'Business',
+      text1:'Resources Article Heading',
+      location:'Lagos State Government',
+     },
+
+     {
+       id:'2',
+       image:Rectangle23,
+       text:'Healthcare',
+       text1:'Resources Article Heading',
+       location:'Evercare Hospital',
+
+
+     },
+     {
+       id:'3',
+       image:Rectangle3, 
+       text:'Fashion',
+       text1:'Resources Article Heading',
+       location:'David Wej',
+     }
+    ]
+    export const AdvertsolutionRoute=[
+      {
+        id:'1',
+        image:Rectangle5776,
+      }
+    ]
+
+    export const Advertcontents=[
+      {
+        id:'1',
+        image:Rectangle5794,
+        text:'Branded Content',
+        text1:"We help you define your brand's personality, positioning, and messaging to ensure a cohesive and impactful advertising strategy. We specialize in creating targeted and optimized digital advertising campaigns across various platforms, including social media, search engines, and display networks.",
+      },
+
+      {
+        id:'2',
+        image:rainbow,
+        text:'Insights',
+        text1:"We're committed to delivering unparalleled insights into your advertising performance. Our advanced analytics tools provide you with in-depth data on key metrics such as impressions, clicks conversions, and customer demographics. Harness the power of data to understand what's working, what's not, and how to fine-tune your campaigns for maximum impact."
+      },
+
+      {
+        id:'3',
+        image:carton,
+        text:'Distribution',
+        text1:'At Fatherland, we understand that distribution is the key to a successful advertising campaign. Our dedicated team of experts specializes in strategically distributing your ads to the right channels, maximizing your brand&apos,s visibility and generating quality leads.'
+      },
+
+      {
+        id:'4',
+        image:asdfghjkl,
+        text:'Training',
+        text1:'We believe in empowering our clients to take charge of their advertising efforts. Our comprehensive training programs equip you with the knowledge and skills necessary to navigate the dynamic world of advertising. From understanding digital marketing trends to mastering the art of social media advertising, our training ensures that you stay ahead of the curve and make informed decisions that drive results'
+      },
+      {
+        id:'5',
+        image: Rectanglell,
+        text:'Accelerator Programs',
+        text1:'Through our unique accelerator program, your organization can be part of an initiative to drive innovation in your sector, region, or for a social cause, amplified via Fatherland’s global network.'
+      },
+      {
+        id:'6',
+        image:Group37016,
+        text:'Fatherland Discover Brands',
+        text1:'Fatherland’s global portfolio includes iconic entertainment, Education, and Ecommerce brands. Our dedicated team can help you build smarter, more targeted solutions for your brand.',
+      },
     
-    
-    
+    ]
+     
+
     
     
     
