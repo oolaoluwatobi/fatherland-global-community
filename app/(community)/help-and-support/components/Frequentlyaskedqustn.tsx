@@ -33,7 +33,7 @@ export default function Frequentlyaskedqustn() {
           <div key={index} className="">
             <div>
               <p
-                className="flex justify-between items-center gap-4 relative border lg:py-[2.138rem] px-[1.835rem] shadow-lg bg-white
+                className="flex justify-between items-center gap-4 relative border  py-4 lg:py-[2.138rem] px-[1.835rem] shadow-lg bg-white
                  shadow-blue-50 rounded-[10px] mb-[2.174rem]"
                 onClick={() => toggleDisplay(index)}
               >
