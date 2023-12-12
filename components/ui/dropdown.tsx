@@ -19,7 +19,7 @@ const Dropdown = () => {
       label: "About us ",
     },
     {
-        href: "/advertisement",
+        href: "/advertisements",
         label: "Advertisement",
       },
     {
