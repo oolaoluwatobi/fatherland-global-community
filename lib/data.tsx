@@ -37,8 +37,20 @@ import carton from '@/public/carton.png'
 import Group37016 from '@/public/Group 37016.png'
 import  Rectanglell from '@/public/Rectanglell.png'
 import asdfghjkl from '@/public/asdfghjkl.png'
-
- 
+import box from '@/public/box.png'
+import Link  from '@/public/Link.png'
+import  nove from '@/public/nove.png'
+import abigail  from '@/public/abigail.png'
+import africanprint  from '@/public/africanprint.png'
+import ace1 from '@/public/ace-1.jpg.png'
+// import rectange4  from '@/public/Rectangle 24 (1).png'
+// import rectange5   from '@/public/Rectangle 24 (2).png'
+// import rectange7  from '@/public/Rectangle 24 (3).png'
+// import rectange8  from '@/public/Rectangle 24 (4).png'
+// import rectange2 from '@/public/Rectangle 24.png'
+// import rectange3  from '@/public/Rectangle 23 (1).png'
+// import rectange6  from '@/public/Rectangle 23 (2).png'
+// import rectange1  from '@/public/Rectangle 23.png'
 
 import rect from "@/public/rect.png"
 // import imag6 from "@/public/assets/imag6.png";
@@ -54,6 +66,7 @@ import special1 from '@/public/special 1.png'
 import special2 from '@/public/special 2.png'
 import special3 from '@/public/special 3.png' 
 import { text } from 'stream/consumers'
+import { link } from 'fs'
 // import des1 from '@/public/des1.png'
 // import des2 from '@/public/des2.png'
 // import des3 from '@/public/des3.png'
@@ -872,9 +885,60 @@ export const Case = [
         image:Group37016,
         text:'Fatherland Discover Brands',
         text1:'Fatherland’s global portfolio includes iconic entertainment, Education, and Ecommerce brands. Our dedicated team can help you build smarter, more targeted solutions for your brand.',
-      },
+      }
     
     ]
+
+    export const StorehotDeal=[
+      {
+       id:'1',
+       image:box,
+       content:'Raffia Handbag(Box), Woven Shoulder Bag, Summer Bag',
+       content1:'Jewelry Bags & Accessories',
+       price:'$11.00',
+       price1:'$8.80' 
+      },
+
+      {
+        id:'2',
+        image:Link,
+        content:'Baba Onilu',
+        content1:'Art & Collectibles',
+        content2:'',
+        price:'$200.00',
+        price1:'$160.00'
+      },
+
+     { id:'3',
+      image:africanprint,
+      content:'African Print',
+      content1:'Art & Collectibles',
+      content2:'',
+      price1:'$16.00',
+    },
+    { id:'4',
+      image:nove,
+      content:'A Woman Alone',
+      content1: 'Tunde,Books & Magazines',
+      content2:'',
+      price:'$6.00',
+      price1:'$4.80'
+    },
+    { id:'5',
+      image:abigail,
+      content:'',
+      content1: 'Books & Magazines Ebooks', 
+      content2:'Short Stories (Ebooks)',
+      price1:'$2.00',
+    },
+    { id:'6',
+      image:ace1,
+      content:'Ace',
+      content1: 'Music & Entertainment',
+      price1:'$4.00',
+    }
+
+  ]
      
 
     
