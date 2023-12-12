@@ -23,7 +23,7 @@ export default function AdvertContactus() {
       </div>
 
       <section className='max-w-[50rem] mx-auto border-2 border-[#0CA2B9] rounded-2xl bg-white'>
-        <p className={`${monserat.className} pt-[2.125rem] mb-14 pb-[0.938rem] pl-[2.25rem] text-[#14202Db] text-xl font-[550] leading-5 break-words`}>
+        <p className={`${monserat.className} pt-[2.125rem] mb14 pb-[0.6rem] pl-[2.25rem] text-[#14202Db] text-xl font-[550] leading-5 break-words`}>
         Get In Touch
         </p>
         <p className='pl-[2.25rem] text-[#14202d] text-base font-normal leading-7 break-words pb-[2.875rem]'>
