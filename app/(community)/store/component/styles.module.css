@@ -1,0 +1,9 @@
+.storebg{
+    height: 430px;
+    background-image: url(../../../../public/Img.png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
