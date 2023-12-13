@@ -3,8 +3,32 @@ import img2 from "@/public/Rectangle 5781.png";
 import join from '@/public/joingroup.png'
 import food1 from '@/public/Rectangle 234.png'
 import food2 from '@/public/Rectangle 234 (1).png'
-// import meal1 from '@/public/Rectangle 5817.png'
-// import meal2 from '@/public/Rectangle 5818.png'
+import i1 from '@/public/image 31.png'
+import i2 from '@/public/image 26.png'
+import i3 from '@/public/image 27.png'
+import i4 from '@/public/image 29.png'
+import i5 from '@/public/image 30.png'
+import i6 from '@/public/image 31 (1).png'
+import i7 from '@/public/Fashion things.png'
+import i8 from '@/public/writing.png'
+import i9 from '@/public/image 24.png'
+
+import service1 from '@/public/service 1.png'
+import service2 from '@/public/service 3.png'
+import service3 from '@/public/service 15.png'
+import service4 from '@/public/service 5.png'
+import service5 from '@/public/service 6.png'
+import service6 from '@/public/service 13.png'
+import service7 from '@/public/service 4.png'
+import service8 from '@/public/service 12.png'
+import service9 from '@/public/service 10.png'
+import service10 from '@/public/service 11.png'
+import service11 from '@/public/service 22.png'
+import service12 from '@/public/service 20.png'
+import service13 from '@/public/service 16.png'
+import service14 from '@/public/service 18.png'
+import service15 from '@/public/service 17.png'
+import service16 from '@/public/service 19.png'
 
 
 
@@ -299,4 +323,188 @@ export const channels=[
     facebook:'Facebook',
     youtube:'Youtube'
   },
+]
+
+export const ExploreCulturalLearningCategories=[
+
+{
+  id:'1',
+  images:i1,
+  label:'Food & Africa Delicacies',
+  href:''
+},
+{
+  id:'2',
+  images:i2,
+  label:'Alternative medicine',
+  href:''
+},
+{
+  id:'3',
+  images:i3,
+  label:'Spirituality & Faith',
+  href:''
+},
+{
+  id:'4',
+  images:i4,
+  label:'Spirituality & Faith',
+  href:''
+},
+{
+  id:'5',
+  images:i5,
+  label:'Black creative cities',
+  href:''
+},
+{
+  id:'6',
+  images:i6,
+  label:'Cultural and traditional values',
+  href:''
+},
+{
+  id:'7',
+  images:i7,
+  label:'Fashion & Lifestyle',
+  href:''
+},
+{
+  id:'8',
+  images:i8,
+  label:'Kids and Family Values',
+  href:''
+},
+{
+  id:'9',
+  images:i9,
+  label:'Arts & Entertainment',
+  href:''
+},
+]
+
+export const Tutors=[
+  {
+    id:'1',
+    name:'Mary Adebayo',
+    image:service1
+  },
+  {
+    id:'2',
+    name:'Abdulqowiyu Adeyemi Usman',
+    image:service2
+  },
+  {
+    id:'3',
+    name:'Esther Johnson',
+    image:service3
+  },
+  {
+    id:'4',
+    name:'Jumoke Elugbaju',
+    image:service4
+  },
+  {
+    id:'5',
+    name:'Dr Oladipo Abiodun Mariam',
+    image:service5
+  },
+  {
+    id:'6',
+    name:'Ijeoma Odilu',
+    image:service6
+  },
+  {
+    id:'7',
+    name:'Chinenye Marvis Nwosu',
+    image:service7
+  },
+  {
+    id:'8',
+    name:'Adanna Oscar',
+    image:service8
+  },
+  {
+    id:'9',
+    name:'Oti Egwu',
+    image:service9
+  },
+  {
+    id:'10',
+    name:'Boluwatife Orimolade',
+    image:service10
+  },
+  {
+    id:'11',
+    name:'Oladipo Oluwadamilola Blessing',
+    image:service11
+  },
+  {
+    id:'12',
+    name:'Chief Federick ajanesan',
+    image:service12
+  },
+  {
+    id:'13',
+    name:'Prophetess nasa bawa',
+    image:service13
+  },
+  {
+    id:'14',
+    name:'IfaKorede Alapo Ola',
+    image:service14
+  },
+  {
+    id:'15',
+    name:'Ifadamilare  Ayinla',
+    image:service15
+  },
+  {
+    id:'16',
+    name:'Agahiu Ruth Odogoa',
+    image:service16
+  }
+]
+
+export const FAQ=[
+  {
+    id:'1',
+    label:'What is Explore Cultural Learning?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'2',
+    label:'Can cultural learning be done online?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'3',
+    label:'Why is Explore cultural learning important?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'4',
+    label:'How can cultural learning benefit organizations and workplaces?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'5',
+    label:'How does cultural learning contribute to personal growth?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'6',
+    label:'Is cultural learning a lifelong process?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'7',
+    label:'Does ECL possess a lifelong benefit?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  },
+  {
+    id:'8',
+    label:'How can I share my cultural knowledge with others?',
+    answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
+  }
 ]
