@@ -17,7 +17,7 @@ export default function Schoolandclassroom() {
                 <p className='lg:text-[45px] text-xl text-center lg:text-start font-bold lg:leading-[62px] break-words max-w-[36.938rem] mb-[0.625rem]
                 '><span className='text-[#FF8800] max-w-[36.938rem]'>Robust</span> formats for 
                 <span className='text-[#FF8800] pl-2'>flexible</span> and <span className='text-[#FF8800]'>on demand</span> Africa cultural learning</p>
-                <p className='max-w-[31.375rem] text-base font-normal break-words mb-[1.75rem] text-center lg:text-start'>Streaming platform that makes it possible for 
+                <p className='max-w-[31.375rem] lg:text-base text-sm font-normal break-words mb-[1.75rem] text-center lg:text-start'>Streaming platform that makes it possible for 
                 anyone to watch or listen to hundreds of video lessons 
                 taught by erudite tutors on African cultures and values for Africans</p>
 
