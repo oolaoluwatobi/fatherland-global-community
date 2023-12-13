@@ -6,3 +6,35 @@
     background-size: fill;
     background-position: center;
   }
+
+  .cat {
+    background-image: url(../../../../public/Group\ 149.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: fill;
+    background-position: center;
+  }
+
+  .d {
+    background-image: linear-gradient(90deg, rgba(20, 32, 45, 0.40) 0%, rgba(20, 32, 45, 0) 100%);
+  }
+  .bt{
+
+      background-image: url(../../../../public/Frame\ 3.png);
+      background-size: 100% 100%;
+      -o-background-size: 100% 100%;
+      -webkit-background-size: 100% 100%;
+      background-size: fill;
+      background-position: center;
+    }
+
+    .bt2{
+
+      background-image: url(../../../../public/Mask\ group.png);
+      background-size: 100% 100%;
+      -o-background-size: 100% 100%;
+      -webkit-background-size: 100% 100%;
+      background-size: fill;
+      background-position: center;
+    }
