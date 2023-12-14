@@ -6,8 +6,8 @@ import Image from 'next/image'
 export default function StorediscoverCategory() {
   return (
       <div  className='grid grid-cols-4 mt-5 gap-6 shadow-xl shadow-blue-50 pb'>
-          {Storediscovers.map((discoverStore)=>(
-            <div className='shadow-lg '>
+          {Storediscovers.map((discoverStore, i)=>(
+            <div className='shadow-lg ' key={i}>
                 <Image src={discoverStore.image} alt=""className='w-full mt-4 bg-' />
                <div className='p-5 mt-4'>
                    <p className='font-[800] text-lg'>{discoverStore.title}</p>
