@@ -12,15 +12,15 @@ const Dropdown = () => {
     
   };
 
-  const route = [
+  const routes = [
     {
       href: "/about-us",
       label: "About us ",
     },
     {
-        href: "/advertisements",
-        label: "Advertisement",
-      },
+      href: "/advertisements",
+      label: "Advertisement",
+    },
     {
       href: "/african-taste",
       label: "African Taste",
@@ -59,9 +59,13 @@ const Dropdown = () => {
     },
     {
       href: "exploreculturallearning",
-      labelL:'Explore cultural Learning'
-    }
-  ];
+      label:'Explore cultural L'
+    },
+    {
+      href: "about-cultural-learning",
+      label:'Cultural Learning'
+    },
+  ] as const;
 
   return (
     <div className="relative inline-block text-left">
@@ -85,7 +89,7 @@ const Dropdown = () => {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          {route.map((route, i) => (
+          {routes.map((route, i) => (
             <div key={i} className="text-white z-50">
               <div>
                 <Link
@@ -102,28 +106,6 @@ const Dropdown = () => {
         </button>
        
       </div>
-
-      {/* {isOpen && (
-        <div
-          className="px-2 py-3 origin-top-right absolute top-7 right0 mt-2 w-full roundedmd shadowlg bg-[#2EA658] ring1 ringblack ring-opacity5 focus:outline-none z-50"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="options-menu"
-        >
-          {route.map((route, i) => (
-            <div key={i} className="text-white z-50">
-              <div>
-                <Link
-                  href={route.href}
-                  className="text-sm font-medium transition-colors  flex flex-row w-full"
-                >
-                  {route.label}
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      )} */}
     </div>
   );
 };

@@ -17,8 +17,8 @@ export default function Platform() {
                 <p  className='text-[#55525D] text-xs lg:text-sm font-normal leading-6 break-words mb-[4.188rem] text-center lg:text-start'>Browse through recordings of previous live sessions on Africa cultures 
                     and values from our world-class instructors & tutors.</p>
                     <div className='mb-5 flex justify-center lg:justify-start'> 
-                        <Button className='hover:bg-primary mr-6'>Get Started</Button>
-                        <Button className='bg-transparent hover:bg-transparent text-black border border-primary'>Log In</Button>
+                        <Button className='hover:bg-primary mr-6 text-base font-semibold break-words'>Get Started</Button>
+                        <Button className='bg-transparent hover:bg-transparent text-[#03004D] border border-primary text-base font-semibold break-words'>Log In</Button>
                     </div>
             </div>
 
