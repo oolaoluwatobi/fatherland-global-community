@@ -58,11 +58,11 @@ const Dropdown = () => {
       label: "Help and Support",
     },
     {
-      href: "exploreculturallearning",
+      href: "/exploreculturallearning",
       label:'Explore cultural L'
     },
     {
-      href: "about-cultural-learning",
+      href: "/about-cultural-learning",
       label:'Cultural Learning'
     },
     {
