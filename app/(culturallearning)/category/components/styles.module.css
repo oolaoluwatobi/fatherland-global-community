@@ -1,0 +1,17 @@
+.cat {
+    background-image: url(../../../../public/herocat.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: fill;
+    background-position: center;
+  }
+  .bt2{
+
+    background-image: url(../../../../public/Mask\ group.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: fill;
+    background-position: center;
+  }

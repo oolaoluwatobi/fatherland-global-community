@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-export default function Storediscover() {
+import Image from 'next/image'
+
+import { Storediscovers } from '@/lib/data'
+
+export default function StoreDiscover() {
   return (
     <div className='mt-10 flex justify-between' >
         <div>
@@ -13,7 +17,7 @@ export default function Storediscover() {
           <Link href=''>Crafts & Supplies</Link>
         </div>
 
-        <div></div>
+      
     </div>
   )
 }

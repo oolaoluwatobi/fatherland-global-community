@@ -43,14 +43,32 @@ import  nove from '@/public/nove.png'
 import abigail  from '@/public/abigail.png'
 import africanprint  from '@/public/africanprint.png'
 import ace1 from '@/public/ace-1.jpg.png'
-// import rectange4  from '@/public/Rectangle 24 (1).png'
-// import rectange5   from '@/public/Rectangle 24 (2).png'
-// import rectange7  from '@/public/Rectangle 24 (3).png'
-// import rectange8  from '@/public/Rectangle 24 (4).png'
-// import rectange2 from '@/public/Rectangle 24.png'
-// import rectange3  from '@/public/Rectangle 23 (1).png'
-// import rectange6  from '@/public/Rectangle 23 (2).png'
-// import rectange1  from '@/public/Rectangle 23.png'
+import rectange4  from '@/public/Rectangle 24 (1).png'
+import rectange5   from '@/public/Rectangle 24 (2).png'
+import rectange7  from '@/public/Rectangle 24 (3).png'
+import rectange8  from '@/public/Rectangle 24 (4).png'
+import rectange2 from '@/public/Rectangle 24.png'
+import rectange3  from '@/public/Rectangle 23 (1).png'
+import rectange6  from '@/public/Rectangle 23 (2).png'
+import rectange1  from '@/public/palm wine.png'
+import review from '@/public/review.jpg'
+import Cta from '@/public/CTA.svg'
+import basket1 from '@/public/basket1.png'
+import basket2 from '@/public/basket2.png'
+import basket3 from '@/public/basket3.png'
+import calabash from '@/public/calabash.png'
+import box1 from '@/public/bx-1 (1).png'
+import box2 from '@/public/bx-1 (2).png'
+import maskkk from '@/public/Mask groupttt.png'
+import box3 from '@/public/bx-1.png'
+
+// import maskgroup from '@/public/Mask group (1).png'
+import bonnet from '@/public/fashionbonnet.png'
+import bag from '@/public/bagg.png'
+import smile from '@/public/smile.png'
+import handfan from '@/public/handfan.png'
+
+
 
 import rect from "@/public/rect.png"
 // import imag6 from "@/public/assets/imag6.png";
@@ -65,7 +83,7 @@ import splash from "@/public/splash.png"
 import special1 from '@/public/special 1.png'
 import special2 from '@/public/special 2.png'
 import special3 from '@/public/special 3.png' 
-import { text } from 'stream/consumers'
+// import { text } from 'stream/consumers'
 import { link } from 'fs'
 // import des1 from '@/public/des1.png'
 // import des2 from '@/public/des2.png'
@@ -939,7 +957,268 @@ export const Case = [
     }
 
   ]
-     
+  export const Storediscovers =[
+    {
+      id:'1',
+      image:rectange1,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'2',
+      image:rectange2,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'3',
+      image:rectange3,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'4',
+      image:rectange4,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'5',
+      image:rectange5,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'6',
+      image:rectange6,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'7',
+      image:rectange7,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'8',
+      image:rectange8,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+   
+  ]
+  
+  export const StoreHomes =[
+    {
+      id:'1',
+      image:basket1,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+    {
+      id:'2',
+      image:basket2,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+
+    {
+      id:'3',
+      image:calabash,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+
+    {
+      id:'4',
+      image:basket3,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+
+    {
+      id:'5',
+      image:rectange7,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+    {
+      id:'4',
+      image:basket3,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+
+    {
+      id:'5',
+      image:rectange7,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+    {
+      id:'4',
+      image:basket3,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+
+    {
+      id:'5',
+      image:rectange7,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      price1:'$115.00',
+      image2:Cta
+      
+    },
+   
+  ]
+
+
+   export const storeHomes2=[
+    // {
+    //   id:'1',
+    //   image:mask,
+    //   // title:"Palm wine topper",
+    //   // description:'Art & collectibles',
+    //   // price:'£36.00',
+    //   // image1:review,
+    //   // image2:Cta
+      
+    // },
+    {
+      id:'1',
+      image:bonnet,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'2',
+      image:bag,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'3',
+      image:smile,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'4',
+      image:handfan,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+   ]
+
+   export const storeDistribution=[
+    {
+      id:'1',
+      image:box3
+    },
+
+    {
+      id:'2',
+      image:box1
+    },
+    {
+      id:'3',
+      image:maskkk
+    },
+    {
+      id:'4',
+      image:box2
+    }
+   ]
 
     
     

@@ -7,3 +7,22 @@
     background-position: center;
     
 }
+
+.cardbg{
+    height: 430px;
+    background-image: url(../../../../public/framem.png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+.cardbg2{
+    height: 200px;
+    width:500px;
+    background-image: url(../../../../public/Section.png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+}
