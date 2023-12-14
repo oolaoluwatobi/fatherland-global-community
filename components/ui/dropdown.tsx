@@ -65,6 +65,10 @@ const Dropdown = () => {
       href: "about-cultural-learning",
       label:'Cultural Learning'
     },
+    {
+      href: "/category",
+      label:'Category'
+    },
   ] as const;
 
   return (

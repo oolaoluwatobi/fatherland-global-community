@@ -30,7 +30,7 @@ export default function Allcourses() {
           </p>
           <hr className="mx-[1.25rem]" />
           {AllCategories.map((cat, i) => (
-            <Link href={cat.href} key={i} className="">
+            <Link href={`/category/${cat.href}`} key={i} className="">
               <p className="pl-[1.25rem] py-[1.563rem] text-sm font-semibold text-[#55525D]">
                 {cat.label}
               </p>
