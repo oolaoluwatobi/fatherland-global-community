@@ -12,6 +12,7 @@ export default function Store() {
        <div className={`${style.storebg} mt-10 pl-[2.188rem] `}>
            <p className='text-bold font-bold lg:text-6xl pt-28'>Handcrafted products <br /> inspired by <span className='text-[#DA5001]'>Africans</span> </p>
            <p className=' pt-5 text-bold font-[500] text-2xl text-gray-500'>Fatherland Store is a destination for unique and creative products.</p>
+           
       </div>
     </div>
 

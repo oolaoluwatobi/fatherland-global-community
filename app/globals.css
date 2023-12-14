@@ -84,6 +84,11 @@
   }
 }
 
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .hero_background {
   height: 100%;
   background-image: url(../public/herobk.png);
