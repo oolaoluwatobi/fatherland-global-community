@@ -12,7 +12,7 @@ export default function TrendingSelectionofcourses() {
           Trending selection of courses
         </p>
         <Link
-          href=""
+          href="/category"
           className="text-[#FF8800] text-lg font-medium leading-5 break-words"
         >
           See all

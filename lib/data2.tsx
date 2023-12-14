@@ -43,7 +43,7 @@ export const EMBRACE = [
   {
     label: "Embrace the diverse flavours of African cuisines",
   },
-];
+]as const;
 
 export const LIST = [
   {
@@ -58,7 +58,7 @@ export const LIST = [
     text: "Fatherland community gives you the keys to a world of culinary delight with over 25% discount off anything you eat",
     image: img2,
   },
-];
+]as const;
 
 export const EMBRACEMEAL=[
     {
@@ -73,7 +73,7 @@ export const EMBRACEMEAL=[
         text:'Enjoy 50% discount on delectable food and refreshing drinks when you buy for two people',
         
     }
-]
+] as const;
 export const joinFatherlandCommunityBanner=[
   {
     image:join,
@@ -81,7 +81,7 @@ export const joinFatherlandCommunityBanner=[
     label2:'We bridge divides by bringing people together',
     text:'Our community delivers exclusive benefits and brands to the global members of African Descent and Non-Africans, targeting over 100 million members. Enjoy exclusive benefits across travel, lifestyle, heritage, history, spirituality, culture, entertainment, education, investment, social & business networking & attractive tangible business possibilities when you join.',
   }
-]
+] as const;
 
 export const foodSection=[
     {
@@ -242,7 +242,7 @@ export const foodSection=[
       location2:'2 Barker St, Lozells, Birmingham B19 1EL, United Kingdom'
     },
 
-]
+] as const;
 
 export const Questions=[
   {
@@ -305,7 +305,7 @@ export const Questions=[
     label:'What is Fatherland Community',
     answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
   },
-]
+] as const;
 
 export const Contactdetails=[
   {
@@ -314,7 +314,7 @@ export const Contactdetails=[
     website:'www.fatherlandcommunity.com',
     address:'1180 Avenue of the Americas, New York 10036, United States',
   },
-]
+] as const;
 
 export const channels=[
   {
@@ -323,7 +323,7 @@ export const channels=[
     facebook:'Facebook',
     youtube:'Youtube'
   },
-]
+] as const;
 
 export const ExploreCulturalLearningCategories=[
 
@@ -381,7 +381,7 @@ export const ExploreCulturalLearningCategories=[
   label:'Arts & Entertainment',
   href:''
 },
-]
+] as const;
 
 export const Tutors=[
   {
@@ -464,7 +464,7 @@ export const Tutors=[
     name:'Agahiu Ruth Odogoa',
     image:service16
   }
-]
+] as const;
 
 export const FAQ=[
   {
@@ -507,4 +507,138 @@ export const FAQ=[
     label:'How can I share my cultural knowledge with others?',
     answer:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, excepturi.'
   }
-]
+] as const;
+
+export const RecommendedCourses=[
+  {
+    id:'1',
+    label:'All Courses',
+    href:''
+  },
+  {
+    id:'2',
+    label:'Most Popular',
+    href:''
+  },
+  {
+    id:'3',
+    label:'Free',
+    href:''
+  },
+  {
+    id:'4',
+    label:'Trending',
+    href:''
+  },
+  {
+    id:'5',
+    label:'Recently Viewed',
+    href:''
+  },
+]as const
+
+export const AllCategories=[
+  {
+    id:'1',
+    label:'Cultural & Traditional Values',
+    href:'cultural-traditional-values'
+  },
+  {
+    id:'2',
+    label:'Alternative Medicine',
+    href:'alternative-medicine'
+  },
+  {
+    id:'3',
+    label:'Black Creative Cities',
+    href:'black-creative-cities'
+  },
+  {
+    id:'4',
+    label:'Arts & Entertainment ',
+    href:'arts-entertainment'
+  },
+  {
+    id:'5',
+    label:'Community & Governance ',
+    href:'community-governance'
+  },
+  {
+    id:'6',
+    label:'Food & Healthy Eating  ',
+    href:'food-healthy-eating'
+  },
+  {
+    id:'7',
+    label:'Kids and Family values ',
+    href:'kids-and-family-values'
+  },
+  {
+    id:'8',
+    label:'Spirituality and Faith ',
+    href:'spirituality-and-faith'
+  },
+]as const
+
+
+export const classTeachers=[
+
+{
+  id:'cultural-traditional-values',
+  image1:service14,
+  image2:service15,
+  image3:'',
+  image4:'',
+
+},
+{
+  id:'alternative-medicine',
+  image1:service4,
+  image2:service5,
+  image3:'',
+  image4:'',
+},
+{
+  id:'black-creative-cities',
+  image1:service12,
+  image2:'',
+  image3:'',
+  image4:'',
+},
+{
+  id:'arts-entertainment',
+  image1:service2,
+  image2:service10,
+  image3:'',
+  image4:'',
+},
+{
+  id:'community-governance',
+  image1:service1,
+  image2:service9,
+  image3:'',
+  image4:'',
+},
+{
+  id:'food-healthy-eating',
+  image1:service6,
+  image2:'',
+  image3:'',
+  image4:'',
+},
+{
+  id:'kids-and-family-values',
+  image1:service7,
+  image2:service8,
+  image3:service4,
+  image4:service16,
+},
+{
+  id:'spirituality-and-faith',
+  image1:service13,
+  image2:'',
+  image3:'',
+  image4:'',
+},
+
+]as const
