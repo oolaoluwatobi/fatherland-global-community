@@ -4,7 +4,7 @@ import React from 'react'
 import { BiPalette } from 'react-icons/bi'
 import { MdCardGiftcard, MdLocalMall, MdLocalMovies, MdLocalOffer, MdMenuBook, MdQueueMusic } from 'react-icons/md'
 import Image from 'next/image'
-import offerbanner from '@/public/OFFER-BANNER.png.png'
+// import offerbanner from '@/public/OFFER-BANNER.png.png'
 
 export default function Storecategory() {
   return (
