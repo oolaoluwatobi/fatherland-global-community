@@ -541,42 +541,42 @@ export const AllCategories=[
   {
     id:'1',
     label:'Cultural & Traditional Values',
-    href:''
+    href:'cultural-traditional-values'
   },
   {
     id:'2',
     label:'Alternative Medicine',
-    href:''
+    href:'alternative-medicine'
   },
   {
     id:'3',
     label:'Black Creative Cities',
-    href:''
+    href:'black-creative-cities'
   },
   {
     id:'4',
     label:'Arts & Entertainment ',
-    href:''
+    href:'arts-entertainment'
   },
   {
     id:'5',
     label:'Community & Governance ',
-    href:''
+    href:'community-governance'
   },
   {
     id:'6',
     label:'Food & Healthy Eating  ',
-    href:''
+    href:'food-healthy-eating'
   },
   {
     id:'7',
     label:'Kids and Family values ',
-    href:''
+    href:'kids-and-family-values'
   },
   {
     id:'8',
     label:'Spirituality and Faith ',
-    href:''
+    href:'spirituality-and-faith'
   },
 ]as const
 
@@ -584,7 +584,7 @@ export const AllCategories=[
 export const classTeachers=[
 
 {
-  id:'Cultural & Traditional Values',
+  id:'cultural-traditional-values',
   image1:service14,
   image2:service15,
   image3:'',
@@ -592,49 +592,49 @@ export const classTeachers=[
 
 },
 {
-  id:'Alternative Medicine',
+  id:'alternative-medicine',
   image1:service4,
   image2:service5,
   image3:'',
   image4:'',
 },
 {
-  id:'Black Creative Cities',
+  id:'black-creative-cities',
   image1:service12,
   image2:'',
   image3:'',
   image4:'',
 },
 {
-  id:'Arts & Entertainment ',
+  id:'arts-entertainment',
   image1:service2,
   image2:service10,
   image3:'',
   image4:'',
 },
 {
-  id:'Community & Governance',
+  id:'community-governance',
   image1:service1,
   image2:service9,
   image3:'',
   image4:'',
 },
 {
-  id:'Food & Healthy Eating ',
+  id:'food-healthy-eating',
   image1:service6,
   image2:'',
   image3:'',
   image4:'',
 },
 {
-  id:'Kids and Family values',
+  id:'kids-and-family-values',
   image1:service7,
   image2:service8,
   image3:service4,
   image4:service16,
 },
 {
-  id:'Spirituality and Faith',
+  id:'spirituality-and-faith',
   image1:service13,
   image2:'',
   image3:'',
