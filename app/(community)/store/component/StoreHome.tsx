@@ -3,7 +3,7 @@
 import React from "react";
 import { StoreHomes } from "@/lib/data";
 import Image from "next/image";
-import mask from '@/public/categorie banner.png'
+import mask from "@/public/categorie banner.png";
 import { storeHomes2 } from "@/lib/data";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
@@ -23,7 +23,9 @@ export default function StoreHome() {
           <p className="font-bold text-3xl text-[#232323]">
             Home and <span className="text-primary">Living</span>
           </p>
-          <p className="pt-2 texl-2xl tex-[#686868]">Curated home accessories handpicked by our best Editors</p>
+          <p className="pt-2 texl-2xl tex-[#686868]">
+            Curated home accessories handpicked by our best Editors
+          </p>
         </div>
         <div className=" relative mt-5 shadow-xl shadow-blue-50">
           <button className="absolute left-2 top-0 bottom-0 my-auto">
@@ -39,7 +41,7 @@ export default function StoreHome() {
             />
           </button>
 
-          <aside id="store" className="flex gap-6 overflow-x-auto no-scroll">
+          <aside id="stor" className="flex gap-6 overflow-x-auto no-scroll">
             {StoreHomes.map((discoverhome) => (
               <div
                 className="shadow-lg min-w-[17.188rem]"
@@ -51,16 +53,13 @@ export default function StoreHome() {
                 />
                 <div className="p-5 mt-4">
                   <p className="font-[800] text-lg">{discoverhome.title}</p>
-                  <p className="font-normal text-[#686868] pt-2">
-                    {discoverhome.description}
-                  </p>
+                  <p className="font-normal text-[#686868] pt-2">{discoverhome.description}</p>
 
                   <div className="flex justify-between ">
-                    <p className="text-[#050A1E] font-[800] mb-5 pt-4 ">
+                    <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
                       {discoverhome.price}
-                      {/* <p className="pt-3 ">{discoverhome.price1} </p> */}
                       <p className="font-normal">{discoverhome.price1}</p>
-                    </p>
+                    </div>
                     <div>
                       <Image src={discoverhome.image2} alt="" className="" />
                     </div>
@@ -70,19 +69,21 @@ export default function StoreHome() {
             ))}
           </aside>
         </div>
-          
+
         <div className="grid grid-cols-5 mt-10 gap-6 mx-auto ml-5 shadow-xl  shadow-blue-50 ">
-        <div>
+          <div>
             <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
-           </div>
-          {storeHomes2.map((storehome2 ,i) => (
+          </div>
+          {storeHomes2.map((storehome2, i) => (
             <div key={i} className="shadow-lg  ">
-              <Image src={storehome2.image} alt="" className="h-[16.5rem] w-[17.125rem] " />
+              <Image
+                src={storehome2.image}
+                alt=""
+                className="h-[16.5rem] w-[17.125rem] "
+              />
               <div className="p-5 mt-2">
                 <p className="font-[800] text-lg">{storehome2.title}</p>
-                <p className="font-normal text-[#686868] pt-2">
-                  {storehome2.description}
-                </p>
+                <p className="font-normal text-[#686868] pt-2">{storehome2.description}</p>
 
                 <div className="flex justify-between ">
                   <p className="text-[#050A1E] font-[800] pt-4 ">
