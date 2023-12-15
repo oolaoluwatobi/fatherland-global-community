@@ -28,7 +28,7 @@ export default function Becomeatutor() {
                  <DotFilledIcon className='mr-3'/>Teach Course Material: Use videos to deliver course information  </p>
          </div>
 
-        <Link href='' className='flex justify-center lg:justify-start'><Button className='text-[#2db6b9] text-base font-semibold break-words px-[3.125rem] py-[0.938rem] bg-white hover:bg-white'>Become a Tutor</Button></Link>
+        <Link href='/become-a-tutor' className='flex justify-center lg:justify-start'><Button className='text-[#2db6b9] text-base font-semibold break-words px-[3.125rem] py-[0.938rem] bg-white hover:bg-white'>Become a Tutor</Button></Link>
     </div>
   )
 }

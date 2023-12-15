@@ -75,6 +75,11 @@ export default function page({ params }: { params: { categoryId: string } }) {
           />
         </div>
       </div>
+      <div className="items-center max-w7xl mx-auto container lg:pb[3.875rem] pb5 lg:mt-24 lg:pt[6.375rem ">
+        <p className="text-black lg:text-[40px] text-base font-bold lg:leading-10 break-words text-center lg:text-start lg:pl-[4.5rem]">
+        You May Also Like
+        </p>
+      </div>
       <Youmayalsolike />
       <Getstarted />
       <Faq />
