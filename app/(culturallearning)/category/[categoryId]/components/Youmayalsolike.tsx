@@ -5,7 +5,7 @@ import React from "react";
 import { Tutors } from "@/lib/data2";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
-export default function TrendingSelectionofcourses() {
+export default function Youmayalsolike() {
 
   const storehomes = () => {
     const discover = document.querySelector("#store");
@@ -21,17 +21,11 @@ export default function TrendingSelectionofcourses() {
 
 
   return (
-    <div className=" relative bg-[#fff3e5] mx-auto pt-5 lg:pt-[6.375rem] pb-[4.313rem] mb-8 lg:mb-[5.5rem]">
-        <div className="lg:flex justify-between items-center max-w7xl mx-auto container lg:pb-[3.875rem] pb-5 absolute">
+    <div className=" relative mx-auto lg:mt-24 lg:pt[6.375rem] pb[4.313rem] mb-8 lg:mb[5.5rem] max-w-[90rem]">
+        <div className="items-center max-w7xl mx-auto container lg:pb-[3.875rem] pb-5 absolute">
         <p className="text-black lg:text-[40px] text-base font-bold lg:leading-10 break-words text-center lg:text-start lg:pl-[4.5rem]">
-          Trending selection of courses
+        You May Also Like
         </p>
-        <Link
-          href="/category"
-          className="text-[#FF8800] text-lg font-medium leading-5 break-words"
-        >
-          See all
-        </Link>
       </div>
     <button className="absolute left-12 top-0 bottom-0 my-auto hidden lg:block">
       <BsChevronLeft
@@ -46,12 +40,12 @@ export default function TrendingSelectionofcourses() {
       />
     </button>
 
-    <div id="store" className="overflow-x-auto no-scrollbar">
+    <div id="store" className="overflow-x-auto no-scrollbar max-w-7xl mx-auto bg-red500 pb-4">
     <div className="mx-auto pt-5 lg:pt-[6.375rem]">
 
 
       <div className="lg:flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
-        {Tutors.slice(3, 12).map((tutor, i) => (
+        {Tutors.map((tutor, i) => (
           <Image
             key={i}
             src={tutor.image}
