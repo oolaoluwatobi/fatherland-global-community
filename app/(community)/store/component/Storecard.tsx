@@ -7,9 +7,10 @@ export default function StoreCard() {
   return (
     <div>
       <div className="bg-black p-16 rounded-3xl ">
-        <div className="mx-auto grid grid-cols-2  gap-4 mt-10 bg-gradient-to-r from-teal-500  to-green-500  p-10 ">
+        <div className="mx-auto grid grid-cols-2  gap-4 mt-10 bg-gradient-to-r from-cyan-600  to-green-500  p-10 ">
           <h3 className="text-3xl w-[34rem] text-white font-bold ]">Latest Product trends and discount news straight to you </h3>
-          <input type="text" className="bg-white rounded-full" placeholder="Quick Links"  />
+          <input type="text" className="bg-white rounded-full pl-5" placeholder="Quick Links"  />
+          <button className="bg-gradient-to-r from-cyan-600  to-green-500  w-[7.05rem] h-[2.5rem] text-center px- text-[#ffffff] rounded-full">Subscribe</button>
         </div>
         <div className="flex justify-around mt-20">
             <p className="text-white text-2xl w-[24rem]  font-bold ]">Download Fatherland Community App</p>

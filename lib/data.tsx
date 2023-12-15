@@ -1197,6 +1197,37 @@ export const Case = [
       image2:Cta
       
     },
+    {
+      id:'5',
+      image:bag,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'6',
+      image:smile,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'7',
+      image:handfan,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
 
    ]
 
