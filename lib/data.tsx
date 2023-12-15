@@ -43,11 +43,11 @@ import  nove from '@/public/nove.png'
 import abigail  from '@/public/abigail.png'
 import africanprint  from '@/public/africanprint.png'
 import ace1 from '@/public/ace-1.jpg.png'
-import rectange4  from '@/public/Rectangle 24 (1).png'
+import rectange4  from '@/public/Rectangle 24 (2).png'
 import rectange5   from '@/public/Rectangle 24 (2).png'
-import rectange7  from '@/public/Rectangle 24 (3).png'
+import rectange7  from '@/public/Rectangle 24 (4).png'
 import rectange8  from '@/public/Rectangle 24 (4).png'
-import rectange2 from '@/public/Rectangle 24.png'
+import rectange2 from '@/public/Rectangle 24 (4).png'
 import rectange3  from '@/public/Rectangle 23 (1).png'
 import rectange6  from '@/public/Rectangle 23 (2).png'
 import rectange1  from '@/public/palm wine.png'
@@ -61,6 +61,12 @@ import box1 from '@/public/bx-1 (1).png'
 import box2 from '@/public/bx-1 (2).png'
 import maskkk from '@/public/Mask groupttt.png'
 import box3 from '@/public/bx-1.png'
+import fash1 from '@/public/fash1.png'
+import fash2 from '@/public/fash2.png'
+import fash3 from '@/public/fash3.png'
+import fash4 from '@/public/fas4.png'
+import fash8 from '@/public/fash8.png'
+import fash9 from '@/public/fash9.png'
 
 // import maskgroup from '@/public/Mask group (1).png'
 import bonnet from '@/public/fashionbonnet.png'
@@ -1250,6 +1256,104 @@ export const Case = [
       image:box2
     }
    ]
+
+   export const Affrocategories =[
+    {
+      id:'1',
+      image:fash1,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'2',
+      image:fash2,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'3',
+      image:fash3,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'4',
+      image:bonnet,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'5',
+      image:fash4,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+
+    {
+      id:'6',
+      image:rectange4,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'7',
+      image:rectange5,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'8',
+      image:fash8,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+    {
+      id:'9',
+      image:fash9,
+      title:"Palm wine topper",
+      description:'Art & collectibles',
+      price:'£36.00',
+      image1:review,
+      image2:Cta
+      
+    },
+   
+  ]
 
     
     
