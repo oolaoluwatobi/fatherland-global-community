@@ -10,7 +10,7 @@ import Storecard from './component/Storecard'
 
 export default function StorePage () {
   return (
-    <section className='mx-auto w-[90rem] mb-10 bg-gray-`100'>
+    <section className='mx-auto max-w-[90rem] mb-10 bg-[#f8fafe]'>
     <Store />
     <Storecategory />
     <Storebanner />
