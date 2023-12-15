@@ -17,12 +17,12 @@ export default function StoreHome() {
     discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
   };
   const container = () => {
-    const rightarrow = document.getElementById("#storehomes");
-    rightarrow?.scrollBy({ left: -rightarrow.clientWidth, behavior: "smooth" });
+    const right = document.querySelector("storehomes");
+    right?.scrollBy({ left: -right.clientWidth, behavior: "smooth" });
   };
   const containers = () => {
-    const rightarrow = document.getElementById("#storehomes");
-    rightarrow?.scrollBy({ left: -rightarrow.clientWidth, behavior: "smooth" });
+    const right = document.querySelector("storehomes");
+    right?.scrollBy({ left: right.clientWidth, behavior: "smooth" });
   };
 
   return (
@@ -83,25 +83,23 @@ export default function StoreHome() {
         </div>
 
         <div className=" relative mt-5 shadow-xl shadow-blue-50">
-          {/* {" "} */}
           <button className="absolute left-2 top-0 bottom-0 my-auto">
             <BsArrowLeftSquareFill
-              onClick={() => containers()}
+              onClick={() => container()}
               className="w-12 h-12 text-white bg-black"
             />
           </button>
           <button className="absolute right-12 top-0 bottom-0 my-auto">
             <BsArrowRightSquareFill
               className="w-12 h-12 text-white bg-black "
-              onClick={container}
+              onClick={containers}
             />
           </button>
-          <div
-            id="storehomes"
-            className="flex mt-10 gap-6 mx-auto ml-5 shadow-xl overflow-x-auto no-scroll  shadow-blue-50 ">
-            <div>
+          {/* <aside> */}
+            <div id="storehomes"
+            className="flex gap-6 overflow-x-auto no-scroll">
               <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
-            </div>
+            
             {storeHomes2.map((storehome2, i) => (
               <div key={i} className="shadow-lg min-w-[17.188rem]  ">
                 <Image
@@ -131,7 +129,8 @@ export default function StoreHome() {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          {/* </aside> */}
         </div>
       </div>
     </div>
