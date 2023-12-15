@@ -12,7 +12,7 @@ export default function Join() {
 
     <div className='bg-red300 mx-auto mb-[3.813rem]'>
         <p className='text-[#14202D] text-4xl font-bold leading-[56px] break-words text-center pb-[1.313rem]'>Join Fatherland Community</p>
-        <p className='text-[#14202D] text-xl font-normal leading-7 break-words text-center'>We will use the information entered here for your membership card</p>
+        <p className='text-[#14202D] text-xl font-normal leading-7 break-words text-center container'>We will use the information entered here for your membership card</p>
     </div>
 
         <section className='lg:flex justify-around max-w-7xl mx-auto'>
@@ -80,9 +80,10 @@ export default function Join() {
         </main>
 
 
-            <div className='container'>
+            <div className='container mx-auto text-center'>
                 <p className=' pb-[3px] text-[#14202D] text-xl font-normal leading-7 text-center'>Your Membership Card</p>
-                <p className='text-[#14202D] text-sm font-normal leading-7 w-full lg:w-[26.5rem] mb-[3.625rem] '>Your membership card will look like this. It&apos;s important that the name on your
+                <p className='text-[#14202D] text-sm font-normal leading-7 w-full lg:w-[26.5rem] mb-[3.625rem] text-center'>Your membership card 
+                will look like this. It&apos;s important that the name on your
                      membership card is correct, as they will
                      be required to gain access to community hubs in your location</p>
 
