@@ -17,7 +17,7 @@ export default function page({ params }: { params: { categoryId: string } }) {
     <section>
       <HeroCat />
       <div className="max-w-[90rem] mx-auto lg:pl-[7.7rem] lg:pr-[5rem] lg:flex container">
-        <aside className="max-w7xl bg-white w-full mxauto lg:w-[281px] py-[1.563rem] mr-[2.3rem] lg:h-[65rem] shadow shadow-[#ff8800] ">
+        <div className="max-w7xl bg-white w-full mxauto lg:w-[281px] py-[1.563rem] mr-[2.3rem] lg:h-[65rem] shadow shadow-[#ff8800] ">
           <div className="">
             <p className="pl-[1.25rem] py-[0.688rem] text-base font-semibold">
               Recommended Courses
@@ -49,7 +49,7 @@ export default function page({ params }: { params: { categoryId: string } }) {
               </Link>
             ))}
           </div>
-        </aside>
+        </div>
 
         <div className="lg:grid grid-cols-2 gap-12 ">
           <Image

@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Allcourses() {
   return (
     <div className="max-w-[90rem] mx-auto bggreen-700 lg:pl-[7.7rem] lg:pr-[5rem] lg:flex container">
-      <aside className="max-w7xl bg-white w-full mxauto lg:w-[281px] py-[1.563rem] mr-5 lg:h-[65rem] shadow shadow-[#ff8800] ">
+      <div className="max-w7xl bg-white w-full mxauto lg:w-[281px] py-[1.563rem] mr-5 lg:h-[65rem] shadow shadow-[#ff8800] ">
         <div className="">
           <p className="pl-[1.25rem] py-[0.688rem] text-base font-semibold">
             Recommended Courses
@@ -37,7 +37,7 @@ export default function Allcourses() {
             </Link>
           ))}
         </div>
-      </aside>
+      </div>
 
       <section className="containe lg:grid grid-cols-3 gap-4 ">
         {Tutors.map((tutor, i) => (

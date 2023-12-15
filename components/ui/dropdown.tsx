@@ -50,6 +50,10 @@ const Dropdown = () => {
       label: "Travel and spirituality",
     },
     {
+      href: "/store",
+      label:'Store'
+    },
+    {
       href: "/contact-us",
       label: "Contact Us",
     },
@@ -69,6 +73,7 @@ const Dropdown = () => {
       href: "/category",
       label:'Category'
     },
+
   ] as const;
 
   return (
