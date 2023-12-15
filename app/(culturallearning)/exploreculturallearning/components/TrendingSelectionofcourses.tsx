@@ -2,23 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Tutors } from "@/lib/data2";
-import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+// import { Tutors } from "@/lib/data2";
+// import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+import Youmayalsolike from "../../category/[categoryId]/components/Youmayalsolike";
 
 export default function TrendingSelectionofcourses() {
-
-  const storehomes = () => {
-    const discover = document.querySelector("#store");
-    discover?.scrollBy({ left: -discover.clientWidth, behavior: "smooth" });
-  };
-  const storehomess = () => {
-    const discover = document.querySelector("#store");
-    discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
-  };
-
-
-
-
 
   return (
     <div className=" relative bg-[#fff3e5] mx-auto pt-5 lg:pt-[6.375rem] pb-[4.313rem] mb-8 lg:mb-[5.5rem]">
@@ -33,37 +21,7 @@ export default function TrendingSelectionofcourses() {
           See all
         </Link>
       </div>
-    <button className="absolute left-12 top-0 bottom-0 my-auto hidden lg:block">
-      <BsChevronLeft
-        onClick={() => storehomes()}
-        className="w-12 h-12 text-black bg-white rounded-[50px]"
-      />
-    </button>
-    <button className="absolute right-12 top-0 bottom-0 my-auto hidden lg:block">
-      <BsChevronRight
-        className="w-12 h-12 text-black bg-white rounded-[50px]"
-        onClick={storehomess}
-      />
-    </button>
-
-    <div id="store" className="overflow-x-auto no-scrollbar">
-    <div className="mx-auto pt-5 lg:pt-[6.375rem]">
-
-
-      <div className="lg:flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
-        {Tutors.slice(3, 12).map((tutor, i) => (
-          <Image
-            key={i}
-            src={tutor.image}
-            alt=""
-            className="mx-auto mb-[1.478rem] containe max-h-[23.438rem] max-w-[18.125rem]"
-          />
-          
-        ))}
-      </div>
-      
-    </div>
-    </div>
+        <Youmayalsolike />
   </div>
 
   );
