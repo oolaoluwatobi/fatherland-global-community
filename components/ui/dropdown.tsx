@@ -73,6 +73,10 @@ const Dropdown = () => {
       href: "/category",
       label:'Category'
     },
+    {
+      href: "/campus",
+      label:'Campus'
+    },
 
   ] as const;
 
