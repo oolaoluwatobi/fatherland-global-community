@@ -68,9 +68,9 @@ export default function Storecategory() {
         </div>
       </div>
       <main>
-        <div className=" pt-6 flex lg:flx w-[55.857rem]  gap[40rem] justifyaround h-20 shadow-lg mt-5 mb-5">
+        <div className=" pt-6 flex lg:flx w-[55.857rem]  gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
           <h1 className="ml-14 text-2xl font-bold">Hot Deals</h1>
-          <p className="ml-2 text-lg text-gray-600">see all</p>
+          <p className="mr-5 text-lg text-gray-600">see all</p>
         </div>
         <div className="lg:grid grid-cols-3 gap-4 w-[55.875rem] mxauto cursor-pointer  ">
           {StorehotDeal.map((store, i) => (
