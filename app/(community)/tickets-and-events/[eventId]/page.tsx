@@ -1,3 +1,4 @@
+'use client'
 import { EVENTS } from "@/lib/data";
 import Image from "next/image";
 import React from "react";
@@ -5,7 +6,10 @@ import React from "react";
 import { MdCalendarMonth } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 export default function EventPage({ params }: { params: { eventId: string } }) {
+  const router=useRouter()
   const renderEvent = EVENTS.find((item) => item.id === params.eventId);
   console.log(renderEvent);
   const renderPreviousEvents = EVENTS.slice(0, 3).map((event) => (
@@ -16,7 +20,7 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
     >
       <Image src={event.image} alt={event.name} className="rounded-t-md" />
       <div className="p-4 space-y-4">
-        <Link href={event.id}><p className="font-[600] hover:underline">{event.name}</p></Link>
+        <p className="font-[600] hover:underline">{event.name}</p>
         <div className="flex space-x-4 text-sm">
           <p className="flex">
             <MdCalendarMonth className="my-auto mr-2" /> {event.date2}
@@ -28,7 +32,7 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
         </div>
       </div>
       <div className="mx-auto ms-4 mb-4 ">
-        <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md">
+        <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md" onClick={()=>router.push(`${event.id}`)}>
           <Link href="#">Buy Tickets</Link>
         </button>
       </div>

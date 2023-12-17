@@ -3,8 +3,12 @@ import React from "react";
 import style from "./styles.module.css";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Router } from "next/router";
+
 
 export default function Bookaticket() {
+  const router=useRouter()
   return (
     <div
       className={`mxauto wfull containe ${style.tourft} mb-[7.063rem] max-w-[90rem]`}
@@ -16,9 +20,9 @@ export default function Bookaticket() {
         Book a Ticket Now
       </div>
       <div className="flex justify-center lg:mt-[9.563rem]">
-        <Button className="text-center bg-0 border border-white text-[15px] font-semibold break-words mb-[4.688rem]">
+        <Button className="text-center bg-0 border border-white text-[15px] font-semibold break-words mb-[4.688rem]" onClick={()=>router.push('/book-a-ticket')}>
           {" "}
-          <Link href='/book-a-ticket'>Making a Booking</Link>
+          Making a Booking
         </Button>
       </div>
     </div>
