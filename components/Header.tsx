@@ -16,6 +16,7 @@ import {
   // NavigationMenuTrigger,
   // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { useRouter } from "next/navigation";
 
 const routes = [
   {
@@ -71,6 +72,7 @@ const routes = [
 ];
 
 export default function Header() {
+  const router=useRouter()
   return (
     <header className="sm:flex sm:justify-between p-3 bg-red-20 bg-white w-full sticky top-0 z-50
     ">
@@ -131,21 +133,15 @@ export default function Header() {
             </nav>
 
             <div className="space-x-2">
-              <Button className="bg-[#FF8800] text-white hover:bg-[#ff8800d9]">
-                <Link
-                  href="/becomeamember"
-                  className="text-sm font-medium transition-colors"
-                >
+              <Button className="bg-[#FF8800] text-white hover:bg-[#ff8800d9] text-sm font-medium transition-colors" onClick={()=>router.push('/becomeamember')}>
+              
                   Become a Member
-                </Link>
+              
               </Button>
-              <Button variant="outline" className="border-[#FF8800] hover:bg-white">
-                <Link
-                  href="/loginpage"
-                  className="text-sm font-medium transition-colors text-[#ff8800] "
-                >
+              <Button variant="outline" className="border-[#FF8800] hover:bg-white text-sm font-medium transition-colors text-[#ff8800]" onClick={()=>router.push('/loginpage')}>
+               
                   Log In
-                </Link>
+    
               </Button>
             </div>
           </div>

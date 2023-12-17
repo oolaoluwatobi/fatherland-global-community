@@ -3,10 +3,11 @@ import React from 'react'
 import style from './styles.module.css'
 import { DotFilledIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 
 export default function Becomeatutor() {
+     const router=useRouter()
   return (
     <div className={`mx-auto max-w-7xl ${style.bt} pt-[2.556rem] rounded-[10px] container pb-[2rem]`}>
         <p className='text-white lg:text-[40px] text-xl font-bold lg:leaing-[50px] break-words pb-4 text-center lg:text-start'>Become A Tutor</p>
@@ -28,7 +29,9 @@ export default function Becomeatutor() {
                  <DotFilledIcon className='mr-3'/>Teach Course Material: Use videos to deliver course information  </p>
          </div>
 
-        <Link href='/become-a-tutor' className='flex justify-center lg:justify-start'><Button className='text-[#2db6b9] text-base font-semibold break-words px-[3.125rem] py-[0.938rem] bg-white hover:bg-white'>Become a Tutor</Button></Link>
+        <div className='flex justify-center lg:justify-start'>
+          <Button className='text-[#2db6b9] text-base font-semibold break-words px-[3.125rem] py-[0.938rem] bg-white hover:bg-white
+          ' onClick={()=>router.push('/become-a-tutor')}>Become a Tutor</Button></div>
     </div>
   )
 }
