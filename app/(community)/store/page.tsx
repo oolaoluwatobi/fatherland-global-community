@@ -8,7 +8,9 @@ import StoreHome from './component/StoreHome'
 import StoreDistribution from './component/StoreDistribution'
 import Storecard from './component/Storecard'
 
-export default function StorePage () {
+export default function StorePage ({ params }: { params: { storeId: string } }) {
+  console.log(params.storeId, '[STOREID_____}')
+  
   return (
     <section className='mx-auto max-w-[90rem] mb-10 bg-[#f8fafe]'>
     <Store />
@@ -16,7 +18,7 @@ export default function StorePage () {
     <Storebanner />
     <StoreDiscover />
     <StorediscoverCategory />
-    <StoreHome />
+    <StoreHome params={params} />
     <StoreDistribution />
     <Storecard />
     </section>
