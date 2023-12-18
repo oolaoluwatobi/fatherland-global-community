@@ -5,9 +5,10 @@ import { StoreHomes } from "@/lib/data";
 import Image from "next/image";
 import mask from "@/public/categorie banner.png";
 import { storeHomes2 } from "@/lib/data";
+import Link from "next/link";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
-export default function StoreHome() {
+export default function StoreHome({ params }: { params: { storeId: string } }) {
   const storehomes = () => {
     const discover = document.querySelector("#store");
     discover?.scrollBy({ left: -discover.clientWidth, behavior: "smooth" });
@@ -17,11 +18,11 @@ export default function StoreHome() {
     discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
   };
   const container = () => {
-    const right = document.querySelector("storehomes");
+    const right = document.querySelector("#storehomes");
     right?.scrollBy({ left: -right.clientWidth, behavior: "smooth" });
   };
   const containers = () => {
-    const right = document.querySelector("storehomes");
+    const right = document.querySelector("#storehomes");
     right?.scrollBy({ left: right.clientWidth, behavior: "smooth" });
   };
 
@@ -101,7 +102,9 @@ export default function StoreHome() {
               <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
             
             {storeHomes2.map((storehome2, i) => (
+              
               <div key={i} className="shadow-lg min-w-[17.188rem]  ">
+                <Link href={`/store/${storehome2.id}`} >
                 <Image
                   src={storehome2.image}
                   alt=""
@@ -123,10 +126,11 @@ export default function StoreHome() {
                       />{" "}
                     </p>
                     <div>
-                      <Image src={storehome2.image2} alt="" className="" />
+                    <Image src={storehome2.image2} alt="" className="" />
                     </div>
                   </div>
                 </div>
+                </Link>
               </div>
             ))}
             </div>

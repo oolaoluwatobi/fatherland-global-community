@@ -1,6 +1,6 @@
 .Affrobg{
     height: 430px;
-    background-image: url(../../../../public/rec.png);
+    background-image: url(../../../../../public/rec.png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;
     background-size: cover;
@@ -9,7 +9,7 @@
 }
 .Afrobg{
     /* height: 430px; */
-    background-image: url(../../../../public/OFFER\ BANNER\ \(1\).png);
+    background-image: url(../../../../../public/OFFER\ BANNER\ \(1\).png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;
     background-size: fill;
@@ -17,13 +17,3 @@
     background-position: center;
     
 }
-
-/* .Afobg{
-    height: 430px;
-    background-image: url(../../../../public/Ellipse\ 188.png);
-    -o-background-size:100% 100%;
-    -webkit-background-size:100% 100%;
-    background-size: cover;
-    background-position: center;
-    
-} */
