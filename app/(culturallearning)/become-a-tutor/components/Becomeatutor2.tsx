@@ -11,7 +11,7 @@ export default function Becomeatutor2() {
   return (
     <div className={`${style.bft} pt-[2.556rem] rounded-[10px] max-w-[77rem] mx-auto lg:pl8 lg:mb-40 mb-5 container`}>
         <div
-      className={`mx-auto max-w-5xl  pb-[2rem] flex justify-between items-center`}
+      className={`mx-auto max-w-5xl  pb-[2rem] lg:flex justify-between items-center`}
     >
       <main>
         <p className="text-white lg:text-[40px] text-xl font-bold lg:leaing-[50px] break-words pb-4 text-center lg:text-start">
@@ -34,7 +34,7 @@ export default function Becomeatutor2() {
           </Button>
         </div>
       </main>
-      <Image src={img} alt="" />
+      <Image src={img} alt="" className="mt-5 lg:mt-0"/>
     </div>
     </div>
   );
