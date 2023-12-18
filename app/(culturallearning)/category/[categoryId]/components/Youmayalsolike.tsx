@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { Tutors } from "@/lib/data2";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
@@ -17,11 +16,6 @@ export default function Youmayalsolike() {
   };
   return (
     <div className=" relative mx-auto lg:mt24 lg:pt[6.375rem] pb[4.313rem] mb-8 lg:mb[5.5rem] max-w-[90rem]">
-        {/* <div className="items-center max-w7xl mx-auto container lg:pb-[3.875rem] pb-5 absolute">
-        <p className="text-black lg:text-[40px] text-base font-bold lg:leading-10 break-words text-center lg:text-start lg:pl-[4.5rem]">
-        You May Also Like
-        </p>
-      </div> */}
     <button className="absolute left-12 top-0 bottom-0 my-auto hidden lg:block">
       <BsChevronLeft
         onClick={() => storehomes()}
