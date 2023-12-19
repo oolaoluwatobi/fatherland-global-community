@@ -9,7 +9,7 @@ import StoreDistribution from './component/StoreDistribution'
 import Storecard from './component/Storecard'
 
 export default function StorePage ({ params }: { params: { storeId: string } }) {
-  console.log(params.storeId, '[STOREID_____}')
+  
   
   return (
     <section className='mx-auto max-w-[90rem] mb-10 bg-[#f8fafe]'>

@@ -74,32 +74,32 @@ import fash4 from "@/public/fas4.png";
 import fash8 from "@/public/fash8.png";
 import fash9 from "@/public/fash9.png";
 import image54 from "@/public/image 54.png";
-import rectan from "@/public/Rectangle 210.png";
-
-// import maskgroup from '@/public/Mask group (1).png'
+import rectan from "@/public/Rectangle 210.png"
+import price from '@/public/Price.png'
+import Rectangle211 from '@/public/Rectangle 211.png'
+import Rectangle212 from '@/public/Rectangle 212.png'
 import bonnet from "@/public/fashionbonnet.png";
 import bag from "@/public/bagg.png";
 import smile from "@/public/smile.png";
-import handfan from "@/public/handfan.png";
+import handfan from '@/public/handfan.png'
+import rectanglebag from "@/public/Rectangle bag.png";
+import rectangleband from "@/public/Rectangle band.png";
+import rectanglefan from "@/public/Rectangle fan.png";
+import rectanglefeet from "@/public/Rectangle feet.png";
+
 
 import rect from "@/public/rect.png";
-// import imag6 from "@/public/assets/imag6.png";
 import Rectangle233 from "@/public/Rectangle 233.png";
 import Rectangle23 from "@/public/Rectangle 23.png";
 import Rectangle2 from "@/public/Rectangle 2.png";
 import Rectangle3 from "@/public/Rectangle 3.png";
 import naomi from "@/public/naomi.png";
 import splash from "@/public/splash.png";
-// import Link from 'next/link';
-// import { GoClock } from "react-icons/go"
+
 import special1 from "@/public/special 1.png";
 import special2 from "@/public/special 2.png";
 import special3 from "@/public/special 3.png";
-// import { text } from 'stream/consumers'
-import { link } from "fs";
-// import des1 from '@/public/des1.png'
-// import des2 from '@/public/des2.png'
-// import des3 from '@/public/des3.png'
+
 
 export const CATEGORIES = [
   {
@@ -1167,7 +1167,7 @@ export const storeHomes2 = [
   },
   {
     id: "4",
-    image: handfan,
+    image:handfan,
     title: "Palm wine topper",
     description: "Art & collectibles",
     price: "£36.00",
@@ -1326,7 +1326,109 @@ export const STORES = [
     rate:"4,917 ratings",
     price:"$14.00",
     price1:"-50% Off",
-
+    image5:price,
+    image6:Rectangle211,
+    image7:Rectangle212,
+    deliveryDate:'Delivery by 12 Mar, Sunday',
+    deliveryTime:'(if ordered before 1:48 PM)',
+    image8: Cta,
 
 },
 ];
+ export const StoresDiscription =[
+  {
+    id:'1',
+    description:"Description",
+    specificate:'Specifications',
+    review:'Reviews',
+    questions:"Questions & Answers",
+    content:"Let your hair do the talking with our very stylish Ankara Alice band.",
+    content1:"The band is designed to fit over the head and hold long hair away from the face, but let it hang freely at the back.",
+    content2:"Adds a new level of fun and fashion to so many standard styles, from casual messy long hair from to polished up-styles and everything in between",
+    content3:" Made of the Ankara fabric with an elastic band to hold the hair tight and keep your way away from your face all day.",
+    content4:" If you’re someone whose hairline always gets soaked with sweat during workouts, then wearing a headband is perfect for you."
+  }
+ ]
+
+ export const StoreRelate = [
+  {
+    id: "1",
+    image: rectanglefan,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  {
+    id: "2",
+    image: rectanglebag,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£90.00",
+    price1: "$199.00",
+    image2: Cta,
+  },
+
+  {
+    id: "3",
+    image: rectanglefeet,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "4",
+    image: box,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  
+  {
+    id: "3",
+    image: rectanglefeet,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "4",
+    image: box,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+ 
+ ]
