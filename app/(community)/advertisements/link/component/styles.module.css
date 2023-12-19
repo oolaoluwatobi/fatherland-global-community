@@ -1,6 +1,6 @@
 .solutionimg{
     height: 430px;
-    background-image: url(../../../../public/dark.png);
+    background-image: url(../../../../../public/dark.png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;
     background-size: cover;
@@ -8,7 +8,7 @@
 }
 .level{
     height: 430px;
-    background-image: url(../../../../public/bgggg.png);
+    background-image: url(../../../../../public/bgggg.png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;
     background-size: cover;
