@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Tutors } from "@/lib/data2";
+import Link from "next/link";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 export default function Youmayalsolike() {
@@ -35,12 +36,14 @@ export default function Youmayalsolike() {
 
       <div className="lg:flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
         {Tutors.map((tutor, i) => (
-          <Image
-            key={i}
+         <Link  key={i} href={`/become-a-tutor/${tutor.id}`}>
+           <Image
+           
             src={tutor.image}
             alt=""
             className="mx-auto mb-[1.478rem] containe max-h-[23.438rem] max-w-[18.125rem]"
           />
+         </Link>
           
         ))}
       </div>

@@ -6,3 +6,25 @@
     background-size: fill;
     background-position: center;
 }
+
+/* .win1{
+    scrollbar-width: thin;
+} */
+.win1::-webkit-scrollbar {
+    width: 10px;
+  }
+  .win1::-webkit-scrollbar-thumb {
+    background-color: #9d9d9d;
+  }
+.win1::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.ban{
+    background-image: url(../../../../../public/campus/Group\ 129.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: fill;
+    background-position: center;
+}
