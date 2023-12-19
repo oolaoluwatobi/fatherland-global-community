@@ -5,7 +5,6 @@ import { RecommendedCourses } from "@/lib/data2";
 import { AllCategories } from "@/lib/data2";
 import Link from "next/link";
 import HeroCat from "../components/HeroCat";
-import { Tutors } from "@/lib/data2";
 import Getstarted from "../components/Getstarted";
 import Faq from "../../exploreculturallearning/components/Faq";
 import Youmayalsolike from "./components/Youmayalsolike";
@@ -55,22 +54,22 @@ export default function page({ params }: { params: { categoryId: string } }) {
         <div className="lg:grid grid-cols-2 gap-12 ">
           <Image
             src={renderTutors?.image1!!}
-            alt=""
+            alt={renderTutors?.id!!}
             className="lg:w-[25.875rem] lg:h-[375px] mb-5 lg:mb-0"
           />
           <Image
             src={renderTutors?.image2!!}
-            alt=""
+            alt={renderTutors?.id!!}
             className="lg:w-[25.875rem] lg:h-[375px] mb-5 lg:mb-0"
           />
           <Image
             src={renderTutors?.image3!!}
-            alt=""
+            alt={renderTutors?.id!!}
             className="lg:w-[25.875rem] lg:h-[375px] mb-5 lg:mb-0"
           />
           <Image
             src={renderTutors?.image4!!}
-            alt=""
+            alt={renderTutors?.id!!}
             className="lg:w-[25.875rem] lg:h-[375px] mb-5 lg:mb-0"
           />
         </div>

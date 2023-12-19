@@ -16,7 +16,7 @@ export default function Faq() {
       };
   return (
     <div className="bg-red500 max-w-7xl mx-auto">
-    <p className="mx-auto container text-[#14202D] text-base lg:text-4xl font-bold leading-[56px] break-words lg:pt[6.482rem] lg:mb-[3.134rem] text-center lg:text-start">
+    <p className="mx-auto container text-[#14202D] text-base lg:text-4xl font-bold leading-[56px] break-words lg:pt[6.482rem] lg:mb-[3.134rem] text-center">
       Frequently Asked Questions
     </p>
     <main className="mx-auto container lg:grid grid-cols-2 gap-4 lg:pb-[6.651rem]">

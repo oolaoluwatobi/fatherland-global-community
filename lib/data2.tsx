@@ -416,82 +416,82 @@ export const ExploreCulturalLearningCategories=[
 
 export const Tutors=[
   {
-    id:'1',
+    id:'mary-adebayo',
     name:'Mary Adebayo',
     image:service1
   },
   {
-    id:'2',
+    id:'abdulqowiyu-adeyemi-usman',
     name:'Abdulqowiyu Adeyemi Usman',
     image:service2
   },
   {
-    id:'3',
+    id:'esther-johnson',
     name:'Esther Johnson',
     image:service3
   },
   {
-    id:'4',
+    id:'jumoke-elugbaju',
     name:'Jumoke Elugbaju',
     image:service4
   },
   {
-    id:'5',
+    id:'dr-oladipo-abiodun-mariam',
     name:'Dr Oladipo Abiodun Mariam',
     image:service5
   },
   {
-    id:'6',
+    id:'ijioma-odilu',
     name:'Ijeoma Odilu',
     image:service6
   },
   {
-    id:'7',
+    id:'chinenye-marvis-nwosu',
     name:'Chinenye Marvis Nwosu',
     image:service7
   },
   {
-    id:'8',
+    id:'adanna-oscar',
     name:'Adanna Oscar',
     image:service8
   },
   {
-    id:'9',
+    id:'oti-egwu',
     name:'Oti Egwu',
     image:service9
   },
   {
-    id:'10',
+    id:'boluwatife-orimolade',
     name:'Boluwatife Orimolade',
     image:service10
   },
   {
-    id:'11',
+    id:'oladipo-oluwadamilola-blessing',
     name:'Oladipo Oluwadamilola Blessing',
     image:service11
   },
   {
-    id:'12',
+    id:'chief-federick-ajanesan',
     name:'Chief Federick ajanesan',
     image:service12
   },
   {
-    id:'13',
+    id:'prophetess-nasa-bawa',
     name:'Prophetess nasa bawa',
     image:service13
   },
   {
-    id:'14',
+    id:'ifaKorede-alapo-ola',
     name:'IfaKorede Alapo Ola',
     image:service14
   },
   {
-    id:'15',
+    id:'ifadamilare-ayinla',
     name:'Ifadamilare  Ayinla',
     image:service15
   },
   {
-    id:'16',
+    id:'agahiu-ruth-odogoa',
     name:'Agahiu Ruth Odogoa',
     image:service16
   }
@@ -735,10 +735,10 @@ export const Tutorsinfo=[
 
   },
   {
-    id:'5',
+    id:'jumoke-elugbaju',
     image1:jum1,
     image2:jum2,
-    name:"jumoke-elugbaju",
+    name:"Jumoke Elugbaju",
     info:'This course entails processes and over 20 of the most important plants used in herbal medicine plus making tinctures, teas, oils, salves, honeys, syrups, compresses and poultices.',
     course:'Alternative medicine',
     coursedetails:'Alternative medicine | The Treatment Of Erectal Dysfunction',
@@ -914,4 +914,48 @@ export const Tutorsinfo=[
     
 
   },
+]as const
+
+export const Instructions=[
+  {
+    id:'1',
+    label:'Meet Your Instructor',
+    answer:'tgbhhgvgh'
+   
+  },
+  {
+    id:'2',
+    label:'Meet Your Instructor',
+    answer:'dfgyhjk'
+  },
+  {
+    id:'3',
+    label:'Opportunity and Commitment',
+    answer:'sdfghjk'
+  },
+  {
+    id:'4',
+    label:'Finding A Problem to Solve',
+    answer:'dfgyhjk'
+  },
+  {
+    id:'5',
+    label:'Finding Funding',
+    answer:'wsedrfghjk'
+  },
+  {
+    id:'6',
+    label:'Is cultural learning a lifelong process?',
+    answer:'ertyuio'
+  },
+  {
+    id:'7',
+    label:'Does ECL possess a lifelong benefit?',
+    answer:'ertyuhjikol;'
+  },
+  {
+    id:'8',
+    label:'How can I share my cultural knowledge with others?',
+    answer:'sxdcfgvjnhmk'
+  }
 ]as const
