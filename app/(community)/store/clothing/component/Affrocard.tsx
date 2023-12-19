@@ -1,8 +1,6 @@
 import React from "react";
 import style from "./styles.module.css";
-import Image from "next/image";
-import imaggg from "@/public/image 53.png";
-// import imagggg from '@/public/Ellipse 188.png'
+
 export default function Affrocard() {
   return (
     <div
