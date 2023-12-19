@@ -134,7 +134,6 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
               </div>
             ))}
             </div>
-          {/* </aside> */}
         </div>
       </div>
     </div>
