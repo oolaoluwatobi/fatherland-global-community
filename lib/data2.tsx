@@ -544,27 +544,27 @@ export const RecommendedCourses=[
   {
     id:'1',
     label:'All Courses',
-    href:''
+    href:'/category'
   },
   {
     id:'2',
     label:'Most Popular',
-    href:''
+    href:'/category/most-popular'
   },
   {
     id:'3',
     label:'Free',
-    href:''
+    href:'/category/free'
   },
   {
     id:'4',
     label:'Trending',
-    href:''
+    href:'/category/trending'
   },
   {
     id:'5',
     label:'Recently Viewed',
-    href:''
+    href:'/category/recently-viewed'
   },
 ]as const
 
@@ -958,4 +958,34 @@ export const Instructions=[
     label:'How can I share my cultural knowledge with others?',
     answer:'sxdcfgvjnhmk'
   }
+]as const
+export const Diveristy=[
+{
+  id:'1',
+  text:'Redefining equity, where everybody is giving equal opportunity to showcase their respective natural talent and acquired skills in promoting the organization'
+},
+{
+  id:'2',
+  text:'A Winning Mindset is inculcated to every member of the team where the spirit of we can do it is exhibited by every member of the team.'
+},
+{
+  id:'3',
+  text:'A team is built where everybody is carried along the path of success and every hand on deck to achieve great success.'
+},
+{
+  id:'4',
+  text:'The Power of Empathy is also built where we all, as a team empathize with every member of the team and identify with member that may be challenged'
+},
+{
+  id:'5',
+  text:'Supporting others through empathy can create a calming effect and empower them through challenging times.'
+},
+{
+  id:'6',
+  text:'It is Important of being conscious and alert of cultural background of individual while still recognizing and honoring the individuality of each person.'
+},
+{
+  id:'7',
+  text:'It is of great importance to avoid being bias in our decision making'
+},
 ]as const

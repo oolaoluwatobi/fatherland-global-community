@@ -22,7 +22,7 @@ export default function AfricanCommunity() {
               className="absolute bottom-0 w8 aspect-auto bg-red-40 rounded-md  object-cover  -z-20"
             />
             </h1>
-            <p className="mt-4 leading-7 space-y-2">
+            <div className="mt-4 leading-7 space-y-2">
               Fatherland is a pioneering company that specializes in creating
               technologically advanced products and services that celebrate
               African culture. Our goal is to unite the global African
@@ -33,7 +33,7 @@ export default function AfricanCommunity() {
                 our targeted market and offer culturally designed solutions for
                 the African community worldwide.
               </p>{" "}
-            </p>
+            </div>
           </div>
         </div>
         <div className="relative col-span-2 lg:col-span-1">

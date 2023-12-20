@@ -22,12 +22,12 @@ export default function Eclcampus() {
             Learn from the best Africa learning platform and be the best you can. 
             </p>
 
-                <ul>
-                    <li className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'> <DotFilledIcon className='text-4xl ml-2 mr-2'/> Develop fascinating historical Africa contents with reasonable premium that focuses on key categories of Africa setting</li>
-                    <li className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'> <DotFilledIcon className='text-4xl ml-2 mr-2'/>Hands-on learning African rich values that are almost endangered due to modernization</li>
-                    <li className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'><DotFilledIcon className='text-4xl ml-2 mr-2'/>Custom learning pathways tailored to Africa setting in which Explore Cultural Learning has taken the responsibility</li>
-                    <li className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'><DotFilledIcon className='text-4xl ml-2 mr-2'/>Explore Cultural Learning has rich insights to measure and upscale the impact of Africa customs and values</li>
-                </ul>
+                <main>
+                    <p className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'> <DotFilledIcon className='text-4xl ml-2 mr-2'/> Develop fascinating historical Africa contents with reasonable premium that focuses on key categories of Africa setting</p>
+                    <p className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'> <DotFilledIcon className='text-4xl ml-2 mr-2'/>Hands-on learning African rich values that are almost endangered due to modernization</p>
+                    <p className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'><DotFilledIcon className='text-4xl ml-2 mr-2'/>Custom learning pathways tailored to Africa setting in which Explore Cultural Learning has taken the responsibility</p>
+                    <p className='lg:text-base text-sm font-normal break-words mb-[1.75rem] flex'><DotFilledIcon className='text-4xl ml-2 mr-2'/>Explore Cultural Learning has rich insights to measure and upscale the impact of Africa customs and values</p>
+                </main>
 
 
 
