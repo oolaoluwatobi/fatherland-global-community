@@ -14,8 +14,12 @@ const Dropdown = () => {
 
   const routes = [
     {
-      href: "/about-us",
-      label: "About us ",
+      href: "/payment-details",
+      label: "Payment Details",
+    },
+    {
+      href: "/welcome-page",
+      label: " Welcome page ",
     },
     {
       href: "/advertisements",
@@ -76,6 +80,10 @@ const Dropdown = () => {
     {
       href: "/campus",
       label:'Campus'
+    },
+    {
+      href: "/diversity-and-inclusion",
+      label:'Diversity and inclusion'
     },
 
   ] as const;

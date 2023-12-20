@@ -7,7 +7,7 @@ import style from './styles.module.css'
 export default function HeroCat() {
   return (
     <div
-      className={`mx-auto max-w-[90rem] bg-red500 h52 lg:px-[6.225rem container lg:pt-[3.938rem] pt-5  lg:pb-[4rem] pb-5 lg:px-[8rem]`}
+      className={`mx-auto max-w-[90rem] bg-red500 h52 lg:px-[6.225rem container lg:pt-[3.938rem] pt-5  lg:pb-[4rem] pb-5 lg:px-[7rem]`}
     >
       <main
         className={`max-w-7xl mx-auto ${style.cat} h52 bg-[#d4f6db] lg:flex justify-between items-center rounded-[15px] lg:pl-[3.125rem]
