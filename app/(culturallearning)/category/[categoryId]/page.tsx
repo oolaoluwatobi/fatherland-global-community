@@ -1,13 +1,11 @@
 import React from "react";
 import { classTeachers } from "@/lib/data2";
 import Image from "next/image";
-import { RecommendedCourses } from "@/lib/data2";
-import { AllCategories } from "@/lib/data2";
-import Link from "next/link";
 import HeroCat from "../components/HeroCat";
 import Getstarted from "../components/Getstarted";
 import Faq from "../../exploreculturallearning/components/Faq";
 import Youmayalsolike from "./components/Youmayalsolike";
+import Aside from "./components/Aside";
 export default function page({ params }: { params: { categoryId: string } }) {
   const renderTutors = classTeachers.find(
     (teacher) => teacher.id === params.categoryId
@@ -17,40 +15,7 @@ export default function page({ params }: { params: { categoryId: string } }) {
     <section>
       <HeroCat />
       <div className="max-w-[90rem] mx-auto lg:pl-[7.7rem] lg:pr-[5rem] lg:flex container">
-        <div className="max-w7xl bg-white w-full mxauto lg:w-[281px] py-[1.563rem] mr-[2.3rem] lg:h-[65rem] shadow shadow-[#ff8800] ">
-          <div className="">
-            <p className="pl-[1.25rem] py-[0.688rem] text-base font-semibold">
-              Recommended Courses
-            </p>
-            <hr className="mx-[1.25rem] " />
-
-            {RecommendedCourses.map((course, i) => (
-              <Link
-                href={course.href}
-                key={i}
-                className="hover hover:active:bg-slate-400"
-              >
-                <p className="pl-[1.25rem] py-[1.563rem] text-[#55525D] text-sm font-semibold">
-                  {course.label}
-                </p>
-              </Link>
-            ))}
-          </div>
-          <div className="">
-            <p className="px-[1.25rem] py-[0.688rem] text-base font-semibold">
-              All Categories
-            </p>
-            <hr className="mx-[1.25rem]" />
-            {AllCategories.map((cat, i) => (
-              <Link href={cat.href} key={i} className="">
-                <p className="pl-[1.25rem] py-[1.563rem] text-sm font-semibold text-[#55525D]">
-                  {cat.label}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-
+        <Aside />
         <div className="lg:grid grid-cols-2 gap-12 ">
           <Image
             src={renderTutors?.image1!!}
