@@ -9,7 +9,7 @@ import Join from './components/Join'
 
 export default function pageAfricantaste() {
   return (
-    <div className='mx-auto max-w-[90rem]'>
+    <div className='mxauto max-w-[90rem'>
         <Hero />
         <Embrace />
         <Amazingdeals />
