@@ -6,7 +6,7 @@ import playstore from '@/public/playstore.png.png'
 export default function StoreCard() {
   return (
     <div>
-      <div className="bg-black p-16 rounded-3xl ">
+      <div className="bg-black p-16 rounded-3xl  w-full max-w-[97.813rem]  mx-auto ">
         <div className="mx-auto grid grid-cols-2 relative  gap-4 mt-10 bg-gradient-to-r from-cyan-600  to-green-500  p-10 ">
           <h3 className="text-3xl w-[34rem] text-white font-bold ]">Latest Product trends and discount news straight to you </h3>
           <input type="text" className="bg-white rounded-full pl-5" placeholder="Quick Links"  />

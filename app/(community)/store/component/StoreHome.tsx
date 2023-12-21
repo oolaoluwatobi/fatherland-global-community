@@ -27,13 +27,13 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
   };
 
   return (
-    <div>
+    <div className="mx-auto w-full max-w-[97.813rem]  ">
       <div>
-        <div className="mt-10 ml-5">
+        <div className="mt-10 ml-5 mx-auto   ">
           <p className="font-bold text-3xl text-[#232323]">
             Home and <span className="text-primary">Living</span>
           </p>
-          <p className="pt-2 texl-2xl tex-[#686868]">
+          <p className="pt-3 texl-2xl tex-[#686868]">
             Curated home accessories handpicked by our best Editors
           </p>
         </div>
@@ -52,8 +52,8 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
             />
           </button>
 
-          <aside id="store" className="flex gap-6 overflow-x-auto no-scroll">
-            {StoreHomes.map((discoverhome) => (
+          <aside id="store" className="lg:flex gap-6 overflow-x-auto no-scroll">
+            {StoreHomes.map((discoverhome) => ( 
               <div
                 className="shadow-lg min-w-[17.188rem]"
                 key={discoverhome.id}>

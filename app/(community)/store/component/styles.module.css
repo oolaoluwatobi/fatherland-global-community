@@ -1,3 +1,8 @@
+.griddisplay {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
 .storebg{
     height: 430px;
     background-image: url(../../../../public/Img.png);
