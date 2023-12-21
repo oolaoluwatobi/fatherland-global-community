@@ -115,7 +115,6 @@ export default function HamburgerMenu() {
         md:backdrop-blur-none md:bg-opacity-0 md:backdrop-filter-none align-baseline shadow-md sha md:shadow-none roundedxl 
         bg-[#FFFFFF30]  md:bg-none px-4`}
         >
-          
           {routes.map((route, i) => (
             <div key={i} className="text-white z-50">
               <div>
@@ -128,9 +127,16 @@ export default function HamburgerMenu() {
               </div>
             </div>
           ))}
-          <Link href='/become-a-member'><li className="border-[#FF8800] border hover:bg-white text-sm font-medium rounded-[18px] text-[#ff8800] my-3 py-2">Become a member</li></Link>
-          <Link href='/loginpage'><li className="border-[#FF8800] border hover:bg-white text-sm font-medium rounded-[18px]  text-[#ff8800] py-2">Login</li></Link>
-          
+          <Link href="/become-a-member">
+            <li className="border-[#FF8800] border hover:bg-white text-sm font-medium rounded-[18px] text-[#ff8800] my-3 py-2">
+              Become a member
+            </li>
+          </Link>
+          <Link href="/loginpage">
+            <li className="border-[#FF8800] border hover:bg-white text-sm font-medium rounded-[18px]  text-[#ff8800] py-2">
+              Login
+            </li>
+          </Link>
         </ul>
       </button>
     </div>
