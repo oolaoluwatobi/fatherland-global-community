@@ -39,18 +39,18 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
     discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
   };
   return (
-    <div className="max-w-[90rem] mx-auto mb-24">
-      <div className="mx-auto max-w-[70rem]">
-        <div className="flex justify- items-center mt-5">
-          <input
-            type="text"
-            placeholder="Search for anything"
-            className="bg-white lg:w-[72rem] w-full mxauto h-[3.9rem] pl5 text-gray-200 text-xl mt-10 shadow-lg pl-4"
-          />
-          <BiSearch className="bg-black text-[#ffffff] h-[3.5rem] w-[3rem] mt-10  " />
-          <HeartIcon className="text-black bg- h-[3rem] w-[3rem] ml-6 mt-10" />
-          <LiaShoppingCartSolid className="h-[3rem] w-[3rem] ml-4 mt-10" />
-        </div>
+    <div className=" mx-auto mb-24  w-full max-w-[97.813rem]  ">
+      <div className="mx-auto   ">
+      <div className="flex justify-center items-center mx-auto">
+        <input
+          type="text"
+          placeholder="Search for anything"
+          className="bg-white  w-full mxauto h-[3.9rem] pl5 text-gray-200 text-xl mt-10 shadow-lg pl-4"
+        />
+        <BiSearch className="bg-black text-[#ffffff] h-[3.5rem] w-[3rem] mt-10  " />
+        <HeartIcon className="text-black bg- h-[3rem] w-[3rem] ml-6 mt-10" />
+        <LiaShoppingCartSolid className="h-[3rem] w-[3rem] ml-4 mt-10" />
+      </div>
         <div className="flex justify-between">
           <div className=" ml20 mt-10 flex mb-10 ">
             <div className="flex">
@@ -79,8 +79,8 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
             <IoIosArrowForward className="mt-1" />
           </div>
         </div>
-        <div className="flex gap mt-5">
-          <div className="mt-6 w-[28rem] h-[28rem]">
+        <div className="flex justify-between mt-5">
+          <div className="mt-6 w-[rem] h-[rem]">
             <Image
               className="w-[6.5rem] h-[6.5rem] rounded-lg"
               src={renderStore?.image!!}
@@ -103,16 +103,16 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
             />
           </div>
           <Image
-            className="w-[28rem] h-[28rem] mt-6 ml2 rounded-lg "
+            className="w-[28rem] h-[28rem]  mt-6 ml2 rounded-lg "
             src={renderStore?.image!!}
             alt=""
           />
           <div className="ml-14">
             <div>
-              <p className="text-lg font-[600]">
+              <p className="lg:text-lg font-[600]">
                 By <span className="text-primary">ForeMedia</span>
               </p>
-              <p className="text-3xl mt-2 font-[700]">{renderStore?.content}</p>
+              <p className="text-3xl text-6 lg:xl mt-2 font-[700]">{renderStore?.content}</p>
               <div className="flex gap-4 mt-3  shadow-sm pb-4">
                 <Image
                   src={renderStore?.image4!!}
@@ -229,7 +229,7 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
         </div>
       </div>
 
-      <div className="max-w-[70rem] mx-auto">
+      <div className="w-full max-w-[90rem]   mx-auto">
         <div className=" ml4 flex bg-orange-100 pt-3 pl-8 mt-5 h-[3rem] gap-24">
           <p className=" font-[500] ">{renderStoredescription?.description}</p>
           <p className="text-[#b8b4b4]">
@@ -323,12 +323,12 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
                 className="flex gap-6 overflow-x-auto no-scroll ">
                 {StoreRelate.map((storesrelate) => (
                   <div
-                    className="shadow-lg min-w-[17.188rem]"
+                    className="shadow-lg min-w-[17.188rem] h-auto"
                     key={storesrelate.id}>
                     <Image
                       src={storesrelate.image}
                       alt=""
-                      className="w-[17.188rem] mt-4 bg-"
+                      className="w-[17.188rem] h-[16.4rem] mt-4 bg-"
                     />
                     <div className="p-5 mt-4 ">
                       <p className="font-[800] text-lg">{storesrelate.title}</p>
@@ -358,12 +358,12 @@ export default function StorePage({ params }: { params: { storeId: string } }) {
         </div>
 
         <div
-          className={`${style.Afrobg} max-w-[70.375rem max-w-7xl h-[27rem] mx-auto mb-5`}>
+          className={`${style.Afrobg} w-full max-w[97.813rem] ax-w-7xl h-[27rem] mx-auto mb-5`}>
           <div className="">
-            <p className="text-[#fff] font-[500] pt-[10rem] pl-[13rem] font-sans text-3xl">
+            <p className="text-[#fff] font-[500] pt-[10rem] px-[24rem] font-sans text-3xl">
               Get every Special Offer
             </p>
-            <p className="text-5xl pl-[6.938rem] text-[#fff] font-[600] pt-[1rem]">
+            <p className="text-5xl pl[6.938rem]  px-[21rem] text-[#fff] font-[600] pt-[1rem]">
               BIG FASHION SALE
             </p>
           </div>

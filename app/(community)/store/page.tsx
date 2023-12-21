@@ -12,7 +12,7 @@ export default function StorePage ({ params }: { params: { storeId: string } }) 
   
   
   return (
-    <section className='mx-auto max-w-[90rem] mb-10 bg-[#f8fafe]'>
+    <section className=' max-w[90rem] mb-10 bg-[#f8fafe]'>
     <Store />
     <Storecategory />
     <Storebanner />
