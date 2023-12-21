@@ -1,0 +1,8 @@
+.hero {
+    background-image: url(../../../../public/campus/privacy.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+  }
