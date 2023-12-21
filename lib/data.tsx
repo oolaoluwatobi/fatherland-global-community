@@ -1429,6 +1429,30 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
+]
 
+export const ShoppingBasket=[
  
- ]
+  {
+    id:'1',
+    image:bonnet,
+    product1:'Ankara Alice band - Ankara Headwear',
+    size:'Size: L',
+    color:'Color: Green',
+    price1:'$14.00',
+   
+    subtotal:'$14.00',
+    remove:"Remove",
+
+  },
+  {
+    id:'2',
+    image:rectanglefeet,
+    product1:'African Beaded Neckpiece',
+    size:'Size: Free',
+    color:'Color: Multi',
+    price1:'$18.00',
+    subtotal:'$36.00',
+    remove:"Remove",
+  }
+]

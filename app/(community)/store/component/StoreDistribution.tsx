@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { storeDistribution } from '@/lib/data'
 export default function StoreDistribution() {
   return (
-    <div>
+    <div className=' w-full max-w-[90rem] mx-auto '>
         <h1 className="font-bold text-3xl mx-auto ml-10 mt-10 text-[#232323]">Community Distribution <span className='text-primary'>Network Partners</span> </h1>
      <div className='flex mt-5 mb-20'>
         {storeDistribution.map((distribute)=>(
