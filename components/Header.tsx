@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import Dropdown from "./ui/dropdown";
 import { useRouter } from "next/navigation";
-import HamburgerMenu from "./ui/hamburger";
+import Sidebar from "./Sidebar";
 
 export default function Header() {
   const router = useRouter();
@@ -34,7 +34,7 @@ export default function Header() {
             Log In
           </Button>
           <div className="lg:hidden mr-4">
-              <HamburgerMenu/>
+              <Sidebar />
               </div>
         </div>
       </nav>
