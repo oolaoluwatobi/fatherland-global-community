@@ -1429,6 +1429,103 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
+  {
+    id: "1",
+    image: rectanglefan,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  {
+    id: "2",
+    image: rectanglebag,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£90.00",
+    price1: "$199.00",
+    image2: Cta,
+  },
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  
+  {
+    id: "3",
+    image: rectanglefeet,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "4",
+    image: box,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+  
+  {
+    id: "3",
+    image: rectanglefeet,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "4",
+    image: box,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
+  {
+    id: "5",
+    image: rectangleband,
+    title: "Palm wine topper",
+    description: "Art & collectibles",
+    price: "£36.00",
+    price1: "$115.00",
+    image2: Cta,
+  },
+
 ]
 
 export const ShoppingBasket=[
@@ -1455,4 +1552,11 @@ export const ShoppingBasket=[
     subtotal:'$36.00',
     remove:"Remove",
   }
+
 ]
+
+// export const ShoppingPriceDetails=[
+//   {
+//     id:'1'
+//   }
+// ]

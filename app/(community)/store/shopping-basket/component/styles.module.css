@@ -1,0 +1,10 @@
+.Afrobg{
+    /* height: 430px; */
+    background-image: url(../../../../../public/OFFER\ BANNER\ \(1\).png);
+    -o-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
