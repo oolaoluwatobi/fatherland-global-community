@@ -6,69 +6,69 @@ import Link from "next/link";
 import style from "./styles.module.css";
 export default function Creditcardinfo() {
   return (
-    <div className="pt-[5.563rem] bg-[#fcfdff]">
-      <div className="bg-red300 mx-auto mb-[3.813rem]">
-        <p className="text-[#14202D] text-4xl font-bold leading-[56px] break-words text-center pb-[1.313rem]">
-          Payment Details
+    <div className="mx-auto lg:pt-[5.563rem] pt-12 max-w-7xl ">
+     <div className="bg-red300 mx-auto lg:mb-[3.813rem] mb-12">
+        <p className="text-[#14202D] lg:text-4xl text-2xl font-bold lg:leading-[56px] break-words text-center lg:pb-[1.313rem] pb-4">
+        Payment Details
         </p>
-        <p className="text-[#14202D] text-xl font-normal leading-7 break-words text-center">
-          Enter your credit card details and billing information
+        <p className="text-[#14202D] lg:text-xl text-base font-normal leading-7 break-words text-center container">
+        Enter your credit card details and billing information
         </p>
       </div>
 
-      <section className="lg:flex justify-around max-w-7xl mx-auto">
+      <section className="lg:flex justify-around max-w-7xl mx-auto container">
         <div className="bg-green500 rounded-[15px] px2 max-w-[50rem mxauto mb-12">
           <main className="bg-white bg-red500 rounded-[15px] px2 max-w-[50rem mxauto mt-[42px">
             <div className="flex items-center py-[2.044rem] px-[2.25rem]">
               <Image src={no2} alt="" className="" />
-              <p className="text-[#14202D] text-2xl font-normal break-words pl-7">
+              <p className="text-[#14202D] lg:text-2xl text-sm font-normal break-words pl-7">
                 Credit Card Information
               </p>
             </div>
 
-            <form action="" className="mxauto px-[2.25rem] pb-[2.914rem]">
-              <label htmlFor="" className="">
+            <form action="" className="mxauto px-[2.25rem] lg:pb-[2.914rem]">
+              <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                 Card Name
               </label>{" "}
               <br />
               <input
                 type="text"
-                className="bg-[#f4f4f4] w-full h-[65px] mb-[2.688rem] rounded-[6px]"
+                className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
               />
-              <label htmlFor="" className="">
+              <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                 Card Number
               </label>{" "}
               <br />
               <input
                 type="text"
-                className="bg-[#f4f4f4] w-full h-[65px] mb-[2.688rem] rounded-[6px]"
+                className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
               />
               <div className="lg:flex justify-between pb-[2.688rem] gap-4 mx-auto">
                 <div>
-                  <label htmlFor="" className="">
+                  <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                     Exp Date
                   </label>{" "}
                   <br />
                   <input
                     type="text"
-                    className="w-full lg:w-[22rem] h-[65px] bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px] mb-[2.688rem] lg:mb-0"
+                    className="w-full lg:w-[20rem] lg:h-[65px] h-12 mb-4 bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px] lg:mb-0 placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                   />
                 </div>
                 <div>
-                  <label htmlFor="" className="">
+                  <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                     CVV
                   </label>{" "}
                   <br />
                   <input
                     type="password"
-                    className=" w-full lg:w-[22rem] h-[65px] bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px]"
+                    className="w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                   />
                 </div>
               </div>
             </form>
           </main>
 
-          <main className="bg-white bg-red500 rounded-[15px] px2 max-w-[800px mxauto mb12 mt-[42px]">
+          <main className="bg-white bg-red500 rounded-[15px] px2 max-w-[800px mxauto mb12 mt-[42px] pb-12">
             <div className="flex items-center py-[2.044rem] px-[2.25rem]">
               <Image src={no2} alt="" className="" />
               <p className="text-[#14202D] text-2xl font-normal break-words pl-7">
@@ -76,32 +76,32 @@ export default function Creditcardinfo() {
               </p>
             </div>
 
-            <form action="" className="mxauto px-[2.25rem] pb-[2.914rem]">
-              <label htmlFor="" className="">
+            <form action="" className="mxauto px-[2.25rem] lg:pb-[2.914rem]">
+              <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                 Address 1
               </label>{" "}
               <br />
               <input
                 type="text"
-                className="bg-[#f4f4f4] w-full h-[65px] mb-[2.688rem] rounded-[6px]"
+                className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
               />
-              <label htmlFor="" className="">
+              <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                 City
               </label>{" "}
               <br />
               <input
                 type="text"
-                className="bg-[#f4f4f4] w-full h-[65px] mb-[2.688rem] rounded-[6px]"
+                className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
               />
-              <label htmlFor="" className="">
+              <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
                 Country
               </label>{" "}
               <br />
               <input
                 type="text"
-                className="bg-[#f4f4f4] w-full h-[65px] mb-[2.688rem] rounded-[6px] lg:w-[724px"
+                className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
               />
-              <p className="lg:w-[724px] text-base mx-auto font-normal leading-[21px] break-words">
+              <p className="lg:w-[724px] lg:text-base text-xs mx-auto font-normal leading-[21px] break-words">
                 By Clicking “join Fatherland Community” You confirm that you
                 have read, understood and accepted the
                 <Link href="" className="text-[#DA5001] pl-1 hover:underline">
@@ -109,7 +109,7 @@ export default function Creditcardinfo() {
                 </Link>{" "}
                 of Fatherland community
               </p>
-              <div className="flex justify-center mt-[48px] ">
+              <div className="flex justify-center lg:mt-[48px] mt-4 ">
                 <button className="font-semibold break-words text-base bg-[#FF8800] px-[10px] py-[9px] rounded-[5px] text-white">
                   Join Fatherland community
                 </button>
