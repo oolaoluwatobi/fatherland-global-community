@@ -3,7 +3,7 @@ import Shopping from './component/Shopping'
 
 export default function page() {
   return (
-     <section>
+     <section className='bg-[#feffff]'>
         <Shopping />
      </section>
   )
