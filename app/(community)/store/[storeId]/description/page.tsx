@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function page() {
+export default function Descriptionpage() {
   return (
     <div>
-      <h1>Storeidpage</h1>
+      description
     </div>
   )
 }

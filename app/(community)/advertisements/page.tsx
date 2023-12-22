@@ -15,7 +15,7 @@ import Advertwork from './link/component/Advertwork'
 
 export default function AdvertPage() {
   return (
-    <section className='mx-auto max-w-[90rem]'>
+    <section className='mx-auto max-w-[90rem] bg-[#EFF4FA]'>
         {/* <Advertising /> */}
         <Advertising />
         <Features />
