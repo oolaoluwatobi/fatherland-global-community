@@ -3,7 +3,7 @@ import styles from '../loginpage/styles.module.css'
 import Loginform from './Loginform'
 export default function page() {
   return (
-    <div className={`${styles.login_background} max-w-[90rem] mx-auto`}>
+    <div className={`${styles.login_background} mx-auto`}>
         <Loginform />
     </div>
   )
