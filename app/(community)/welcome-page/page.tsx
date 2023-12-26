@@ -7,7 +7,7 @@ import Joinorstart from './components/Joinorstart'
 
 export default function page() {
   return (
-    <div className='mx-auto max-w-[90rem] bg-white'>
+    <div className='mx-auto bg-white'>
         <Welcome />
         <Imagecollection />
         <Join />

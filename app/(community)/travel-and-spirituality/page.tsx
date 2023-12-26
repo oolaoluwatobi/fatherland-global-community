@@ -8,7 +8,7 @@ import Bookaticket from './components/Bookaticket'
 
 export default function page() {
   return (
-    <div className='mx-auto max-w-[90rem] bg-[#fcfdff] bg-red500'>
+    <div className='mx-auto bg-[#fcfdff] bg-red500'>
         <Tourandspirituality />
         <Welcome />
         <Ourpackages />
