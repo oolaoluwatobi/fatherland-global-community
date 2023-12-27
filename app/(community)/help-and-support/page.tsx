@@ -6,7 +6,7 @@ import Getanswer from './components/Getanswer'
 
 export default function page() {
   return (
-    <div className='max-w-[90rem] bg-[#fcfdff] mx-auto'>
+    <div className=' bg-[#fcfdff] mx-auto'>
         <HeroSetion />
         <Frequentlyaskedqustn />
         <Getanswer />
