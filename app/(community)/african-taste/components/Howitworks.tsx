@@ -31,8 +31,8 @@ export default function Howitworks() {
 
 
             <div className=' pt-12 lg:pt-0'>
-                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifyevenly items-center bg-white'>
-                    <FaPeopleGroup className='lg:mr-[4.813rem] mr-4 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>  Become a Member by Registering</p>
+                <p className='text-black lg:text-xl text-sm lg:w-[38.125rem] font-normal lg:h-[5.956rem] lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifyevenly items-center bg-white'>
+                    <FaPeopleGroup className='lg:mr-[4.813rem] mr-8 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>  Become a Member by Registering</p>
 
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div className=''>
@@ -44,8 +44,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifyevenly items-center bg-white'>
-                <FaCreditCard className='lg:mr-[4.813rem] mr-8 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Get your membership card</p>
+                <p className='text-black lg:text-xl text-sm lg:w-[38.125rem] font-normal lg:leading-5 text-center break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifycenter items-center bg-white'>
+                <FaCreditCard className='lg:mr-[4.813rem] mr-12 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Get your membership card</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -56,8 +56,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <div className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifyevenly items-center py3 px12  bg-white'>
-                    <FaGlobe className='lg:mr-[4.813rem] mr-8 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Explore the website to see offers and partners</div>
+                <div className='text-black lg:text-xl text-sm font-normal lg:w-[38.125rem] text-center lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex justifyevenly items-center py3 px12  bg-white'>
+                    <FaGlobe className='lg:mr-[4.813rem lg:mr-8 mr-2 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Explore the website to see offers and partners</div>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -68,8 +68,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex items-center  bg-white'>
-                <FaLocationPin className='lg:mr-[4.813rem] mr-8 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Visit the nearest restaurant in your location</p>
+                <p className='text-black lg:text-xl text-sm lg:w-[38.125rem] text-center font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex items-center  bg-white'>
+                <FaLocationPin className='lg:mr-[4.813rem lg:mr-8 mr-2 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Visit the nearest restaurant in your location</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -80,8 +80,8 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex items-center bg-white'>
-                <FaCreditCard className='lg:mr-[4.813rem] mr-8 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Show them your Fatherland Membership card</p>
+                <p className='text-black lg:text-xl text-sm lg:w-[38.125rem] text-center font-normal lg:leading-5 break-words px-[9.563rem py-[1.9rem] rounded-[7px] flex items-center bg-white'>
+                <FaCreditCard className='lg:mr-[4.813rem lg:mr-8 mr-2 ml-2 lg:ml-[1.625rem] lg:text-[30px] text-[#0BA1BA]'/>Show them your Fatherland Membership card</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>
                     <span><DividerVerticalIcon /></span>
@@ -92,7 +92,7 @@ export default function Howitworks() {
                     <span><DividerVerticalIcon /></span>
                     </div>
                 </div>
-                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[4rem] py-[1.9rem] text-center rounded-[7px] flex items-center bg-white'>
+                <p className='text-black lg:text-xl text-sm font-normal lg:leading-5 break-words px-[4rem] py-[1.9rem] text-center rounded-[7px] flex justify-center bg-white'>
                 Sit back & Enjoy your Meal!</p>
                 <div className='flex lg:justify-between justify-around lg:px-20 px-0 text-[#0BA1BC]'>
                     <div>

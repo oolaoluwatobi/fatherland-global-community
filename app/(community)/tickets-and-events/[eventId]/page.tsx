@@ -2,7 +2,6 @@
 import { EVENTS } from "@/lib/data";
 import Image from "next/image";
 import React from "react";
-// import Container from "@/components/ui/container";
 import { MdCalendarMonth } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Link from "next/link";
@@ -16,9 +15,9 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
     <div
       
       key={event.id}
-      className="upcoming_events_card hover:border hover:border-[#FF8800] active:border cursor-pointer "
+      className="upcoming_events_card hover:border hover:border-[#FF8800] active:border cursor-pointer"
     >
-      <Image src={event.image} alt={event.name} className="rounded-t-md" />
+      <Image src={event.image} alt={event.name} className="rounded-t-md h-[14.313rem] w-[25.188rem]" />
       <div className="p-4 space-y-4">
         <p className="font-[600] hover:underline">{event.name}</p>
         <div className="flex space-x-4 text-sm">
@@ -40,63 +39,63 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
   ));
 
   return (
-    <div className="mx-auto w-full max-w-[90rem] px-20 bg-white">
-      <div className="grid grid-cols-2 gap2 md:gap-[3.25rem] mt-[3rem] max-w-[90rem] bgwhite bg-red500">
-        <div className="col-span-2 lg:col-span-1 p-4">
+    <div className="mx-auto bg-white ">
+      <div className="lg:flex items-center gap-[3.25rem] lg:mt-[7rem] mt-12 lg:mb-[6.375rem] max-w-7xl mx-auto container mb-4 bg-red500">
+        <div className="">
           <Image
             src={renderEvent?.image!!}
             alt="background image"
             className=" aspect-auto bg-red-40 rounded-md object-cover lg:w-[625px] lg:h-[492px]"
           />
         </div>
-        <div className="col-span-2 lg:col-span-1 space-y-5 mt-3 my-aut px10 lg:h-[492px]">
-          <h2 className="text-4xl font-[600] text-[#282828] lg:w-[35.875rem] lg:h-[102px]">
+        <div className="lg:h-[492px] mt-4 lg:mt-0">
+          <h2 className="lg:text-4xl text-xl text-center lg:text-start font-[600] text-[#282828] lg:w-[35.875rem] lg:h-[102px]">
             {renderEvent?.name}
           </h2>
-          <div className="mt-[1.375rem] pb-[px]">
-            <p className="flex text-[#282828] font-normal text-sm mb-[1.313rem]">
+          <div className="lg:mt-[1.375rem] mt-4">
+            <p className="flex text-[#282828] font-normal lg:text-sm text-xs lg:mb-[1.313rem]">
               <MdCalendarMonth className="my-auto mr-2" />
               {renderEvent?.date}
             </p>{" "}
             <br />
-            <p className="flex text-[#282828] font-normal text-sm mb-[2rem]">
+            <p className="flex text-[#282828] font-normal lg:text-sm text-xs lg:mb-[2rem] mb-4">
               <HiOutlineLocationMarker className="my-auto mr-2" />
               {renderEvent?.location}
             </p>
           </div>
-          <div className="lg:pb-[45px]">
-            <p className="text-[20px] font-normal leading-[29px] break-words lg:w-[35.875rem] lg:h-[116px] ">
+          <div className="lg:mb-[45px] mb-4">
+            <p className="lg:text-[20px] text-sm font-normal lg:leading-[29px] break-words lg:w-[35.875rem] lg:h-[116px] ">
               {renderEvent?.text}
             </p>
           </div>
-          <div className="bg-[#ececec] mxauto lg:w-[35.813rem] flex justify-between items-center px-4 rounded-[7px]">
+          <div className="bg-[#ececec] lg:py-[19px] lg:w-[35.813rem] flex justify-between items-center px-4 rounded-[7px]">
             <div
-              className={`text-[#14202D] leading-7 text-sm font-normal py-1`}
+              className={`text-[#14202D] leading-7 lg:text-sm text-xs font-normal py1`}
             >
               Tickets <br />{" "}
-              <span className="text-[32px] text-[#14202D] font-semibold leading-7">
+              <span className="lg:text-[32px] text-xl text-[#14202D] font-semibold leading-7">
                 {renderEvent?.price}
               </span>
             </div>
             <div className="">
-              <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md">
-                <Link href="">Buy Tickets</Link>
+              <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md" onClick={()=>router.push('/book-a-ticket')}>
+                Buy Tickets
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-3 md:mx-auto mb-8 md:mb-[7rem] max-w-[90rem] bg-yellow300 mt8 md:mt-[6.375rem]">
-        <p className="mb-4 text-2xl	leading-7 font-medium text-[#14202D]">
+      <div className="mx-3 md:mx-auto max-w-7xl container lg:mb-[8.938rem] mb-12">
+        <p className="mb-4 lg:text-2xl text-lg	leading-7 font-medium text-[#14202D]">
           Tags
         </p>
-        <div className="mx-auto flex flex-wrap gap-4">
+        <div className="mx-auto lg:flex flex-wrap gap-4 grid grid-cols-2">
           {renderEvent?.tags.map((tag, i) => (
             <Link
               href={tag.href}
               key={i}
-              className="text-[#FD6906] px-4 bg-[#fff0de] text-center mxauto py-[1rem] rounded-full font-normal text-xl leading-7 px2 text-wrap"
+              className="text-[#FD6906] px-4 bg-[#fff0de] text-center lg:py-[1rem] py-1 rounded-full font-normal lg:text-xl text-xs lg:leading-7 text-wrap"
             >
               {tag.label}
             </Link>
@@ -104,13 +103,13 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
         </div>
       </div>
 
-      <div>
+      <div className="mx-auto max-w-7xl container">
         <h5
-          className={`text-[2.5rem] font-extrabold leading-[3.625rem] pb-[2.813rem] text-[#14202D] max-w-[77.625rem]`}
+          className={`lg:text-[2.5rem] text-xl font-extrabold leading-[3.625rem] lg:pb-[2.813rem] text-[#14202D] max-w-[77.625rem]`}
         >
           Similar Events
         </h5>
-        <div className="grid md:grid-cols-3 gap-x-6 gap-y-12 max-w-7xl bg-gray600 mb-[10.813rem]">
+        <div className="grid md:grid-cols-3 gap-x-6 gap-y-12 max-w-7xl bg-gray600 lg:mb-[10.813rem] mb-12">
           {renderPreviousEvents}
         </div>
       </div>

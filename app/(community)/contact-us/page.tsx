@@ -3,7 +3,7 @@ import Contactus from './components/Contactus'
 
 export default function pageContact() {
   return (
-    <div className='mx-auto max-w-[90rem] bg-[#fcfdff]'>
+    <div className='mx-auto bg-[#fcfdff]'>
         <Contactus />
     </div>
   )
