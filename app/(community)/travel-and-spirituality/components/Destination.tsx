@@ -5,8 +5,8 @@ import style from "./styles.module.css";
 
 export default function Destination() {
   return (
-    <div className="mx-auto w-full container">
-      <div className="lg:mx-[2rem] my-[6rem] wfull mxauto container border-[10px] border-[#28D744] lg:h-[8.438rem] border-t-0 border-b-0 border-r-0 rounded-t-[10px] rounded-b-[10px]">
+    <div className="mx-auto max-w-7xl container lg:mb-[7.188rem] mb-12">
+      <div className="lg:mx-[2rem] lg:my-[6rem] my-8 wfull mxauto container border-[10px] border-[#28D744] lg:h-[8.438rem] border-t-0 border-b-0 border-r-0 rounded-t-[10px] rounded-b-[10px]">
         <p className="text-[#28D744] text-xl font-medium lg:leading-5 break-words">
         DESTINATIONS
         </p>
@@ -15,7 +15,7 @@ export default function Destination() {
         </p>
       </div>
 
-      <main className="lg:flex">
+      <main className="lg:flex justify-between">
         <div
           className={`upcoming_events_card px-0 hover:border hover:border- 
          active:border-primary cursor-pointer lg:w-[24.25rem] lg:h-[26.188rem] 

@@ -4,7 +4,7 @@ import Foodsection from './components/Foodsection'
 
 export default function page() {
   return (
-    <div className='max-w-[90rem] mx-auto'>
+    <div className=' mx-auto'>
         <Find />
         <Foodsection />
     </div>

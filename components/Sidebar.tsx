@@ -105,11 +105,11 @@ const Sidebar = (props: Props) => {
             </div>
           ))}
           
-          <Button onClick={()=>router.push('/becomeamember')}>
+          <Button onClick={()=>router.push('/becomeamember')} className='bg-secondary'>
               Become a member
           </Button> <br />
 
-          <Button onClick={()=>router.push('/loginpage')}>
+          <Button onClick={()=>router.push('/loginpage')} className='bg-secondary'>
               Login
           </Button>
 
