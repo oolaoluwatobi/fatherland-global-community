@@ -34,15 +34,16 @@ export default function Tutorpage({ params }: { params: { tutorId: string } }) {
   };
 
   return (
-    <div className={`max-w-[90rem] mx-auto`}>
+    <div className={` mx-auto`}>
+      <div className={` mx-auto ${sytle.hero} lg:pt-[3.938rem] pt-5 pb-[3.25rem]`}>
       <main
-        className={`max-w-[90rem] mx-auto ${sytle.hero} container lg:pt-[3.938rem] pt-5 pb-[3.25rem] lg:flex justify-between items-center lg:pl-[8rem]`}
+        className={` lg:flex justify-between items-center container`}
       >
-        <div>
-          <p className="text-[#161915] lg:text-[48px] text-xl font-black lg:leading-[58px] break-words mb-[2.75rem] text-center lg:text-start">
+        <div className="max-w-7xl mx-auto ">
+          <p className="text-[#161915] lg:text-[48px] text-2xl font-black lg:leading-[58px] break-words lg:mb-[2.75rem] mb-2 text-center lg:text-start">
             {renderTutors?.name}
           </p>
-          <p className="text-[#161915] lg:text-xl text-base font-bold break-words lg:mb-[2.875rem] text-center lg:text-start">
+          <p className="text-[#161915] lg:text-xl text-base font-bold break-words lg:mb-[2.875rem] mb-2 text-center lg:text-start">
             {renderTutors?.course}
           </p>
           <div className="flex justify-center lg:justify-start">
@@ -85,7 +86,9 @@ export default function Tutorpage({ params }: { params: { tutorId: string } }) {
 
         <Image src={renderTutors?.image1!!} alt="" />
       </main>
-      <div className="max-w-[90rem] mx-auto lg:pl-[8rem] container pt-[2.688rem] mb-[1.625rem]">
+      </div>
+      
+      <div className="max-w-7xl mx-auto container pt-[2.688rem] mb-[1.625rem]">
         <p className="text-[#1619115] lg:text-3xl text-xl font-bold lg:leading-[62px] break-words mb-[2.188rem]">
           Class Overview
         </p>
@@ -178,7 +181,7 @@ export default function Tutorpage({ params }: { params: { tutorId: string } }) {
                 <div className={`mb-[0.563rem]`}>
                   <p
                     className={`bg-[#f6f6f6] text-black text-base font-semibold leading-5 break-words px-[1.25rem] py-[13px] flex justify-between items-center cursor-pointer `}
-                    onClick={() => toggleDisplay(index)} 
+                    onClick={() => toggleDisplay(index)}
                   >
                     {list.label}
                     <span>
@@ -198,15 +201,16 @@ export default function Tutorpage({ params }: { params: { tutorId: string } }) {
           </div>
         </main>
       </div>
-     <main className="lg:pl-[7rem] container lg:mb-{4.563rem] mb-5">
-     <Banner />
-     </main>
-     <div className='max-w-7xl bg-red500 mx-auto lg:pl-[2rem]'>
-      <p className="text-[#14202E] font-bold lg:text-3xl text-lg lg:leading-[40px] lg:text-start text-center lg:ml-[2rem]">Other Related Classes</p>
-      <Youmayalsolike />
-     </div>
-     <Faq />
-    
+      <main className="container lg:mb-{4.563rem] mb-5 max-w-7xl">
+        <Banner />
+      </main>
+      <div className="max-w-7xl bg-red500 mx-auto">
+        <p className="text-[#14202E] mb-[2.875rem] font-bold lg:text-3xl text-lg lg:leading-[40px] lg:text-start text-center lg:ml-[2rem]">
+          Other Related Classes
+        </p>
+        <Youmayalsolike />
+      </div>
+      <Faq />
     </div>
   );
 }
