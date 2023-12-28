@@ -14,7 +14,7 @@ export default function page({ params }: { params: { categoryId: string } }) {
   return (
     <section>
       <HeroCat />
-      <div className="max-w-[90rem] mx-auto lg:pl-[7.7rem] lg:pr-[5rem] lg:flex container">
+      <div className="max-w-7xl mx-auto  lg:pr-[5rem] lg:flex container">
         <Aside />
         <div className="lg:grid grid-cols-2 gap-12 ">
           <Image
@@ -39,8 +39,8 @@ export default function page({ params }: { params: { categoryId: string } }) {
           />
         </div>
       </div>
-      <div className="items-center max-w7xl mx-auto container lg:pb[3.875rem] pb5 lg:mt-24 lg:pt[6.375rem ">
-        <p className="text-black lg:text-[40px] text-base font-bold lg:leading-10 break-words text-center lg:text-start lg:pl-[4.5rem]">
+      <div className="items-center max-w-7xl mx-auto container lg:pb[3.875rem] pb5 lg:mt-24 lg:mb-[2.875rem] mb-5">
+        <p className="text-black lg:text-[40px] text-base font-bold lg:leading-10 break-words text-center lg:text-start">
         You May Also Like
         </p>
       </div>

@@ -5,8 +5,8 @@ import img from "@/public/Rectangle 244.png";
 
 export default function Breakbarriers() {
   return (
-    <div className="max-w-[90rem] mx-auto bg-[#fff3e5] lg:py-[6.25rem] py-5 lg:mb-[5.375rem] mb-5">
-      <div className="container lg:flex justify-around items-center max-w-7xl">
+    <div className="mx-auto bg-[#fff3e5] lg:py-[6.25rem] py-5 lg:mb-[5.375rem] mb-5">
+      <div className="container lg:flex justify-around gap-4 items-center max-w-7xl">
         <div className="">
           <p className="text-black lg:text-[40px] text-xl font-bold lg:leading-[65px] break-words mb-[1.5rem] text-center lg:text-start">
             Break barriers from reaching out to Africans in Diaspora

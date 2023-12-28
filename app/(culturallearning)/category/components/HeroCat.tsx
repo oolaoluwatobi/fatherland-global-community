@@ -7,14 +7,14 @@ import style from './styles.module.css'
 export default function HeroCat() {
   return (
     <div
-      className={`mx-auto max-w-[90rem] bg-red500 h52 lg:px-[6.225rem container lg:pt-[3.938rem] pt-5  lg:pb-[4rem] pb-5 lg:px-[7rem]`}
+      className={`mx-auto bg-red500 max-w-7xl container lg:pt-[3.938rem] pt-5  lg:pb-[4rem] pb-5`}
     >
       <main
         className={`max-w-7xl mx-auto ${style.cat} h52 bg-[#d4f6db] lg:flex justify-between items-center rounded-[15px] lg:pl-[3.125rem]
-        lg:pr-[7.5rem] lg:py-[4.25rem]`}
+        lg:pr-[7.5rem] lg:py-[4.25rem] py-5`}
       >
         <div className="container">
-          <p className="text-[#14202E] text-center lg:text-start lg:text-[60px] text-xl font-bold lg:leading-[63px] break-words">
+          <p className="text-[#14202E] text-center lg:text-start lg:text-[60px] text-2xl font-bold lg:leading-[63px] break-words">
             Categories
           </p>
           <p className="lg:w-[22rem] text-center lg:text-start text-[#55525D] lg:text-lg text-sm font-medium leading-7 break-words">

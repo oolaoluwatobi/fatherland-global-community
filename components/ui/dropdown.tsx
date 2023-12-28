@@ -82,6 +82,10 @@ const Dropdown = () => {
       label:'Campus'
     },
     {
+      href: "/donate",
+      label:'Donate'
+    },
+    {
       href: "/diversity-and-inclusion",
       label:'Diversity and inclusion'
     },

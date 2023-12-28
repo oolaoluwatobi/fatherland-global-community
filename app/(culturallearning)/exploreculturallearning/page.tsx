@@ -10,7 +10,7 @@ import Faq from './components/Faq'
 
 export default function page() {
   return (
-    <div className='max-w-[90rem] mx-auto bg-white'>
+    <div className='mx-auto bg-white'>
         <HeroSection />
         <Schoolandclassroom />
         <Categories />
