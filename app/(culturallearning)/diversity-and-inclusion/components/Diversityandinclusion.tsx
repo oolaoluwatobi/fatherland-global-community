@@ -5,9 +5,9 @@ import style from "./styles.module.css";
 export default function Diversityandinclusion() {
   return (
     <div
-      className={`max-w-[90rem] ${style.hero} mx-auto flex justify-center pt-12 pb-16 lg:pt-[11.875rem] lg:pb-[15.063rem] mt-5 lg:mt-[5.125rem]`}
+      className={` ${style.hero} mx-auto flex justify-center pt-12 pb-16 lg:pt-[11.875rem] lg:pb-[15.063rem] mt-5 lg:mt-[5.125rem]`}
     >
-      <main className="mx-auto containe">
+      <main className="mx-auto containe max-w-7xl">
         <div className="flex justify-center">
           <p
             className="text-white lg:text-xl text-sm font-medium break-words text-center bg-[#FFFFFF30] 
