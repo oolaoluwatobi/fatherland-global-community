@@ -3,7 +3,7 @@ import SupportFatherlandFoundation from './components/SupportFatherlandFoundatio
 
 export default function pageSupportFatherlandFoundation() {
   return (
-    <div className='mx-auto max-w-[90rem] bg-[#fcfdff]'>
+    <div className='mx-auto bg-[#fcfdff]'>
         <SupportFatherlandFoundation />
     </div>
   )

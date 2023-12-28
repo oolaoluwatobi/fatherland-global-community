@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 export default function Getstarted() {
   return (
-    <div className={`lg:mb-[6.482rem]  max-w-[90rem] mx-auto ${style.bt2} bg-[#fff3e5] pt-5 lg:mt-[3rem] mt-8 lg:pb-[6.563rem] pb-5 lg:pt-[6.625rem]`}>
+    <div className={`lg:mb-[6.482rem] mx-auto ${style.bt2} bg-[#fff3e5] pt-5 lg:mt-[3rem] mt-8 lg:pb-[6.563rem] pb-5 lg:pt-[6.625rem]`}>
     <main className='max-w-7xl mx-auto container mb-[3.125rem]'>
     <p className='text-[#002a0c] lg:text-[40px] mx-auto text-center pb-[0.313rem]
      text-xl font-bold  lg:leaing-[50px] break-words'>Get Started and Upscale Knowledge About Africa</p>

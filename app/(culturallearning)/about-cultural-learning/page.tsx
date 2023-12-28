@@ -8,7 +8,7 @@ import Intrestedinlearning from '../exploreculturallearning/components/Intrested
 
 export default function page() {
   return (
-    <div className='bg-white max-w-[90rem] mx-auto'>
+    <div className='bg-white mx-auto'>
         <Platform />
         <Worldclassonline />
         <Connect />

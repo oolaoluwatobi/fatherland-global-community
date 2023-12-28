@@ -8,7 +8,7 @@ import { BiChevronRight } from 'react-icons/bi'
 
 export default function Choosecategory() {
   return (
-    <div className={`max-w-[90rem] mx-auto ${style.bee} pt-12 bg-[#fff3e5] pb-5 lg:mb-[6.313rem] mb-5`}>
+    <div className={` mx-auto ${style.bee} pt-12 bg-[#fff3e5] pb-5 lg:mb-[6.313rem] mb-5`}>
         <p className='text-center font-bold text-xl lg:text-[40px] lg:leading-[58px] break-words container mb-5 lg:mb-[3.151rem]'>
         Choose a category to watch and learn a class highlight</p>
 

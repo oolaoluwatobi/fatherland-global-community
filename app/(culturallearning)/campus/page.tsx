@@ -7,7 +7,7 @@ import Intrestedinlearning from '../exploreculturallearning/components/Intrested
 
 export default function page() {
   return (
-    <div className='bg-white mx-auto max-w-[90rem]'>
+    <div className='bg-white mx-auto'>
         <Platform />
         <Explore />
         <Choosecategory />
