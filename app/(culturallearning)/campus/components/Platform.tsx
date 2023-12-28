@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 export default function Platform() {
   return (
     <div
-      className={`mx-auto max-w-[90rem] ${style.hero} lg:mt-[5.938rem] mt-5 lg:mb-[10rem] mb-5`}
+      className={`mx-auto ${style.hero} lg:mt-[5.938rem] mt-5 lg:mb-[10rem] mb-12`}
     >
-      <main className="container lg:flex justify-around items-center max-w-7xl">
+      <main className="container lg:flex justify-between items-center max-w-7xl">
         <div className="mb-5 lg:mb-0">
           <p
             className="text-black bg-[#fff3e5] px-[2.313rem] mb-[1.188rem] rounded-[20px] lg:text-lg text-sm 
@@ -20,7 +20,7 @@ export default function Platform() {
           </p>
           <p
             className="lg:w-[35.25rem] text-[#263238] lg:text-[58px] mb-[1.563rem] 
-            text-xl font-bold lg:leading-[65px] break-words text-center lg:text-start"
+            text-2xl font-bold lg:leading-[65px] break-words text-center lg:text-start"
           >
             A Cultural Learning Platform to Upscale Knowledge About Africa
           </p>

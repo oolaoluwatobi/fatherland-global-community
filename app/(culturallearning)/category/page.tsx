@@ -6,7 +6,7 @@ import Faq from '../exploreculturallearning/components/Faq'
 
 export default function page() {
   return (
-    <div className='bg-white max-w-[90rem] mx-auto'>
+    <div className='bg-white mx-auto'>
         <HeroCat />
         <Allcourses />
         <Getstarted />

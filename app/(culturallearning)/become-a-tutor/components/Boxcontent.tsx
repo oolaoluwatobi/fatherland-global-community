@@ -9,8 +9,8 @@ import Image from "next/image";
 
 export default function Boxcontent() {
   return (
-    <div className="mx-auto max-w-[90rem] bg-red500 lg:pl-8 lg:mb-[14.5rem] mb-5">
-      <main className="bg-green500 max-w-7xl lg:flex flex-wrap gap-10 container">
+    <div className="mx-auto max-w-7xl container bg-red500 lg:pl-8 lg:mb-[14.5rem] mb-5">
+      <main className="bg-green500  lg:flex flex-wrap gap-10 ">
         <div className="lg:w-[23.625rem] lg:h-[22.563rem] bg-white mb-4 container py-[1.75rem] rounded-[1px] shadow-lg shadow-blue-100">
           <div className="flex justify-center">
             <Image src={icon4} alt="" className="mb-[1.125rem]"/>

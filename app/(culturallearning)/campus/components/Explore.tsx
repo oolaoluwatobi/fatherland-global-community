@@ -7,15 +7,15 @@ import { FaCircle } from "react-icons/fa6";
 
 export default function Explore() {
   return (
-    <div className="max-w-[90rem] bg-white lg:mb-[13.25rem] mb-5">
-      <main className="container max-w7xl lg:flex justify-around items-center lg:gap-12 lg:pl-[100px]">
+    <div className="max-w-7xl mx-auto bg-white lg:mb-[13.25rem] mb-5">
+      <main className="container lg:flex justify-between items-center lg:gap-12">
         <div>
           <Image src={img1} alt="" className="mb-[1.188rem]" />
           <Image src={img2} alt="" />
         </div>
         <div>
           <p
-            className="lg:w-[36.188rem] text-black lg:text-[40px] text-xl text-center
+            className="lg:w-[36.188rem] text-black lg:text-[40px] text-2xl text-center
                  lg:text-start font-bold lg:leading-[65px] break-words mb-[10px] mt-5 lg:mt-0"
           >
             Explore Cultural Learning Campus

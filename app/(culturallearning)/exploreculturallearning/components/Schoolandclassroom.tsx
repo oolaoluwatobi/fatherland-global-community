@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button'
 
 export default function Schoolandclassroom() {
   return (
-    <div className='bg-white max-w-[90rem] pt-8 lg:pt-[4.813rem] lg:mb-[9.563rem] mb-5'>
-        <main className='lg:pl-[6.25rem] lg:flex justify-around items-center'>
+    <div className='bg-white  mx-auto pt-8 lg:pt-[4.813rem] lg:mb-[9.563rem] mb-5'>
+        <main className='lg:pl-[6.25rem mx-auto max-w-7xl lg:flex justify-around items-center'>
             <Image src={hey} alt="" className='container lg:w-[44.188rem lg:h-[25.5rem]'/>
 
             <div className='mx-auto container mt-5 lg:mt-0'>

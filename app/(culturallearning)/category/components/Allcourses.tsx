@@ -9,7 +9,7 @@ import Aside from "../[categoryId]/components/Aside";
 export default function Allcourses() {
 
   return (
-    <div className="max-w-[90rem] mx-auto bggreen-700 lg:pl-[7.7rem] lg:pr-[5rem] lg:flex container">
+    <div className=" mx-auto bggreen-700 max-w-7xl lg:pr-[5rem] lg:flex container">
 <Aside />
       <section className="containe lg:grid grid-cols-3 gap-4 ">
         {Tutors.map((tutor, i) => (

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} min-h-screen flex flex-col justifybetween bg-red500 max-w-[90rem] mx-auto bg-[#D9D9D97D]`}>
+      <body className={`${raleway.className} min-h-screen flex flex-col justifybetween bg-red500 mx-auto bg-[#D9D9D97D]`}>
         <Header />
         {children}
         <Footer />

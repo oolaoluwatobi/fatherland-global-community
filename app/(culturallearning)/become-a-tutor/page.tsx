@@ -7,7 +7,7 @@ import Someofourtutors from './components/Someofourtutors'
 
 export default function page() {
   return (
-    <div className=' mx-auto bg-white max-w-[90rem]'>
+    <div className=' mx-auto bg-white'>
       <HeroSection />
       <Createyourown />
       <Boxcontent />

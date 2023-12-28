@@ -16,7 +16,7 @@ export default function Youmayalsolike() {
     discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
   };
   return (
-    <div className=" relative mx-auto lg:mt24 lg:pt[6.375rem] pb[4.313rem] mb-8 lg:mb[5.5rem] max-w-[90rem]">
+    <div className=" relative mx-auto lg:mt24 lg:pt[6.375rem] pb[4.313rem] mb-8 lg:mb[5.5rem] max-w-[90rem">
     <button className="absolute left-12 top-0 bottom-0 my-auto hidden lg:block">
       <BsChevronLeft
         onClick={() => storehomes()}
@@ -31,7 +31,7 @@ export default function Youmayalsolike() {
     </button>
 
     <div id="store" className="overflow-x-auto no-scrollbar max-w-7xl mx-auto bg-red500 pb-4">
-    <div className="mx-auto pt-5 lg:pt-[6.375rem]">
+    <div className="mx-auto pt5 lg:pt-[6.375rem">
 
 
       <div className="lg:flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
