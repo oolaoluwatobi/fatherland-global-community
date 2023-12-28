@@ -9,7 +9,7 @@ import Register from './components/Register'
 
 export default function page() {
   return (
-    <main className='max-w-[90rem] mx-auto'>
+    <main className='max-w-[90rem mx-auto'>
       <GrabTickets />
       <BrowseCategories />
       <UpcomingEvents />
