@@ -1,47 +1,47 @@
+'use client'
 import React from "react";
-// import heroBackground from "@/public/assets/hero-background.svg";
-// import Container from "@/components/ui/container";
 import Image from "next/image";
-import Link from "next/link";
-
 import Images from "@/public/data/HeroGallery";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
-
+import { useRouter } from "next/navigation";
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
 
 export default function Hero() {
+  const router =useRouter()
   return (
-    <section className="bg-red-10 py[7rem] pt-[4rem] pb-[5rem]   hero_background max-w-[90rem] mx-auto ">
-      <div className="hero_backgroun pt5 bg-red-20">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10  px-4 sm:px-6 lg:px-20 py20  bg-red-20">
-          <div className="grid gap-10 lg:py20">
-            <article className="text-[#263238] my-auto">
+    <section className="bg-red-10 py[7rem] pt-[4rem] pb-[5rem] hero_background max-w-[90rem mx-auto ">
+      <div className="hero_backgroun pt5 bg-red-20 container">
+        <div className="gri sm:grid-cols1 lg:grid-cols2 gap10  px4 sm:px6 lg:px20 py20  bg-red-20 lg:flex justify-between itemscenter">
+          <div className="gri gap10 lg:py20">
+            <article className="text-[#263238] myauto lg:mt-[14.563rem]">
               <h1
-                className={`hero-heading ${raleway.className} font-extrabold text-xl md:text-3xl lg:text-4xl
-                 xl:text5xl 2xl:text6xl leading-[15rem]`}>
+                className={`hero-heading ${raleway.className} max-w-[37.188rem] font-extrabold text-xl md:text-3xl lg:text-4xl
+                 xl:text5xl 2xl:text6xl leading[15rem]`}
+              >
                 The #1 Global Afrocentric Community
               </h1>
               <Button
-                // variant="outlineAccent"
                 size="lg"
-                className="font-[700] mt-14 bg-[#ff8800] hover:bg-[#ff8800]">
-                <Link href=".">Join Fatherland Now</Link>{" "}
+                className="font-[700] lg:mt-14 mt-8 mb-8 lg:mb-0 bg-[#ff8800] hover:bg-[#ff8800]"
+                onClick={()=>router.push('/')}
+              >
+                Join Fatherland Now
               </Button>
             </article>
           </div>
 
-          <div className="h-fit lg:pb-20 bg-red200">
-            <ul className="grid grid-cols-4  sm:grid-cols-4 md:grid-cols-5 gap-3 md:gap-5">
+          <div className="hfit lg:pb-20 bg-red200 lg:mt-[4.25rem] lg:mb-[5rem] mb-8">
+            <ul className="grid grid-cols-4 lg:grid-cols-5 lg:gap-[1.641rem] gap-3">
               {Images.map((image) => (
                 <li key={image.id} className="">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    className="md:my-1 lg:my-1 w-32 md md :w-24 lg:w-40"
+                    className="lg:w-[6.5rem]"
                   />
                 </li>
               ))}
