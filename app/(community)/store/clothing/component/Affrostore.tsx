@@ -11,20 +11,20 @@ import image54 from "@/public/image 54.png";
 import { MdArrowForward, MdArrowForwardIos } from "react-icons/md";
 export default function Affrostore() {
   return (
-    <div className="mx-auto max-w-[90rem] mb-5">
-      <div className="flex justify- items-center">
+    <div className="mx-auto max-w-[90rem] lg:mb-14 mb-14">
+      <div className="lg:flex justify- items-center">
         <input
           type="text"
           placeholder="Search for anything"
           className="bg-white lg:w-[rem] w-full mxauto h-[4rem] pl5 text-gray-200 text-xl mt-10  shadow-lg pl-4"
         />
-        <BiSearch className="bg-black text-[#ffffff] h-[3.5rem] w-[3rem] mt-10  " />
-        <HeartIcon className="text-black bg- h-[3rem] w-[3rem] ml-6 mt-10" />
-        <LiaShoppingCartSolid className="h-[3rem] w-[3rem] ml-4 mt-10" />
+        <BiSearch className="bg-black text-[#ffffff] h-[3.5rem] w-[3rem] lg:mt-10  " />
+        <HeartIcon className="text-black bg- h-[3rem] w-[3rem] lg:ml-6 lg:mt-10" />
+        <LiaShoppingCartSolid className="h-[3rem] w-[3rem] lg:ml-4 lg:mt-10" />
       </div>
 
       <div
-        className={`${style.Affrobg}  mt-10  mx-auto max-w-[90rem] py[4.125rem] `}>
+        className={`${style.Affrobg}  mt-10  mx-auto lg:x-w-[90rem] py[4.125rem] `}>
         <div className="flex justify-between">
           <div className=" border-l-[5px] border-t-[5px]  border-b-[5px] w-full  p[2.75rem]  items-center h-fit my-auto ml-[14rem] py-10 px-20">
             <p className={`font-normal text-[#fff] text-3xl  `}>
@@ -44,19 +44,19 @@ export default function Affrostore() {
         </div>
       </div>
 
-      <div className=" ml-20 mt-10 flex">
+      <div className=" ml-20 mt-10 lg:flex">
         <div className="flex">
-          <HomeIcon className=" text-pt-1 w-[2.125rem h-[0.938rem bg-red-00 h-6 w-6 " />
+          <HomeIcon className=" text-pt-1  h-[0.938rem bg-red-00 h-6 w-6 " />
           <p className="font-rubik pl-2 ">Home</p>
         </div>
 
         <div className="flex">
-          <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
+          <IoIosArrowForward className=" lg:ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
           <p className="font-rubik pl2 ">Fashion</p>
         </div>
 
         <div className="flex">
-          <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
+          <IoIosArrowForward className=" lg:ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
           <p className="font-rubik  text-[#FD6906] font-normal ">Clothing</p>
         </div>
       </div>

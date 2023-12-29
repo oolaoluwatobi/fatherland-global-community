@@ -27,7 +27,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-[97.813rem]  ">
+    <div className="mx-auto lg:w-full max-w-[97.813rem]  ">
       <div>
         <div className="mt-10 ml-5 mx-auto   ">
           <p className="font-bold text-3xl text-[#232323]">
@@ -39,13 +39,13 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
         </div>
 
         <div className=" relative mt-5 shadow-xl shadow-blue-50">
-          <button className="absolute left-2 top-0 bottom-0 my-auto">
+          <button className="absolute left-2 top-0 bottom-0 my-auto hidden lg:inline-block">
             <BsArrowLeftSquareFill
               onClick={() => storehomes()}
               className="w-12 h-12 text-primary"
             />
           </button>
-          <button className="absolute right-12 top-0 bottom-0 my-auto">
+          <button className="absolute right-12 top-0 bottom-0 my-auto hidden lg:inline-block">
             <BsArrowRightSquareFill
               className="w-12 h-12 text-primary "
               onClick={storehomess}
@@ -60,7 +60,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                 <Image
                   src={discoverhome.image}
                   alt=""
-                  className="w-[17.188rem] mt-4 bg-"
+                  className="lg:w-[17.188rem] mt-4 bg-"
                 />
                 <div className="p-5 mt-4">
                   <p className="font-[800] text-lg">{discoverhome.title}</p>
@@ -68,7 +68,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                     {discoverhome.description}
                   </p>
 
-                  <div className="flex justify-between ">
+                  <div className="lg:flex justify-between ">
                     <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
                       {discoverhome.price}
                       <p className="font-normal">{discoverhome.price1}</p>
@@ -98,7 +98,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
           </button>
           {/* <aside> */}
             <div id="storehomes"
-            className="flex gap-6 overflow-x-auto no-scroll">
+            className="lg:flex gap-6 overflow-x-auto no-scroll">
               <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
             
             {storeHomes2.map((storehome2, i) => (
@@ -116,7 +116,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                     {storehome2.description}
                   </p>
 
-                  <div className="flex justify-between ">
+                  <div className="lg:flex justify-between ">
                     <p className="text-[#050A1E] font-[800] pt-4 ">
                       {storehome2.price}
                       <Image
