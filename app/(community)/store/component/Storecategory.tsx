@@ -69,7 +69,7 @@ export default function Storecategory() {
         </div>
       </div>
       <main className="w-full">
-        <div className=" pt-6 flex lg:flex  gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
+        <div className=" pt-6 lg:flex flex gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
           <h1 className="ml-14 text-2xl font-bold">Hot Deals</h1>
           <p className="mr-5 text-lg text-gray-600">see all</p>
         </div>
