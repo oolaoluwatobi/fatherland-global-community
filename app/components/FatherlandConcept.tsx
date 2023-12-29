@@ -8,10 +8,10 @@ import Link from "next/link";
 
 export default function FatherlandConcept() {
   return (
-    <section className="mt-20">
-      <Container>
-        <div className="grid grid-cols-2 border-l-8 border-secondary rounded-l-xl    bg-red-20">
-          <div className="p-10 flex flex-col justify-between text-dark ">
+    <section className="mt-20 max-w-7xl container">
+      <div>
+        <div className="lg:grid grid-cols-2 border-l-8 border-secondary rounded-l-xl    bg-red-20">
+          <div className="lg:p-10 p-4 flex flex-col justify-between text-dark ">
             <Link  href="/about-us">
               <Button
                 variant="secondaryAccent"
@@ -21,26 +21,26 @@ export default function FatherlandConcept() {
                   About Us
               </Button>
             </Link>
-            <h1 className="text-4xl font-[800] leading-normal ">
+            <h1 className="lg:text-4xl text-2xl font-[800] leading-normal lg:w-[27rem]">
               Fatherland{" "}
               <span className="text-secondary ">
-                African <br /> Forum{" "}
+                African  Forum{" "}
               </span>{" "}
               and <span className="text-secondary ">Marketplace</span>{" "}
             </h1>
-            <p>
+            <p className="lg:text-base text-sm">
               Fatherland unites Africans, providing an Afrocentric lifestyle and
               diverse products. Members immerse in Africa’s rich heritage and
               experience
             </p>
-            <div className="">
+            <div className=" flex justify-center lg:justify-start mt-4 lg:mt-0">
               <Button variant="default" size="lg">
                 Join Now
               </Button>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative p-4 lg:p-0">
             <Image
               className="rounded-lg"
               src={videoPlaceholder}
@@ -53,7 +53,7 @@ export default function FatherlandConcept() {
             />
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

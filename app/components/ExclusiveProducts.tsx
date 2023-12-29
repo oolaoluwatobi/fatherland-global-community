@@ -75,19 +75,19 @@ const PRODUCTS: ProductArray = [
 export default function ExclusiveProducts() {
   const renderProducts = PRODUCTS.map((product) => {
     return (
-      <React.Fragment key={product.id}>
+      <div key={product.id}>
         <ExclusiveProductsCard product={product} />
-      </React.Fragment>
+      </div>
     );
   });
 
   return (
-    <section className="mt-20 p-20 max-w-[90rem] mx-auto bg-secondary-foreground bg-red-10">
-      <div>
-        <h1 className={`${raleway.className} font-[700] text-muted text-3xl `}>
+    <section className="lg:mt-20 mt-8 lg:p-20 py-12 lg:pb-0 mx-auto bg-secondary-foreground bg-red-10">
+      <div className="max-w-7xl container">
+        <h1 className={`${raleway.className} font-[700] text-muted lg:text-3xl text-xl`}>
           EXCLUSIVE PRODUCTS & BENEFITS
         </h1>
-        <p className="mt-7 text-lg leading-9  max-w-2xl  font-[400]   ">
+        <p className="lg:mt-7 lg:text-lg text-sm leading-9  max-w-2xl  font-[400]   ">
           By offering services and benefits, our goal is to provide
           opp0rtunities for members from all walks of the life to embrace and
           enjoy the True Africa Experience
@@ -95,10 +95,10 @@ export default function ExclusiveProducts() {
         <div className="bg-secondary h-[3px] w-28 rounded-full  mt-1" />
       </div>
 
-      <div className="pt-14   bg-red-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 space-y4   gap-4 bg-red-10">
+      <div className="pt-14 max-w-7xl container  bg-red-20">
+        <div className="grid grid-cols-1 lg:gridcols-2 lg:grid-cols-3 space-y4   gap-4 bg-red-10">
           {renderProducts}
-          <div className="col-span1"></div>
+          
         </div>
       </div>
     </section>
