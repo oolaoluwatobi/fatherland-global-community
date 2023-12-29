@@ -48,9 +48,9 @@ export default function Commerce() {
                     <div className='font-[650] text-base  text-start md:pl-[2.5rem pl-1 lg:text-lg mx-auto lg:w-[21.375rem] lg:h-[60px]'>
                       {entt.text}
                     </div>
-                    <div  className='flex justifyaround items-center px5 '>
+                    <div  className='lg:flex justifyaround items-center px5 '>
                     <Link href={`/press/${entt.id}`} className='lg:pl-[2.5rem] pl-[0.5rem] mt-3 mb-3 ps2 pl6 font-[600] text inline text-amber-500 underline decoration-orange-40'>{entt.goto}</Link>
-                    <div className='ml-14 text-xs md:font-[00] flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {entt.date}</div>
+                    <div className='lg:ml-14 ml-5 text-xs md:font-[00] flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {entt.date}</div>
                     </div>
                     </div>
                   ))}
