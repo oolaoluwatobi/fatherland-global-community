@@ -8,7 +8,7 @@ export default function StoreDistribution() {
      <div className='lg:flex mt-5 mb-20'>
         {storeDistribution.map((distribute)=>(
             <div key={distribute.id} className='' >
-            <Image src={distribute.image} alt="" className='w-[28rem] h-[25rem]' />
+            <Image src={distribute.image} alt="" className='lg:w-[28rem] lg:h-[25rem]' />
             </div>
         ))}
      </div>

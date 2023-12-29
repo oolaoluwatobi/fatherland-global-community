@@ -84,13 +84,13 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
         </div>
 
         <div className=" relative mt-5 shadow-xl shadow-blue-50">
-          <button className="absolute left-2 top-0 bottom-0 my-auto">
+          <button className="absolute hidden lg:inline-block left-2 top-0 bottom-0 my-auto">
             <BsArrowLeftSquareFill
               onClick={() => container()}
               className="w-12 h-12 text-white bg-black"
             />
           </button>
-          <button className="absolute right-12 top-0 bottom-0 my-auto">
+          <button className="absolute right-12 top-0 bottom-0 my-auto hidden lg:inline-block">
             <BsArrowRightSquareFill
               className="w-12 h-12 text-white bg-black "
               onClick={containers}
