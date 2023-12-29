@@ -4,8 +4,8 @@ import React from "react";
 export default function Faturesfatherland() {
   return (
     <div className="mx-auto bg-red-40  mt-24  border-r-[10px] border-r-primary  rounded-r-lg max-w-6xl ">
-      <div className="mx-auto grid grid-cols-3 gap-10 mb-5 containe bg-red-00  justify-around">
-        <div className=" justify-center flex flex-col border bg-yellow-00  border-[#DA500150]  bg-whit rounded-[10px] font-[700] hover:border-primary active:border-primary shadow-lg shadow-blue-100  h-auto w-auto  text-center ">
+      <div className="mx-auto lg:grid grid-cols-3 gap-10 mb-5 containe bg-red-00  justify-around">
+        <div className=" justify-center lg:flex flex-col border bg-yellow-00  border-[#DA500150]  bg-whit rounded-[10px] font-[700] hover:border-primary active:border-primary shadow-lg shadow-blue-100  h-auto w-auto  text-center ">
           <p className=" mt4 text-primary text-7xl ">29M</p>
           <p className="text-2xl mt-9">Monthly Reach</p>
         </div>
