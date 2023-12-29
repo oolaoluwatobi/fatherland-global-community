@@ -11,15 +11,11 @@ import JoinConversation from "../components/JoinConversation";
 
 export default function Home() {
   return (
-    <main className=" bg-red-20 max-w-[90rem] mx-auto bg-whit">
+    <main className=" bg-red-20 mx-auto bg-whit">
       <Hero />
       <FatherlandConcept />
       <ExclusiveProducts />
       <JoinConversation />
-      {/* <ExploreCulture /> */}
-      {/* <CulturalLearning /> */}
-      {/* <AfricanAuthenticStore /> */}
-      {/* <DiscoverItems /> */}
     </main>
   );
 }
