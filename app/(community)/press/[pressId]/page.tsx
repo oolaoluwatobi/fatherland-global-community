@@ -15,10 +15,10 @@ export default function PressPage({ params }: { params: { pressId: string } }) {
   console.log(renderEnt);
 
   return (
-    <div className="mx-auto h-full max-w7xl bg-white  my-auto-full">
+    <div className="mx-auto  w-full max-w-[97.312rem] max-w7xl bg-white  ">
       <div>
         <Image
-          className="mx-auto max-w-7xl"
+          className="mx-auto w-full max-w-[97.312rem]"
           src={renderPress?.image!!}
           alt=""
         />
@@ -48,8 +48,8 @@ export default function PressPage({ params }: { params: { pressId: string } }) {
         </div>
       </div>
 
-      <div className="mt-5 mx-auto pb-32">
-        <div className=" w-full grid lg:grid-cols-3 gap-4 max-w-7xl  mx-auto">
+      <div className="mt-5 mx-auto pb-32 w-full max-w-[97.312rem] container ">
+        <div className=" w-full grid lg:grid-cols-3 gap-4 max-w7xl  mx-auto">
           {Entertainment.map((enter) => (
             <div
               key={enter.id}
@@ -57,12 +57,12 @@ export default function PressPage({ params }: { params: { pressId: string } }) {
               <Image
                 src={enter.image}
                 alt=""
-                className="object-cover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 lg:w-[21.5rem"></Image>
+                className="objectcover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 lg:w-[21.5rem"></Image>
 
               <div className="font-[650] text-start lg:pl-[2.5rem pl-1 text-lg mx-auto lg:w-[21.375rem] lg:h-[60px]">
                 {enter.text}
               </div>
-              <div className="flex justifyaround items-center px5 ">
+              <div className="lg:flex justifyaround items-center px5 ">
                 <Link
                   href={`/press/${params.pressId}`}
                   className="lg:pl-[2.5rem] pl-[0.5rem] mt-3 mb-3 ps2 pl6 font-[600] text inline text-amber-500 underline decoration-orange-40">

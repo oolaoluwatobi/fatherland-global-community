@@ -69,14 +69,14 @@ export default function Storecategory() {
         </div>
       </div>
       <main className="w-full">
-        <div className=" pt-6 flex lg:flx  gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
+        <div className=" pt-6 flex lg:flex  gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
           <h1 className="ml-14 text-2xl font-bold">Hot Deals</h1>
           <p className="mr-5 text-lg text-gray-600">see all</p>
         </div>
-        <div className="lg:grid grid-cols-3 gap-4 min-w-[55.875rem] max-w-full mx-auto cursor-pointer  ">
+        <div className="lg:grid grid-cols-3 gap-4 lg:min-w-[55.875rem] object-cover max-w-full mx-auto cursor-pointer  ">
           {StorehotDeal.map((store, i) => (
             <div key={i} className=" shadow pb-7  ml-5  hover:border-secondary active:border active:border-primary hover:border ">
-              <Image src={store.image!!} alt="" className="w-full" />
+              <Image src={store.image!!} alt="" className="lg:w-full" />
               <div className="ml-4">
                 <p className="font-[500] text-lg w-[18rem] pt-4">
                   {store.content}

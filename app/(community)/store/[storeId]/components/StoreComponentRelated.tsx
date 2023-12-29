@@ -17,19 +17,19 @@ export default function StoreComponentRelated() {
   };
 
   return (
-    <div className='w-full max-w-[90rem] mx-auto'>
+    <div className='w-full mb-14 max-w-[90rem] mx-auto'>
       <div className="mt-24">
           <div>
             <p className="text-2xl font-[700]">Related Products</p>
 
             <div className=" relative mt-5 shadow-xl shadow-blue-50">
-              <button className="absolute left-2 top-0 bottom-0 my-auto">
+              <button className="absolute left-2 top-0 bottom-0 my-auto hidden lg:inline-block">
                 <BsArrowLeftSquareFill
                   onClick={() => storehomes()}
                   className="w-12 h-12 text-primary"
                 />
               </button>
-              <button className="absolute right-12 top-0 bottom-0 my-auto">
+              <button className="absolute right-12 top-0 bottom-0 my-auto hidden lg:inline-block">
                 <BsArrowRightSquareFill
                   className="w-12 h-12 text-primary "
                   onClick={storehomess}
@@ -38,7 +38,7 @@ export default function StoreComponentRelated() {
 
               <aside
                 id="store"
-                className="flex gap-6 overflow-x-auto no-scroll ">
+                className="lg:flex gap-6 overflow-x-auto no-scroll ">
                 {StoreRelate.map((storesrelate) => (
                   <div
                     className="shadow-lg min-w-[17.188rem] h-auto"
@@ -54,7 +54,7 @@ export default function StoreComponentRelated() {
                         {storesrelate.description}
                       </p>
 
-                      <div className="flex justify-between ">
+                      <div className="lg:flex justify-between ">
                         <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
                           {storesrelate.price}
                           <p className="font-normal">{storesrelate.price1}</p>
@@ -75,12 +75,12 @@ export default function StoreComponentRelated() {
           </div>
         </div>
         <div
-          className={`${style.Afrobg} w-full max-w[97.813rem] ax-w-7xl h-[27rem] mx-auto mb-5`}>
+          className={`${style.Afrobg} w-full max-w[97.813rem] ax-w-7xl hidden lg:inline-block h-[27rem] mx-auto mb-5`}>
           <div className="">
-            <p className="text-[#fff] font-[500] pt-[10rem] px-[24rem] font-sans text-3xl">
+            <p className="text-[#fff] font-[500] pt-[10rem] px-[16rem] font-sans text-3xl">
               Get every Special Offer
             </p>
-            <p className="text-5xl pl[6.938rem]  px-[21rem] text-[#fff] font-[600] pt-[1rem]">
+            <p className="text-5xl   px-[14rem] text-[#fff] font-[600] pt-[rem]">
               BIG FASHION SALE
             </p>
           </div>
