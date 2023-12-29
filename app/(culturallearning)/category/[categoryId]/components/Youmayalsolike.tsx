@@ -34,7 +34,7 @@ export default function Youmayalsolike() {
     <div className="mx-auto pt5 lg:pt-[6.375rem">
 
 
-      <div className="lg:flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
+      <div className="flex mt-12 lg:mt-0 justify-between gap-[1.438rem] container mx-auto max-w-7xl">
         {Tutors.map((tutor, i) => (
          <Link  key={i} href={`/become-a-tutor/${tutor.id}`}>
            <Image
