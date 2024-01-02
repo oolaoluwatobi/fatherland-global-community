@@ -12,7 +12,7 @@ export default function StorePage ({ params }: { params: { storeId: string } }) 
   
   
   return (
-    <section className=' max-w[90rem] mb-10 bg-[#EFF4FA]'>
+    <section className=' max-w[90rem] mb-10 bg-[#F8FAFE] bg-red500'>
     <Store />
     <Storecategory />
     <Storebanner />
