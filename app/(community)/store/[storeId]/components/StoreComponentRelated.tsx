@@ -38,7 +38,7 @@ export default function StoreComponentRelated() {
 
               <aside
                 id="store"
-                className="lg:flex gap-6 overflow-x-auto no-scroll ">
+                className="lg:flex gap-6 overflow-x-auto no-scrollbar ">
                 {StoreRelate.map((storesrelate) => (
                   <div
                     className="shadow-lg min-w-[17.188rem] h-auto"

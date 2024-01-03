@@ -26,26 +26,26 @@ const Communtyhubs = [
 
 export default function Communityhub() {
   return (
-    <div className={`${style.bgg}   mb32 mt-40 `}>
+    <div className={`${style.bgg} lg:mt-40 mt-12`}>
       {Communtyhubs.map((Hubs,i) => (
         <main key={i} className=" lg:flex flex-row ">
-          <div className="mx-auto pt-5 containr">
+          <div className="mx-auto pt-5">
             <div className=" ml-10 lg:pt-6 lg:border-[10px] lg:border-primary lg:ps-[2.438rem] lg:border-t-0 lg:border-b-0 lg:border-r-0 rounded-t-[10px] rounded-b-[10px] lg:h-[22.125rem]  containr mx-auto  ">
               <p className="text-white">{Hubs.text}</p>
-              <p className="mt6 text-primary font-[700] pt-2 lg:text-3xl  lg:w-[36rem] mb">
+              <p className="mt6 text-primary font-[700] pt-2 lg:text-3xl  text-xl  lg:w-[36rem] mb">
                 {Hubs.text1}
               </p>
-              <p className="text-white font-[600] text-2xl text-[16px] lg:leading-7 break-words lg:py-[1.063rem] lg:w-[47rem]">
+              <p className="text-white lg:font-[600] font-[400] lg:text-xl text-lg lg:leading-7 break-words lg:py-[1.063rem] lg:w-[47rem]">
                 {Hubs.content}
               </p>
 
-              <Button className="border  bg-transparent border-white">
+              <Button className="border bg-transparent border-white">
                 {Hubs.button}
               </Button>
              </div>
            
           </div>
-          <Image src={hwx} alt="" className="lg:h-[26rem] lg:w-[28rem] mx-auto py-5 h-[22rem] w-[22rem] "/>
+          <Image src={hwx} alt="" className="lg:h-[26rem] lg:w-[28rem] mx-auto lg:py-7 py-7 px-5 h-[22rem] w-[22rem]  "/>
         </main>
       ))}
     </div>

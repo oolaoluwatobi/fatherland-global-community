@@ -6,7 +6,7 @@ import Affrobutton from './component/Affrobutton'
 
 export default function StoreclothingPage() {
   return (
-   <section>
+   <section className='bg-[#F5F5F5]'>
     <Affrostore />
     <Affrocategory />
     <Affrobutton />
