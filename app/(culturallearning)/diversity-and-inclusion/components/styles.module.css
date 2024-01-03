@@ -1,5 +1,13 @@
 .hero{
-    background-image: url(../../../../public/campus/diversity.png);
+    background-image: url(../../../../public/campus/hero\ vector.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: fill;
+    background-position: center;
+}
+.heroo{
+    background-image: url(../../../../public/campus/diver-bg.png);
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;

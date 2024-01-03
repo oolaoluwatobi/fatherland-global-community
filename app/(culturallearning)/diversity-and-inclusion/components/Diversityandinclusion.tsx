@@ -5,9 +5,10 @@ import style from "./styles.module.css";
 export default function Diversityandinclusion() {
   return (
     <div
-      className={` ${style.hero} mx-auto flex justify-center pt-12 pb-16 lg:pt-[11.875rem] lg:pb-[15.063rem] mt-5 lg:mt-[5.125rem]`}
+      className={` ${style.hero} mxauto lg:mb-[3.938rem] mb-8`}
     >
-      <main className="mx-auto containe max-w-7xl">
+<div className={`container mxauto max-w-[77.875rem`}>
+<main className={`mx-auto ${style.heroo} pt-12 pb-16 lg:pt-[7.875rem] lg:pb-[8.063rem] mt-5 lg:mt-[5.125rem]`}>
         <div className="flex justify-center">
           <p
             className="text-white lg:text-xl text-sm font-medium break-words text-center bg-[#FFFFFF30] 
@@ -20,6 +21,7 @@ export default function Diversityandinclusion() {
           Explore Cultural Learning Diversity, Equity, & Inclusion
         </p>
       </main>
+</div>
     </div>
   );
 }
