@@ -68,7 +68,7 @@ export default function Storecategory() {
           <p className="font-[600] text-[#14202D]"> Popular Gifts & Toy</p>
         </div>
       </div>
-      <main className="w-full">
+      <main className="lg:w-full container">
         <div  className=" pt-6 lg:flex flex gap[40rem] justify-between h-20 shadow-lg mt-5 mb-5">
           <h1 className="ml-14 text-2xl font-bold">Hot Deals</h1>
           <p className="mr-5 text-lg text-gray-600">see all</p>

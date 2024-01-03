@@ -10,8 +10,8 @@ import bar from '@/public/bar.png'
 export default function Affrocategory() {
   return (
     <div className="">
-      <div className="lg:flex justify-between w-[79.375rem] h-[7rem] shadow-lg mt-5 text[#52525] mb-10 mx-auto border:active border-primary ">
-        <div className="lg:w[15.188rem] mxauto h[-2rem]  text-xl pt-10 pl-5">
+      <div className="lg:flex justify-between w-[79.375rem] h-[7rem] bg-[#FFFFFF] mt-5 text[#52525] mb-10 mx-auto border:active border-primary ">
+        <div className="lg:w[15.188rem] text-xl pt-10 pl-5">
           {" "}
           Showing 1–9 of 14 results{" "}
         </div>
@@ -20,9 +20,9 @@ export default function Affrocategory() {
         </div>
       </div>
 
-      <main className="mt-10 w-[79.375rem]  lg:flex mx-auto max-w-7xl  ">
+      <main className="mt-10 w-[79.375rem]  lg:flex mx-auto max-w-7xl ">
         <div className="h-[65.5rem] w-[17.25rem] shadow-xl">
-          <div className=" hover:border-primary">
+          <div className=" hover:border-primary bg-[#FFFFFF] ">
             <p className="font-[600] flex justify-between border-b-2 text-lg mx-auto ml-4 mr-7 h-[2.5rem] border-b-red-500 shadow-sm mt-10">
               Categories
               <IoIosArrowDown className="mt-2" />

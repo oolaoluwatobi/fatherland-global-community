@@ -230,7 +230,7 @@ export default function Shopping() {
               />
             </button>
 
-            <aside id="store" className="flex gap-6 overflow-x-auto no-scroll ">
+            <aside id="store" className="flex gap-6 overflow-x-auto no-scrollbar ">
               {StoreRelate.map((storesrelate ,i) => (
                 <div
                   className="shadow-lg min-w-[17.188rem] h-auto"

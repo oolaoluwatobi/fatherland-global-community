@@ -14,11 +14,11 @@ export default function Community() {
   const renderCummunity = COMMUNITY.find((comune => comune.id))
   console.log (renderCummunity)
   return (
-    <div >
-        <div className={`${style.backg} pr-10`}> 
-             <div className={`${momserat.className} font-[700] px-40 text text-center text-2xl text-white pt-20`}> {renderCummunity?.text}</div>
+    <div className='' >
+        <div className={`${style.backg}`}> 
+             <div className={`${momserat.className} font-[700] text-xl text-center lg:text-2xl text-white lg:pt-20 pt-8`}> {renderCummunity?.text}</div>
                 
-            <div className={`${momserat.className} font-[400] px-32  py-8 text-white text-center`} > {renderCummunity?.content}</div>
+            <div className={`${momserat.className} font-[400] lg:px-32 lg:py-8 pt-8 text-sm lg:text-base container text-white text-center`} > {renderCummunity?.content}</div>
         </div>
     </div>
   )
