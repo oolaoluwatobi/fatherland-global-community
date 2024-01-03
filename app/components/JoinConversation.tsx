@@ -108,7 +108,7 @@ export default function JoinConversation() {
         <h4 className='lg:text-3xl text-xl text-[#161915] font-[600]  '>Join Conversation</h4>
         <p className='text-muted text-[#14202d] lg:text-lg text-sm'>Check out the most popular topics</p>
       </div>
-      <div className='mt-10 mb-[9.5rem] border-[20px] border-[#26D44B33]  rounded-lg lg:p-12 p-4'>
+      <div className='mt-10 lg:mb-[9.5rem] mb-12 border-[20px] border-[#26D44B33]  rounded-lg lg:p-12 p-4'>
         <h5 className='text-[#000] font-[600] lg:text-xl text-base'>ALL TOPICS</h5>
         <div className={`overflow-y-scroll lg:h-[43.438rem] h-[30rem] ${style.win1}`}>{renderComments}</div>
       </div>
