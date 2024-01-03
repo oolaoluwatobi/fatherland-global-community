@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Register() {
   return (
-    <div className="bg-[#282828] py-20 lg:mt-[6.063rem] mt-8">
+    <div className="bg-[#282828] py-20 lg:mt-[6.063rem] mt-8 mb-12 lg:mb-[19.688rem]">
       <div className=" text-white my20 px8 max-w-7xl container mx-auto">
         <h3 className="text-center lg:text-4xl text-2xl mx-auto px10 lg:w-[58rem]">
           Register below for latest news and event updates from Fatherland.

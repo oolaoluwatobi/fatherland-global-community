@@ -1,4 +1,4 @@
-import Container from '@/components/ui/container'
+'use client'
 import React from 'react'
 import icon1 from "@/public/assets/icon1.png"
 import icon2 from "@/public/assets/icon2.png"
@@ -32,20 +32,20 @@ export default function WhyWeAreHere() {
 
   const renderCard = data.map(item => {
     return (
-      <div key={item.id} className='w-80  p-8 we_are_here_card  bg-red-10'>
+      <div key={item.id} className='w-80  p-8 we_are_here_card  bg-red-10 mb-8 lg:mb-0'>
         <Image src={item.icon} alt='icon' className='w-20' />
-        <h5 className='mt-4 text-xl font-[700]  '>{item.name}</h5>
-        <p className='mt-4 text-sm '>{item.content}</p>
+        <h5 className='mt-4 lg:text-xl text-base font-[700]  '>{item.name}</h5>
+        <p className='mt-4 lg:text-sm text-xs'>{item.content}</p>
       </div>
     )
   })
   
   return (
-    <Container>
-      <h4 className='text-center mt-20 text-5xl text-muted font-[800] capitalize'>Why We are Here</h4>
-      <div className='mt-10 grid grid-cols-3 mb-10'>
+    <div className='mx-auto max-w-7xl container'>
+      <h4 className='text-center lg:mt-20 mt-12 lg:text-5xl text-2xl text-muted font-[800] capitalize'>Why We are Here</h4>
+      <div className='mt-10 grid lg:grid-cols-3 lg:mb-10'>
         {renderCard}
       </div>
-    </Container>
+    </div>
   )
 }
