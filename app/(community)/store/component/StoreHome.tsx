@@ -52,7 +52,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
             />
           </button>
 
-          <aside id="store" className="lg:flex gap-6 overflow-x-auto no-scroll">
+          <aside id="store" className="lg:flex gap-6 overflow-x-auto no-scrollbar">
             {StoreHomes.map((discoverhome) => ( 
               <div
                 className="shadow-lg min-w-[17.188rem]"
@@ -98,7 +98,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
           </button>
           {/* <aside> */}
             <div id="storehomes"
-            className="lg:flex gap-6 overflow-x-auto no-scroll">
+            className="lg:flex gap-6 overflow-x-auto no-scrollbar">
               <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
             
             {storeHomes2.map((storehome2, i) => (

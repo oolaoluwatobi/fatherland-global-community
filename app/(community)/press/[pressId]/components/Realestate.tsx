@@ -37,21 +37,21 @@ export default function Realestate() {
     <div className='mx-auto max-w-[90rem]'>
       
     <div className=' mx-auto container'>
-       <div className='mx-auto container'>
-           <p className=' text-2xl font-[700] mt-28 mx-auto text-center  lg:text-start lg:ps-[0.5rem]'>Real Estate</p>
+       <div className='mx-auto containe'>
+           <p className=' lg:text-2xl text-xl font-[700] lg:mt-28 mt-8 mx-auto text-center  lg:text-start lg:ps-[0.5rem]'>Real Estate</p>
            <div className='mt-5 mx-auto'>
-               <div className=' w-full grid lg:grid-cols-3 gap-4 max-w-7xl  mx-auto'>
+               <div className=' lg:w-full grid lg:grid-cols-3 gap-4 lg:max-w-7xl  mx-auto'>
               {Estate.map((real)=>(
                   <div key={real.id} className=' bg-white border border-red-200 rounded-[10px]   hover:border-primary  active:border-primary shadow-lg shadow-blue-100 mx-auto w-full lg:w-[23.625rem'>
-                    <Image src={real.image} alt='' className='object-cover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 lg:w-[21.5rem' ></Image>
+                    <Image src={real.image} alt='' className='object-cover mx-auto pt-[1.75rem] pb-[0.563rem] px-3 lg:px-0 ' ></Image>
 
 
-                    <div className='font-[650] text-base  text-start md:pl-[2.5rem pl-1 lg:text-lg mx-auto lg:w-[21.375rem] lg:h-[60px]'>
+                    <div className='font-[650] text-start lg:text-lg text-sm pl-1  mx-auto lg:w-[21.375rem] lg:h-[60px]'>
                       {real.text}
                     </div>
                     <div  className='lg:flex justifyaround items-center px5 '>
-                    <Link href={`/press/${real.id}`} className='lg:pl-[2.5rem] pl-[0.5rem] mt-3 mb-3 ps2 pl6 font-[600] text inline text-amber-500 underline decoration-orange-40'>{real.goto}</Link>
-                    <div className='lg:ml-14 ml-5 text-xs md:font-[00] flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {real.date}</div>
+                    <Link href={`/press/${real.id}`} className='lg:pl-[2.5rem] pl-[0.5rem] lg:text-base text-xs  mt-3 mb-3 ps2 pl6 font-[600] text inline text-amber-500 underline decoration-orange-40'>{real.goto}</Link>
+                    <div className='lg:ml-14 ml-5 lg:text-xs text-[0.6rem] md:font-[00] flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {real.date}</div>
                     </div>
                     </div>
                   ))}

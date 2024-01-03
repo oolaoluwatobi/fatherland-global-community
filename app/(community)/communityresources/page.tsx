@@ -11,7 +11,7 @@ import Communityhub from './component/Cummunityhubs'
 
 export default function CommunityPage() {
   return (
-    <div className=' w-full max-w-[97.813rem]  bg-white mx-auto'>
+    <div className=' w-full max-w-[97.813rem]  bg-[#F5F5F5] mx-auto '>
       <Community />
       <Casestudy />
       <Bloog />

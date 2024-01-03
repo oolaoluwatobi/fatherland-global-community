@@ -12,7 +12,7 @@ export default function StoreLayout({
   }
 }) {
   return (
-    <div className=''>
+    <div className=' bg-[#F5F5F5]'>
       <h1></h1>
       <StoreComponent params={params} />
       <StoreComponentRelated />
