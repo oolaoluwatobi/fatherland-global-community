@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Joinorstart() {
   return (
-    <div className={`w-full lg:mb-[5rem] mb-8 ${style.ft} `}>
-      <main className={`${style.hher} container`}>
+    <div className={`w-full lg:mb-[5rem] mb-8 ${style.ft} lg:h-[24.688rem] `}>
+      <main className={` container`}>
         <div className=" lg:ps-[6.813rem] pb-[5.625rem] pt-[5.125rem] mx-auto">
           <p className="text-white lg:text-[40px]text-2xl text-center lg:text-start font-bold lg:leading-[56px] break-words lg:w-[40.813rem] pb-[0.402rem]">
             Join or Start Conversations with Other Community Members
