@@ -95,8 +95,8 @@ export default function ExclusiveProducts() {
         <div className="bg-secondary h-[3px] w-28 rounded-full  mt-1" />
       </div>
 
-      <div className="pt-14 max-w-7xl container  bg-red-20">
-        <div className="grid grid-cols-1 lg:gridcols-2 lg:grid-cols-3 space-y4   gap-4 bg-red-10">
+      <div className="pt-14 max-w-7xl container lg:pb-[6.688rem] pb-8  bg-red-20">
+        <div className="grid grid-cols-1 lg:gridcols-2 lg:grid-cols-3 space-y4 gap-4 bg-red-10">
           {renderProducts}
           
         </div>

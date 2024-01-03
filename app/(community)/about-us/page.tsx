@@ -7,7 +7,7 @@ import JoinFamily from './components/JoinFamily'
 
 export default function page() {
   return (
-    <main className='mx-auto max-w-[90rem] bg-white'>
+    <main className='mx-auto bg-[fafafa]'>
       <AfricanCommunity />
       <Objectives />
       <WhyWeAreHere />
