@@ -27,13 +27,13 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
   };
 
   return (
-    <div className="mx-auto lg:w-full max-w-[97.813rem]  ">
+    <div className="mx-auto lg:w-full container max-w-[97.813rem]  ">
       <div>
         <div className="mt-10 ml-5 mx-auto   ">
-          <p className="font-bold text-3xl text-[#232323]">
-            Home and <span className="text-primary">Living</span>
+          <p className="font-bold lg:text-3xl text-2xl text-[#232323]">
+            Home and <span className="text-primary ">Living</span>
           </p>
-          <p className="pt-3 texl-2xl tex-[#686868]">
+          <p className="pt-3 lg:texl-2xl text-[#686868]">
             Curated home accessories handpicked by our best Editors
           </p>
         </div>
@@ -108,7 +108,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                 <Image
                   src={storehome2.image}
                   alt=""
-                  className="h-[16.5rem] w-[17.125rem] "
+                  className="h-[16.5rem] lg:w-[17.125rem] w-full "
                 />
                 <div className="p-5 mt-2">
                   <p className="font-[800] text-lg">{storehome2.title}</p>

@@ -9,12 +9,11 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdLocalPolice } from "react-icons/md";
 import { ShoppingBasket } from "@/lib/data";
 import { useState } from "react";
-import { StoreRelate } from "@/lib/data";
-import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
+
 import { MdOutlineLocalShipping } from "react-icons/md";
 import Agent from "@/public/support_agent.png";
 import packagee from "@/public/package.png";
-import style from "./styles.module.css";
+
 import creditstore from "@/public/credit_score.png";
 export default function Shopping() {
   const [count, setCount] = useState(0);
@@ -29,27 +28,21 @@ export default function Shopping() {
     }
   };
 
-  const storehomes = () => {
-    const discover = document.querySelector("#store");
-    discover?.scrollBy({ left: -discover.clientWidth, behavior: "smooth" });
-  };
-  const storehomess = () => {
-    const discover = document.querySelector("#store");
-    discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
-  };
+  
   return (
     <div className="max-w-[97.813rem] w-full mx-auto lg:mb36 sm:mb-36">
       <div className="mx-auto">
-        <div className="lg:flex justify-center items-center mx-auto w-full max-w-[97.813rem]  ">
-          <input
-            type="text"
-            placeholder="Search for anything"
-            className="bg-[#fff]  w-full mxauto h-[3.9rem] pl5 text-gray-200 text-xl mt-10  pl-4"
-          />
-          <BiSearch className="bg-black text-[#ffffff] h-[4rem] w-[3rem] mt-10  " />
-          <HeartIcon className="text-black bg- h-[3rem] w-[3rem] ml-6 mt-10" />
-          <LiaShoppingCartSolid className="h-[3rem] w-[3rem] ml-4 mt-10" />
-        </div>
+      <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
+        <input
+          type="text"
+          placeholder="Search for anything"
+          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
+        />
+        <BiSearch className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
+        :w-11 p-0.5 lg:p-1  aspect-square mt-10  " />
+        <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
+        <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+      </div>
         <div className="lg:flex justify-between mt-10">
           <p className="text-[#b3b0b0] lg:text-lg ml-2 font-[500] pl-2 ">Shopping Basket</p>
 
@@ -212,56 +205,6 @@ export default function Shopping() {
         </div>
       </div>
 
-      <div className="mt-24 ml-4">
-        <div>
-          <p className=" text-2xl font-[700]">Related Products</p>
-
-          <div className=" relative mt-5 shadow-xl shadow-blue-50">
-            <button className="absolute left-2 top-0 bottom-0 my-auto">
-              <BsArrowLeftSquareFill
-                onClick={() => storehomes()}
-                className="w-12 h-12 text-primary"
-              />
-            </button>
-            <button className="absolute right-12 top-0 bottom-0 my-auto">
-              <BsArrowRightSquareFill
-                className="w-12 h-12 text-primary "
-                onClick={storehomess}
-              />
-            </button>
-
-            <aside id="store" className="flex gap-6 overflow-x-auto no-scrollbar ">
-              {StoreRelate.map((storesrelate ,i) => (
-                <div
-                  className="shadow-lg min-w-[17.188rem] h-auto"
-                  key={storesrelate.id}>
-                  <Image
-                    src={storesrelate.image}
-                    alt=""
-                    className="w-[17.188rem] h-[16.4rem] mt-4 bg-"
-                  />
-                  <div className="p-5 mt-4  ">
-                    <p className="font-[800] text-lg">{storesrelate.title}</p>
-                    <p className="font-normal text-[#686868] pt-2">
-                      {storesrelate.description}
-                    </p>
-
-                    <div className="lg:flex justify-between ">
-                      <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
-                        {storesrelate.price}
-                        <p className="font-normal">{storesrelate.price1}</p>
-                      </div>
-                      <div>
-                        <Image src={storesrelate.image2} alt="" className="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </aside>
-          </div>
-        </div>
-      </div>
 
 
     </div>
