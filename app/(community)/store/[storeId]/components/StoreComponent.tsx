@@ -61,16 +61,17 @@ export default function StoreComponent({
   return (
     <div className=" mx-auto mb-24 lg:mb-24  w-full max-w-[97.813rem]  ">
       <div className="mx-auto   ">
-        <div className="lg:flex justify-center items-center mx-auto">
-          <input
-            type="text"
-            placeholder="Search for anything"
-            className="bg-white  w-full mxauto h-[3.9rem] pl5 text-gray-200 text-xl mt-10 shadowlg pl-4"
-          />
-          <BiSearch className="bg-black text-[#ffffff] h-[4rem] w-[3rem] mt-10  " />
-          <HeartIcon className="text-black h-[3rem] w-[3rem] lg:ml-6 lg:mt-10" />
-          <LiaShoppingCartSolid className="h-[3rem] w-[3rem] lg:ml-4 lg:mt-10" />
-        </div>
+      <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
+        <input
+          type="text"
+          placeholder="Search for anything"
+          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
+        />
+        <BiSearch className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
+        :w-11 p-0.5 lg:p-1  aspect-square mt-10  " />
+        <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
+        <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+      </div>
         <div className="lg:flex justify-between">
           <div className=" ml-2 mt-10 flex mb-10 ">
             <div className="flex">
