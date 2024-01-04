@@ -11,10 +11,10 @@ export default function StoreDiscover() {
             <p className='lg:w-[20rem] lg:text-3xl text-xl font-bold'>Discover Unique  <span className='text-primary'> Hand-Picked</span>  Items</p>
         </div>
         <div className=' ml-5 mt-7 flex justify gap-[2rem] mr-10 mb-10 lg:text-xl text-lg'>
-          <Link href='/store/best-offer' className='underline decoration-secondary '> Best Offers </Link>
-          <Link href='/store/art-collectible'>Art & Collectibles</Link>
-          <Link href='/store/book-magazines'>Books & Magazines</Link>
-          <Link href='/store/crafts-supplies'>Crafts & Supplies</Link>
+          <Link href='/store/best-offer' className='underline decoration-secondary lg:text-lg text-xs'> Best Offers </Link>
+          <Link href='/store/art-collectible' className='lg:text-lg text-xs'>Art & Collectibles</Link>
+          <Link href='/store/book-magazines'  className='lg:text-lg text-xs'>Books & Magazines</Link>
+          <Link href='/store/crafts-supplies'  className='lg:text-lg text-xs'>Crafts & Supplies</Link>
         </div>
 
       

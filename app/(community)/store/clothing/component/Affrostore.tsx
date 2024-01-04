@@ -12,15 +12,16 @@ import { MdArrowForward, MdArrowForwardIos } from "react-icons/md";
 export default function Affrostore() {
   return (
     <div className="mx-auto max-w-[90rem] lg:mb-14 mb-14">
-      <div className="lg:flex justify- items-center">
+      <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
         <input
           type="text"
           placeholder="Search for anything"
-          className="bg-white lg:w-[rem] w-full mxauto h-[4rem] pl5 text-gray-200 text-xl mt-10  shadow-lg pl-4"
+          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
         />
-        <BiSearch className="bg-black text-[#ffffff] h-[3.5rem] w-[3rem] lg:mt-10  " />
-        <HeartIcon className="text-black bg- h-[3rem] w-[3rem] lg:ml-6 lg:mt-10" />
-        <LiaShoppingCartSolid className="h-[3rem] w-[3rem] lg:ml-4 lg:mt-10" />
+        <BiSearch className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
+        :w-11 p-0.5 lg:p-1  aspect-square mt-10  " />
+        <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
+        <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
       </div>
 
       <div

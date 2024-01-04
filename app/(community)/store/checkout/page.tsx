@@ -3,7 +3,7 @@ import Checkout from './component/Checkout'
 
 export default function CheckoutPage() {
   return (
-    <section className='bg-[#EFF4FA]'>
+    <section className='bg-[#F5F5F5] mb-24'>
         <Checkout />
     </section>
   )
