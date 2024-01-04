@@ -12,9 +12,9 @@ export default function Header() {
   const router = useRouter();
   return (
     <div className="mx-auto w-full bg-white sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between items-center">
+      <nav className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between justifyaround px-4 lg:px-0 items-center">
         <Link href="/" className="ml4 lg:ml-0">
-          <Image src={logo} alt="" className="" />
+          <Image src={logo} alt="" className="w-32 lg:w-full" />
         </Link>
         <div className="flex justify-between items-center gap-8">
           <Link  href='/about-us' className="hidden lg:inline">Who we are</Link>
@@ -28,7 +28,7 @@ export default function Header() {
           </Button>
           <Button
             variant="outline"
-            className="border-[#FF8800] hover:bg-white text-sm font-medium transition-colors text-[#ff8800]"
+            className="border-[#FF8800] hover:bg-white hidden lg:inline text-sm font-medium transition-colors text-[#ff8800]"
             onClick={() => router.push("/loginpage")}
           >
             Log In
