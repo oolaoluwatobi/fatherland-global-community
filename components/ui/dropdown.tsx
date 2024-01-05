@@ -89,6 +89,10 @@ const Dropdown = () => {
       href: "/diversity-and-inclusion",
       label:'Diversity and inclusion'
     },
+    {
+      href: "/privacy",
+      label:'Privacy'
+    },
 
   ] as const;
 
