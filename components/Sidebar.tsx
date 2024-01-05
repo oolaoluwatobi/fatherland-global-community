@@ -108,7 +108,6 @@ const Sidebar = (props: Props) => {
               </div>
             </div>
           ))}
-          
           <Button onClick={()=>router.push('/becomeamember')} className='bg-secondary'>
               Become a member
           </Button> <br />
