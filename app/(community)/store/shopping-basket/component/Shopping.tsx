@@ -15,6 +15,7 @@ import Agent from "@/public/support_agent.png";
 import packagee from "@/public/package.png";
 
 import creditstore from "@/public/credit_score.png";
+
 export default function Shopping() {
   const [count, setCount] = useState(0);
 
@@ -43,17 +44,17 @@ export default function Shopping() {
         <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
         <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
       </div>
-        <div className="lg:flex justify-between mt-10">
-          <p className="text-[#b3b0b0] lg:text-lg ml-2 font-[500] pl-2 ">Shopping Basket</p>
+        <div className="lg:flex justify-between px-10 mt-10">
+          <p className="text-[#b3b0b0] lg:text-lg  font-[500]  ">Shopping Basket</p>
 
           <div className="flex gap-2 mr-2 mt10">
             <p>Back to results</p>
             <IoIosArrowForward className="mt-1" />
           </div>
         </div>
-        <h1 className="lg:text-3xl ml-4 font-[700] mt-[2rem]">Shopping Basket</h1>
-        <div className="lg:flex gap-[1.25rem] ml-4 mx-auto max-w-[97.813rem]  w-full">
-          <div className="  mt-12  shadow-lg">
+        <h1 className="lg:text-3xl text-xl px-10 font-[700] mt-[2rem]">Shopping Basket</h1>
+        <div className="lg:grid grid-cols-4 px-10 gap-5 mx-auto max-w-[97.813rem]  w-full">
+          <div className="  mt-12  shadow-md col-span-3">
             <div className="lg:flex gap5 bg-orange-100">
               <p className="py-6 font-[600] text-[#686868] pl-5 lg:text-lg">
                 Product
@@ -120,7 +121,7 @@ export default function Shopping() {
             </div>
           </div>
           <div>
-            <div className="shadow-lg lg:pb-[1.25rem] mt-12 h-[22.938rem] lg:w-[18.875rem]">
+            <div className="shadow-md col-span-1 lg:pb-[1.25rem] mt-12 h-fit">
               <div className="text-[#686868] lg:text-lg font-[600]">
                 <p className="px-2 py-2 w-[1.875]">Price Details</p>
               </div>
