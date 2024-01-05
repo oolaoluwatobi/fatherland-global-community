@@ -11,12 +11,14 @@ export default function page() {
   return (
     <div>
         <Privacy />
+        <div className='container'>
         <Generalinfo />
         <Yourconsent />
         <Customerservice />
         <Donotsell />
         <Liabilityofexplore />
         <Pprivacy />
+        </div>
     </div>
   )
 }
