@@ -15,6 +15,7 @@ import Agent from "@/public/support_agent.png";
 import packagee from "@/public/package.png";
 
 import creditstore from "@/public/credit_score.png";
+import ShoppingBasketTable from "./ShoppingBasketTable";
 
 export default function Shopping() {
   const [count, setCount] = useState(0);
@@ -31,7 +32,7 @@ export default function Shopping() {
 
   
   return (
-    <div className="max-w-[97.813rem] w-full mx-auto lg:mb36 sm:mb-36">
+    <div className="max-w[97.813rem] wfull mx-auto lg:mb36 sm:mb-36">
       <div className="mx-auto">
       <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
         <input
@@ -53,14 +54,14 @@ export default function Shopping() {
           </div>
         </div>
         <h1 className="lg:text-3xl text-xl px-10 font-[700] mt-[2rem]">Shopping Basket</h1>
-        <div className="lg:grid grid-cols-4 px-10 gap-5 mx-auto max-w-[97.813rem]  w-full">
+        <div className="lg:grid grid-cols-4 px-10 gap-6 mx-auto max-w-[97.813rem]  w-full">
           <div className="  mt-12  shadow-md col-span-3">
-            <div className="lg:flex gap5 bg-orange-100">
+            <div className="lg:flex gap5 bg-orange-100 py-2">
               <p className="py-6 font-[600] text-[#686868] pl-5 lg:text-lg">
                 Product
               </p>
 
-              <div className="lg:flex ml-[20rem] gap-[6rem] h-[4.6rem] w-[52.25rem] py-6 bg-orange-100">
+              <div className="lg:flex ml-[20rem] gap-[6rem] py-4 bg-orange-100">
                 <p className="font-[600] text-[#686868] lg:text-lg">Price</p>
                 <p className="font-[600] text-[#686868] lg:text-lg">Quantity</p>
                 <p className="font-[600] text-[#686868] lg:text-lg">Subtotal</p>
@@ -68,13 +69,13 @@ export default function Shopping() {
               </div>
             </div>
 
-            <div className="w-[59.25rem]  ">
+            <div className="w-[59.25rem bg-red-200 ">
               {ShoppingBasket.map((shopping,i) => (
                 <div key={i} className="lg:flex gap-5 shadowlg -mt-4  ml-4">
                   <Image
                     src={shopping.image!!}
                     alt=""
-                    className="w-[7.5rem] h[9rem] mt-3  pt-3 "
+                    className="w-[7.5rem] h[9rem] mt-3  pt-3 object-cover "
                   />
 
                   <div className="pb-5 ml-4 mt-2">
@@ -118,6 +119,7 @@ export default function Shopping() {
                   </div>
                 </div>
               ))}
+              <ShoppingBasketTable />
             </div>
           </div>
           <div>
