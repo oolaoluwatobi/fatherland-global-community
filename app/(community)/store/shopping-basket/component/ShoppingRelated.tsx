@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import { StoreRelate } from "@/lib/data";
@@ -17,7 +19,7 @@ export default function ShoppingRelated() {
     <div>
       <div className="mt-24 ml-4">
         <div>
-          <p className=" text-2xl font-[700]">Related Products</p>
+          <p className=" lg:text-2xl font-[700]">Related Products</p>
 
           <div className=" relative mt-5 shadow-xl shadow-blue-50">
             <button className="absolute left-2 top-0 bottom-0 my-auto">
