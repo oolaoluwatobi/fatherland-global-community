@@ -16,12 +16,12 @@ export default function ShoppingRelated() {
     discover?.scrollBy({ left: discover.clientWidth, behavior: "smooth" });
   };
   return (
-    <div>
+    <div className="w-full max-w[97.813rem] mx-auto ">
       <div className="mt-24 ml-4">
         <div>
           <p className=" lg:text-2xl font-[700]">Related Products</p>
 
-          <div className=" relative mt-5 shadow-xl shadow-blue-50">
+          <div className=" relative mt-5 shadow-xl shado">
             <button className="absolute left-2 top-0 bottom-0 my-auto">
               <BsArrowLeftSquareFill
                 onClick={() => storehomes()}
