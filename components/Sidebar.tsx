@@ -101,9 +101,9 @@ const Sidebar = (props: Props) => {
             <MenuIcon />
         </SheetTrigger>
         <SheetContent className='pt16 p-0 bg-[#FFFFFF30'>
-        <Link href="/" className="">
+      
         <Image src={logo} alt="" className='w-32 mb-8 pt-2'/>
-        </Link>
+        
         {routes.map((route, i) => (
             <div key={i} className="text-white z-50 mx-4 mb-2">
               <div>
