@@ -82,6 +82,14 @@ const routes = [
       href: "/diversity-and-inclusion",
       label: "Diversity and inclusion",
     },
+    {
+      href: "/privacy",
+      label:'Privacy'
+    },
+    {
+      href: "/becomeamember",
+      label: "Become a member",
+    },
   ] as const;
 
 const Sidebar = (props: Props) => {
@@ -92,9 +100,10 @@ const Sidebar = (props: Props) => {
         <SheetTrigger className=''>
             <MenuIcon />
         </SheetTrigger>
-        
         <SheetContent className='pt16 p-0 bg-[#FFFFFF30'>
+        <Link href="/" className="">
         <Image src={logo} alt="" className='w-32 mb-8 pt-2'/>
+        </Link>
         {routes.map((route, i) => (
             <div key={i} className="text-white z-50 mx-4 mb-2">
               <div>
@@ -108,15 +117,9 @@ const Sidebar = (props: Props) => {
               </div>
             </div>
           ))}
-          
-          <Button onClick={()=>router.push('/becomeamember')} className='bg-secondary'>
-              Become a member
-          </Button> <br />
-
-          <Button onClick={()=>router.push('/loginpage')} className='bg-secondary'>
+          <Button onClick={()=>router.push('/loginpage')} className='bg-secondary  mx-4'>
               Login
           </Button>
-
         </SheetContent>
     </Sheet>
   )

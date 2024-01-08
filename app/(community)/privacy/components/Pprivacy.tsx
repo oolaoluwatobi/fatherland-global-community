@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Pprivacy() {
   return (
-    <div className="mx-auto lg:w-[75.688rem] border border-[#459C41] container lg:pl-[3.813rem] lg:pr-[2.188rem] pt-[1.875rem] pb-[3.125rem] mb-[18.688rem]">
+    <div className="mx-auto lg:w-[75.688rem] border border-[#459C41] container lg:pl-[3.813rem] lg:pr-[2.188rem] pt-[1.875rem] pb-[3.125rem] lg:mb-[18.688rem] mb-12">
       <div className="text-[#212924] text-lg lg:text-3xl font-bold lg:leading-[56px] break-words mb-[5px] ">
         Privacy
       </div>
