@@ -57,6 +57,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
               <div
                 className="shadow-lg min-w-[17.188rem]"
                 key={discoverhome.id}>
+                  {/* <Link href={`/store/${storehome2.id}`} > */}
                 <Image
                   src={discoverhome.image}
                   alt=""
@@ -78,6 +79,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                     </div>
                   </div>
                 </div>
+                {/* </Link> */}
               </div>
             ))}
           </aside>
