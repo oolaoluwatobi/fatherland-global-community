@@ -1537,7 +1537,6 @@ export const ShoppingBasket=[
     size:'Size: L',
     color:'Color: Green',
     price1:'$14.00',
-   
     subtotal:'$14.00',
     remove:"Remove",
 
@@ -1552,11 +1551,5 @@ export const ShoppingBasket=[
     subtotal:'$36.00',
     remove:"Remove",
   }
-
 ]
 
-// export const ShoppingPriceDetails=[
-//   {
-//     id:'1'
-//   }
-// ]
