@@ -57,7 +57,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
               <div
                 className="shadow-lg min-w-[17.188rem]"
                 key={discoverhome.id}>
-                  {/* <Link href={`/store/${storehome2.id}`} > */}
+                  <Link href={`/store/${discoverhome.id}`} >
                 <Image
                   src={discoverhome.image}
                   alt=""
@@ -79,7 +79,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                     </div>
                   </div>
                 </div>
-                {/* </Link> */}
+                </Link>
               </div>
             ))}
           </aside>
@@ -98,7 +98,6 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
               onClick={containers}
             />
           </button>
-          {/* <aside> */}
             <div id="storehomes"
             className="lg:flex gap-6 overflow-x-auto no-scrollbar">
               <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />

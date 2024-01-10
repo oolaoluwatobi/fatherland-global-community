@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import   bonnet from "@/public/fashionbonnet.png"
-import fash4   from '@/public/fas4.png'
- import image54 from '@/public/image 54.png'
- import rectan from '@/public/Rectangle 210.png'
+import bonnet from "@/public/fashionbonnet.png";
+import fash4 from "@/public/fas4.png";
+import image54 from "@/public/image 54.png";
+import rectan from "@/public/Rectangle 210.png";
 import React from "react";
-import { STORES } from "@/lib/data";
+import { STORES, storeHomes2 } from "@/lib/data";
 import Image, { StaticImageData } from "next/image";
 import { BiPackage, BiSearch, BiVector } from "react-icons/bi";
 import { HeartIcon, HomeIcon } from "@radix-ui/react-icons";
@@ -24,21 +24,21 @@ import packagee from "@/public/package.png";
 const imageData = [
   {
     id: "1",
-    image:  fash4 
+    image: fash4,
   },
   {
     id: "2",
-    image:bonnet
+    image: bonnet,
   },
   {
     id: "3",
-    image:image54
+    image: image54,
   },
   {
     id: "4",
-    image:rectan
-  }
-]
+    image: rectan,
+  },
+];
 
 export default function StoreComponent({
   params,
@@ -56,22 +56,26 @@ export default function StoreComponent({
   );
   console.log(renderStoredescription);
 
-  const [img, setImg] = useState<StaticImageData | undefined>(renderStore?.image!!);
+  const [img, setImg] = useState<StaticImageData | undefined>(
+    renderStore?.image!!
+  );
 
   return (
     <div className=" mx-auto mb-24 lg:mb-24  w-full max-w-[97.813rem]  ">
       <div className="mx-auto   ">
-      <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
-        <input
-          type="text"
-          placeholder="Search for anything"
-          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
-        />
-        <BiSearch className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
-        :w-11 p-0.5 lg:p-1  aspect-square mt-10  " />
-        <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
-        <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
-      </div>
+        <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
+          <input
+            type="text"
+            placeholder="Search for anything"
+            className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
+          />
+          <BiSearch
+            className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
+        :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
+          />
+          <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
+          <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+        </div>
         <div className="lg:flex justify-between">
           <div className=" ml-2 mt-10 flex mb-10 ">
             <div className="flex">
@@ -103,28 +107,28 @@ export default function StoreComponent({
 
         <div className="lg:flex gap-2 justify-between mt-5">
           <div className="mt-6 w-[6.5rem] lg:h-[6.5rem] ">
-            <button  onClick={e => setImg(renderStore?.image)}>
+            <button onClick={(e) => setImg(renderStore?.image)}>
               <Image
                 className="w-[6.5rem] h-[6.5rem] rounded-lg"
                 src={renderStore?.image!!}
                 alt=""
               />
             </button>
-            <button onClick={e => setImg(renderStore?.image1)}>
+            <button onClick={(e) => setImg(renderStore?.image1)}>
               <Image
                 className="w-[7rem] h-[6.5rem] rounded-lg mt-2"
                 src={renderStore?.image1!!}
                 alt=""
               />
             </button>
-            <button onClick={e => setImg(renderStore?.image2)}>
+            <button onClick={(e) => setImg(renderStore?.image2)}>
               <Image
                 className="w-[7rem] h-[6.5rem] rounded-lg mt-2"
                 src={renderStore?.image2!!}
                 alt=""
               />
             </button>
-            <button onClick={e => setImg(renderStore?.image3)}>
+            <button onClick={(e) => setImg(renderStore?.image3)}>
               <Image
                 className="w-[7rem] h-[7rem] rounded-lg mt-2"
                 src={renderStore?.image3!!}
@@ -167,25 +171,27 @@ export default function StoreComponent({
               <div className="lg:flex gap-20 mt-[1.063rem] ">
                 <p>Size</p>
 
-                <div className="lg:flex gap-[0.625rem]">
-                  <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#f6f8fc] text-[#686868] lg:text-xl ">
-                    S
-                  </p>
-                  <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                    M
-                  </p>
-                  <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                    L
-                  </p>
-                  <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                    {" "}
-                    XL
-                  </p>
-                  <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#c9c7c7] lg:text-xl ">
-                    {" "}
-                    XXL
-                  </p>
-                </div>
+                <Link href={`/store/storeComponent`}>
+                  <div className="lg:flex gap-[0.625rem]">
+                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#f6f8fc] text-[#686868] lg:text-xl ">
+                      S
+                    </p>
+                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
+                      M
+                    </p>
+                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
+                      L
+                    </p>
+                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
+                      {" "}
+                      XL
+                    </p>
+                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#c9c7c7] lg:text-xl ">
+                      {" "}
+                      XXL
+                    </p>
+                  </div>
+                </Link>
               </div>
               <div className="lg:flex gap-20 mt-[3.063rem] ">
                 <p>Color</p>
@@ -243,16 +249,16 @@ export default function StoreComponent({
                 <p className="text-sm  ">{renderStore?.deliveryTime}</p>
               </div>
             </div>
-            <div className="lg:flex gap-[1.875rem] mt-14">
+            <div className="lg:flex gap-8 mt-14">
               <div className="">
-                <Button className=" w-[15.625rem] pl-2 h-[3.438rem] bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
+                <Button className=" pl- px-[4rem] py-6 bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
                   <LuShoppingCart className="text-lg h-[1.25rem] w-[1.25rem] mr-2" />{" "}
                   ADD TO CART
                 </Button>
               </div>
               <div className="">
-                <Button className="sm:mt-3 w-[15.625rem] border-2 border-green-500 pl-2 h-[3.438rem] bg-white text-black text-sm ">
-                  <MdElectricBolt className="text-lg h-[1.25rem] w-[1.25rem] mr-2" />{" "}
+                <Button className="lg:mt-0  mt-3 px-[4rem] border-2 border-green-500  py-6 bg-white text-black text-sm ">
+                  <MdElectricBolt className="text-lg h-[1.25rem] w-[1.25rem] mx-auto" />{" "}
                   BUY NOW
                 </Button>
               </div>
@@ -262,34 +268,42 @@ export default function StoreComponent({
       </div>
 
       <div className="lg:w-full lg:max-w-[90rem] mx-auto">
-        <div className=" ml4 lg:flex bg-orange-100 pt-3 pl-8 mt-5 h-[3rem] lg:gap-24">
-          <Link rel="stylesheet" href="description" ><Button variant={"navlink"} className=" font-[500] ">
-            Description
-          </Button></Link>
+        <div className=" ml4 lg:flex bg-orange-100 pt-3 pl-8 mt-5 py-3 lg:gap-24">
+          <Link rel="stylesheet" href="description">
+            <Button variant={"navlink"} className=" font-[500] ">
+              Description
+            </Button>
+          </Link>
+          <Link rel="stylesheet" href="specifications">
           <Button variant={"navlink"} className=" text-[#b8b4b4]">
             Specifications
           </Button>
+          </Link>
+          <Link rel="stylesheet" href="review">
           <Button variant={"navlink"} className="text-[#b8b4b4]">
             review
           </Button>
+          </Link>
+          <Link rel="stylesheet" href="Questions">
           <Button variant={"navlink"} className="text-[#b8b4b4]">
             Questions
           </Button>
+          </Link>
         </div>
         <div>
-          <p className="text-[#949191] text-[12px] ml-5 mt-5 lg:spacing-2 lg:leading-7">
+          <p className="text-[#949191] lg:text-lg text-sm ml-5 mt-5 lg:spacing-2 lg:leading-7">
             {renderStoredescription?.content}
           </p>
-          <p className="text-[#949191] ml-5 mt-2 spacing-2 leading-7">
+          <p className="text-[#949191] lg:text-lg text-sm ml ml-5 mt-2 spacing-2 leading-7">
             {renderStoredescription?.content1}
           </p>
-          <p className="text-[#949191] ml-5 mt-2 spacing-2 leading-7">
+          <p className="text-[#949191] lg:text-lg text-sm ml ml-5 mt-2 spacing-2 leading-7">
             {renderStoredescription?.content2}
           </p>
-          <p className="text-[#949191] ml-5 mt-2 spacing-2 leading-7">
+          <p className="text-[#949191] lg:text-lg text-sm ml ml-5 mt-2 spacing-2 leading-7">
             {renderStoredescription?.content3}
           </p>
-          <p className="text-[#949191] ml-5 mt-2 spacing-2 leading-7">
+          <p className="text-[#949191] lg:text-lg text-sm ml ml-5 mt-2 spacing-2 leading-7">
             {renderStoredescription?.content4}
           </p>
         </div>

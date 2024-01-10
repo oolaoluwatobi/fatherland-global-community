@@ -7,7 +7,7 @@
     background-position: center;
 }
 .level{
-    height: 430px;
+    /* height: 4px; */
     background-image: url(../../../../../public/bgggg.png);
     -o-background-size:100% 100%;
     -webkit-background-size:100% 100%;

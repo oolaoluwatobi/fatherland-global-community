@@ -10,10 +10,10 @@ const monserat= Montserrat({
 
 export default function AdvertsolutionLink() {
   return (
-    <div className={`${style.solutionimg}`}>
-      <div className='ml-20 pt-12 lg:w-10'>
-      <p className={`text-white font-bold lg:w-[36rem] mt-28 text-2xl `}>Our Solutions</p>
-      <p className='text-white mt-3 lg:w-[42rem] text-lg'>We are passionate about crafting unique and compelling advertisements that captivate your target audience and drive results.</p>
+    <div className={`${style.solutionimg} `}>
+      <div className='px-10 pt-12 '>
+      <p className={`text-white font-bold mt-28 text:lg lg:text-2xl `}>Our Solutions</p>
+      <p className='text-white mt-3   text-sm lg:text-lg'>We are passionate about crafting unique and compelling advertisements that <br /> captivate your target audience and drive results.</p>
       </div>
       
     </div>

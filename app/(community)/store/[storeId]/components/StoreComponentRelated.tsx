@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import { Link } from 'lucide-react';
 import Image from 'next/image'
 import { StoreRelate } from "@/lib/data";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
@@ -36,13 +37,15 @@ export default function StoreComponentRelated() {
                 />
               </button>
 
-              <aside
+              <main
                 id="store"
                 className="lg:flex gap-6 overflow-x-auto no-scrollbar ">
+                  {/* <Link href={`/store/storeComponent`}> */}
                 {StoreRelate.map((storesrelate) => (
                   <div
                     className="shadow-lg min-w-[17.188rem] h-auto"
                     key={storesrelate.id}>
+                      
                     <Image
                       src={storesrelate.image}
                       alt=""
@@ -68,9 +71,12 @@ export default function StoreComponentRelated() {
                         </div>
                       </div>
                     </div>
+                   
                   </div>
+                  
                 ))}
-              </aside>
+                 {/* </Link> */}
+              </main>
             </div>
           </div>
         </div>
