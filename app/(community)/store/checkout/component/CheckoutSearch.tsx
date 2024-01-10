@@ -80,7 +80,6 @@ export default function CheckoutSearch() {
               </AccordionTrigger>
               <AccordionContent>
                 <OrderSummary />
-                <OrderSummary />
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -96,44 +95,47 @@ export default function CheckoutSearch() {
         </div>
 
         <div className="col-span-1">
-          <div className=" lg:pb-[1.25rem]  col-span-1 mt2 h-fit bg-white">
-            <div className="text-[#686868] lg:text-lg font-[600]">
-              <p className="px-2 py-2 w-[1.875]">Price Details</p>
-            </div>
-            <div className=" shadow-sm border-t border-t-gray-200">
-              <div className="lg:flex justify-between  pt-3 pb-2 px-3">
-                <p className="text-[#686868] w-[10rem  font-[400]">
-                  Price (2 items)
+            <div className=" lg:pb-[1.25rem]  col-span-1 mt-4 h-fit bg-white  px-[0.938rem]">
+              <div className="text-[#686868] lg:text-lg font-[600]">
+                <p className="px-2 py-2 w-[1.875]">Price Details</p>
+              </div>
+              <div className=" shadow-sm border-t border-t-gray-200">
+                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                  <p className="text-[#686868] w-[10rem  font-[400]">
+                    Price (2 items)
+                  </p>
+                  <p className="text-[#686868]  font-[400]">$54.00</p>
+                </div>
+                <div className="lg:flex justify-between  pt-3 pb-2  px-3">
+                  <p className="text-[#686868] w-[3.688rem] font-[400]">
+                    Discount
+                  </p>
+                  <p className="text-[#686868] font-[400]">-$4.00</p>
+                </div>
+                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                  <p className="text-[#686868] w-[10rem  font-[400]">
+                    Delivery Charges
+                  </p>
+                  <p className="text-[#686868]  font-[400]">$7.00</p>
+                </div>
+                <div className="lg:flex justify-between border  px-3 border-gray-200  pt-4 pb-4">
+                  <p className="text-[#686868]  font-[600]">Total Amount</p>
+                  <p className="text-[#686868] lg:text-lg font-[600]">$57.00</p>
+                </div>
+                <p className="text-[#FD6906] lg:text-sm px-3 py-3 font-[500]">
+                  You will save $4.00 on this order
                 </p>
-                <p className="text-[#686868]  font-[400]">$54.00</p>
               </div>
-              <div className="lg:flex justify-between  pt-3 pb-2  px-3">
-                <p className="text-[#686868] w-[3.688rem] font-[400]">
-                  Discount
-                </p>
-                <p className="text-[#686868] font-[400]">-$4.00</p>
-              </div>
-              <div className="lg:flex gap-24  pt-3 pb-2  px-3">
-                <p className="text-[#686868]  font-[400]">Delivery Charges</p>
-                <p className="text-[#686868] lg:text-lg font-[400]">$7.00</p>
-              </div>
-              <div className="lg:flex justify-between border  px-3 border-gray-200  pt-4 pb-4">
-                <p className="text-[#686868]  font-[600]">Total Amount</p>
-                <p className="text-[#686868] lg:text-lg font-[600]">$57.00</p>
-              </div>
-              <p className="text-[#FD6906] lg:text-sm px-3 py-3 font-[500]">
-                You will save $4.00 on this order
-              </p>
-              
+              {/* <Button className="px-5 py-7 w-full">Proceed to Checkout</Button> */}
             </div>
-              
-          </div>
 
-          <div className="flex mt-4 px-5 space-x-2">
-            <MdLocalPolice className="w-6 h-6 mt1" />
-            <p className="text-[10px]">Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+            <div className="flex mt-4 px-5 space-x-2">
+              <MdLocalPolice className="w-6 h-6 mt1" />
+              <p className="text-[10px]">
+                Safe and Secure Payments. Easy returns. 100% Authentic products.
+              </p>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   );

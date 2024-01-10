@@ -74,19 +74,18 @@ import fash4 from "@/public/fas4.png";
 import fash8 from "@/public/fash8.png";
 import fash9 from "@/public/fash9.png";
 import image54 from "@/public/image 54.png";
-import rectan from "@/public/Rectangle 210.png"
-import price from '@/public/Price.png'
-import Rectangle211 from '@/public/Rectangle 211.png'
-import Rectangle212 from '@/public/Rectangle 212.png'
+import rectan from "@/public/Rectangle 210.png";
+import price from "@/public/Price.png";
+import Rectangle211 from "@/public/Rectangle 211.png";
+import Rectangle212 from "@/public/Rectangle 212.png";
 import bonnet from "@/public/fashionbonnet.png";
 import bag from "@/public/bagg.png";
 import smile from "@/public/smile.png";
-import handfan from '@/public/handfan.png'
+import handfan from "@/public/handfan.png";
 import rectanglebag from "@/public/Rectangle bag.png";
 import rectangleband from "@/public/Rectangle band.png";
 import rectanglefan from "@/public/Rectangle fan.png";
 import rectanglefeet from "@/public/Rectangle feet.png";
-
 
 import rect from "@/public/rect.png";
 import Rectangle233 from "@/public/Rectangle 233.png";
@@ -99,7 +98,6 @@ import splash from "@/public/splash.png";
 import special1 from "@/public/special 1.png";
 import special2 from "@/public/special 2.png";
 import special3 from "@/public/special 3.png";
-
 
 export const CATEGORIES = [
   {
@@ -801,18 +799,41 @@ export const FEATURE = [
 export const AdvertSolutions = [
   {
     id: "1",
-    image1: live,
-    image2: search,
-    image3: local,
+    image: live,
+    text: "Branded Content",
+    color: 'green'
   },
-];
-
-export const Advertsolution2 = [
   {
-    id: "1",
+    id: "2",
+    image: search,
+    text: "Insight",
+    color: 'red'
+  },
+
+  {
+    id: "3",
+    image: local,
+    text: "Distribution",
+    color: 'green'
+  },
+
+  {
+    id: "4",
     image: teacher,
-    image2: trending,
-    image3: movie,
+    text: "Training",
+    color: 'red'
+  },
+  {
+    id: "4",
+    image: trending,
+    text: "Accelerator Programs",
+    color: 'green'
+  },
+  {
+    id: "6",
+    image: movie,
+    text: "Creative Studio",
+    color: 'red'
   },
 ];
 
@@ -1127,16 +1148,6 @@ export const StoreHomes = [
 ];
 
 export const storeHomes2 = [
-  // {
-  //   id:'1',
-  //   image:mask,
-  //   // title:"Palm wine topper",
-  //   // description:'Art & collectibles',
-  //   // price:'£36.00',
-  //   // image1:review,
-  //   // image2:Cta
-
-  // },
   {
     id: "1",
     image: bonnet,
@@ -1167,7 +1178,7 @@ export const storeHomes2 = [
   },
   {
     id: "4",
-    image:handfan,
+    image: handfan,
     title: "Palm wine topper",
     description: "Art & collectibles",
     price: "£36.00",
@@ -1321,36 +1332,41 @@ export const STORES = [
     image3: rectan,
     // image4: fash3,
     // content:""
-    content:"Ankara Alice band/ African Headband/ African Head wear/ Ankara Headwear",
-    image4:review,
-    rate:"4,917 ratings",
-    price:"$14.00",
-    price1:"-50% Off",
-    image5:price,
-    image6:Rectangle211,
-    image7:Rectangle212,
-    deliveryDate:'Delivery by 12 Mar, Sunday',
-    deliveryTime:'(if ordered before 1:48 PM)',
+    content:
+      "Ankara Alice band/ African Headband/ African Head wear/ Ankara Headwear",
+    image4: review,
+    rate: "4,917 ratings",
+    price: "$14.00",
+    price1: "-50% Off",
+    image5: price,
+    image6: Rectangle211,
+    image7: Rectangle212,
+    deliveryDate: "Delivery by 12 Mar, Sunday",
+    deliveryTime: "(if ordered before 1:48 PM)",
     image8: Cta,
-
-},
+  },
 ];
- export const StoresDiscription =[
+export const StoresDiscription = [
   {
-    id:'1',
-    description:"Description",
-    specificate:'Specifications',
-    review:'Reviews',
-    questions:"Questions & Answers",
-    content:"Let your hair do the talking with our very stylish Ankara Alice band.",
-    content1:"The band is designed to fit over the head and hold long hair away from the face, but let it hang freely at the back.",
-    content2:"Adds a new level of fun and fashion to so many standard styles, from casual messy long hair from to polished up-styles and everything in between",
-    content3:" Made of the Ankara fabric with an elastic band to hold the hair tight and keep your way away from your face all day.",
-    content4:" If you’re someone whose hairline always gets soaked with sweat during workouts, then wearing a headband is perfect for you."
-  }
- ]
+    id: "1",
+    description: "Description",
+    specificate: "Specifications",
+    review: "Reviews",
+    questions: "Questions & Answers",
+    content:
+      "Let your hair do the talking with our very stylish Ankara Alice band.",
+    content1:
+      "The band is designed to fit over the head and hold long hair away from the face, but let it hang freely at the back.",
+    content2:
+      "Adds a new level of fun and fashion to so many standard styles, from casual messy long hair from to polished up-styles and everything in between",
+    content3:
+      " Made of the Ankara fabric with an elastic band to hold the hair tight and keep your way away from your face all day.",
+    content4:
+      " If you’re someone whose hairline always gets soaked with sweat during workouts, then wearing a headband is perfect for you.",
+  },
+];
 
- export const StoreRelate = [
+export const StoreRelate = [
   {
     id: "1",
     image: rectanglefan,
@@ -1399,7 +1415,7 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
-  
+
   {
     id: "3",
     image: rectanglefeet,
@@ -1456,7 +1472,7 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
-  
+
   {
     id: "3",
     image: rectanglefeet,
@@ -1495,7 +1511,7 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
-  
+
   {
     id: "3",
     image: rectanglefeet,
@@ -1525,38 +1541,53 @@ export const STORES = [
     price1: "$115.00",
     image2: Cta,
   },
+];
 
-]
-
-export const ShoppingBasket=[
- 
+export const ShoppingBasket = [
   {
-    id:'1',
-    image:bonnet,
-    product1:'Ankara Alice band - Ankara Headwear',
-    size:'Size: L',
-    color:'Color: Green',
-    price1:'$14.00',
-   
-    subtotal:'$14.00',
-    remove:"Remove",
-
+    id: "1",
+    image: bonnet,
+    product1: "Ankara Alice band - Ankara Headwear",
+    size: "Size: L",
+    color: "Color: Green",
+    price1: "$14.00",
+    subtotal: "$14.00",
+    remove: "Remove",
   },
   {
-    id:'2',
-    image:rectanglefeet,
-    product1:'African Beaded Neckpiece',
-    size:'Size: Free',
-    color:'Color: Multi',
-    price1:'$18.00',
-    subtotal:'$36.00',
-    remove:"Remove",
-  }
+    id: "2",
+    image: rectanglefeet,
+    product1: "African Beaded Neckpiece",
+    size: "Size: Free",
+    color: "Color: Multi",
+    price1: "$18.00",
+    subtotal: "$36.00",
+    remove: "Remove",
+  },
+];
 
-]
-
-// export const ShoppingPriceDetails=[
-//   {
-//     id:'1'
-//   }
-// ]
+export const orderSummary= [
+  {
+    id: "1",
+    image: bonnet,
+    product1: "Ankara Alice band - Ankara Headwear",
+    size: "Size: L",
+    color: "Color: Green",
+    add:'X 1',
+    price1: "$14.00",
+    delivery :'Delivery by Sat Mar 11'
+  },
+  
+  {
+    id: "2",
+    image: rectanglefeet,
+    product1: "Ankara Alice band - Ankara Headwear",
+    size: "Size: L",
+    color: "Color: Green",
+    add:'X 2',
+    price1: "$14.00",
+    delivery :'Delivery by Sat Mar 11'
+  },
+  
+  ];
+  

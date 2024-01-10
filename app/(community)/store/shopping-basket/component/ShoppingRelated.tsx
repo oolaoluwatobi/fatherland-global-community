@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 
 import React from "react";
 import Image from "next/image";
@@ -22,13 +23,13 @@ export default function ShoppingRelated() {
           <p className=" lg:text-2xl font-[700]">Related Products</p>
 
           <div className=" relative mt-5 shadow-xl shado">
-            <button className="absolute left-2 top-0 bottom-0 my-auto">
+            <button className="absolute left-2 top-0 bottom-0 my-auto hidden lg:block">
               <BsArrowLeftSquareFill
                 onClick={() => storehomes()}
                 className="w-12 h-12 text-primary"
               />
             </button>
-            <button className="absolute right-12 top-0 bottom-0 my-auto">
+            <button className="absolute right-12 top-0 bottom-0 my-auto hidden lg:block">
               <BsArrowRightSquareFill
                 className="w-12 h-12 text-primary "
                 onClick={storehomess}
@@ -37,11 +38,12 @@ export default function ShoppingRelated() {
 
             <aside
               id="store"
-              className="flex gap-6 overflow-x-auto no-scrollbar ">
+              className="lg:flex gap-6 overflow-x-auto no-scrollbar ">
               {StoreRelate.map((storesrelate, i) => (
                 <div
-                  className="shadow-lg min-w-[17.188rem] h-auto"
+                  className="shadow-md min-w-[17.188rem] h-auto mx-auto container"
                   key={storesrelate.id}>
+                    {/* <Link href={`${}`}> */}
                   <Image
                     src={storesrelate.image}
                     alt=""
@@ -63,6 +65,7 @@ export default function ShoppingRelated() {
                       </div>
                     </div>
                   </div>
+                  {/* </Link> */}
                 </div>
               ))}
             </aside>
