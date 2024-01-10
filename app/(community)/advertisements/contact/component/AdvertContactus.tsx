@@ -15,8 +15,8 @@ const monserat = Montserrat({
 export default function AdvertContactus() {
   return (
     <div className='max-w-[90rem]'>
-              <div className="bg-[#2B3449] mx-auto mb-[3.813rem] lg:px-[2rem]">
-        <p className="text-white text-[40px] font-bold leading-[56px] break-words mx-auto container ps-[5rem] py-[6.5rem]">
+              <div className="bg-[#2B3449] mx-auto mb-12 lg:px-[2rem]">
+        <p className="text-white lg:text-[40px] text-[30px] font-bold leading-[56px] break-words mx-auto container ps-[5rem] py-[6.5rem]">
           Contact Us
         </p>
 

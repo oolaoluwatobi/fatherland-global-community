@@ -43,8 +43,8 @@ export default function Shopping() {
             className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
         :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
           />
-          <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
-          <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+          <HeartIcon className="text-black  lg:h[3rem] lg:w[3rem] w-[1.5rem] h-[1.5rem] lg:ml-6 mt-10" />
+          <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
         </div>
         <div className="lg:flex justify-between px-10 mt-10">
           <p className="text-[#b3b0b0] lg:text-lg  font-[500]  ">
@@ -59,68 +59,50 @@ export default function Shopping() {
         <h1 className="lg:text-3xl text-xl px-10 font-[700] mt-[2rem]">
           Shopping Basket
         </h1>
-        <div className="lg:grid grid-cols-4 px-10 gap-6 mx-auto max-w-[97.813rem]  w-full">
-          <div className="  mt-12  shadow-md col-span-3">
-            <div className="lg:flex gap5 bg-orange100 py-2">
-           
-              
+        <div className="lg:grid grid-cols-7 px-10 gap-4 bg-[#F8FAFE] mx-auto max-w-[97.813rem] mt-10 w-full ">
+          <div className=" shadow-md col-span-5">
+            <div className="lg:flex ">
               <ShoppingBasketTable />
             </div>
 
-            <div className="w-[59.25rem bg-red-200 w-full">
-              {/* {ShoppingBasket.map((shopping,i) => (
-                <div key={i} className="lg:flex gap-5 shadowlg -mt-4  ml-4">
-                  <Image
-                    src={shopping.image!!}
-                    alt=""
-                    className="w-[7.5rem] h[9rem] mt-3  pt-3 object-cover "
-                  />
+            
+          </div>
 
-                  <div className="pb-5 ml-4 mt-2">
-                    <p className="lg:text-lg mt-5 text-[#232323] w-[12.5rem] leading-7 font-[700]">
-                      {shopping.product1}
-                    </p>
-                    <p className="mt-3 font-[600] text-[#686868]">
-                      {shopping.size}
-                    </p>
-                    <p className="mt-2 font-[600]  text-[#686868]">
-                      {shopping.color}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-[#686868] font-[600] ml-3 pt-7 ">
-                      {shopping.price1}
-                    </p>
-                  </div>
-
-                  <div className="lg:flex gap-5 ml-14 pt-10">
-                    <p>
-                      <button className="px-[4px] py-[4px] " onClick={plus}>
-                        <PlusIcon />
-                      </button>
-                      <span className="px-[1.313rem] text-base font-normal leading-5">
-                        {count}
-                      </span>
-                      <button className="px-[4px] py-[4px]" onClick={minus}>
-                        <MinusIcon />
-                      </button>
-                    </p>
-                  </div>
-                  <div>
-                    <p className="ml-20 mt-10 font-[600] text-[#686868]">
-                      {shopping.subtotal}
-                    </p>
-                  </div>
-                  <div>
-                    {" "}
-                    <p className="ml-20 mt-10">{shopping.remove}</p>
-                  </div>
+          <div className="col-span-2 ">
+            <div className=" lg:pb-[1.25rem]  mt4 h-fit bg-white  px-[0.938rem]">
+              <div className="text-[#686868] lg:text-lg font-[600]">
+                <p className="px-2 py-2 w-[1.875]">Price Details</p>
+              </div>
+              <div className=" shadow-sm border-t border-t-gray-200">
+                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                  <p className="text-[#686868] w-[10rem  font-[400]">
+                    Price (2 items)
+                  </p>
+                  <p className="text-[#686868]  font-[400]">$54.00</p>
                 </div>
-              ))} */}
-              
+                <div className="lg:flex justify-between  pt-3 pb-2  px-3">
+                  <p className="text-[#686868] w-[3.688rem] font-[400]">
+                    Discount
+                  </p>
+                  <p className="text-[#686868] font-[400]">-$4.00</p>
+                </div>
+                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                  <p className="text-[#686868] w-[10rem  font-[400]">
+                    Delivery Charges
+                  </p>
+                  <p className="text-[#686868]  font-[400]">$7.00</p>
+                </div>
+                <div className="lg:flex justify-between border  px-3 border-gray-200  pt-4 pb-4">
+                  <p className="text-[#686868]  font-[600]">Total Amount</p>
+                  <p className="text-[#686868] lg:text-lg font-[600]">$57.00</p>
+                </div>
+                <p className="text-[#FD6906] lg:text-sm px-3 py-3 font-[500]">
+                  You will save $4.00 on this order
+                </p>
+              </div>
+              <Button className="px-5 py-7 w-full">Proceed to Checkout</Button>
             </div>
           </div>
-          
         </div>
         <div className="mt-24 ">
           <div className="flex gap-10">

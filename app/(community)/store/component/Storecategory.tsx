@@ -68,15 +68,15 @@ export default function Storecategory() {
           <p className="font-[600] text-[#14202D]"> Popular Gifts & Toy</p>
         </div>
       </div>
-      <main className="lg:w-full w-full containr lg:grid">
-        <div  className=" pt-6 lg:flex flex gap[40rem] justify-between py-5 shadow-lg mt-5 mb-5">
-          <h1 className="ml-14 text-2xl font-bold">Hot Deals</h1>
-          <p className="mr-5 text-lg text-gray-600">see all</p>
+      <main className=" w-full containr lg:grid">
+        <div  className=" pt-6 lg:flex flex gap[40rem] lg:px-12 px-6 justify-between py-5 shadow-lg mt-5 mb-5">
+          <h1 className="  text-2xl font-bold">Hot Deals</h1>
+          <p className=" text-lg text-gray-600">see all</p>
         </div>
         <div className="lg:grid grid-cols-3 gap-4 object-cover w-full mx-auto cursor-pointer  ">
           {StorehotDeal.map((store, i) => (
             <div key={i} className=" shadow pb-7  ml-5  hover:border-secondary active:border active:border-primary hover:border ">
-              <Image src={store.image!!} alt="" className="lg:w-full" />
+              <Image src={store.image!!} alt="" className="w-full" />
               <div className="ml-4">
                 <p className="font-[500] text-lg w-[18rem] pt-4">
                   {store.content}

@@ -80,7 +80,6 @@ export default function CheckoutSearch() {
               </AccordionTrigger>
               <AccordionContent>
                 <OrderSummary />
-                <OrderSummary />
               </AccordionContent>
             </AccordionItem>
           </Accordion>
