@@ -44,7 +44,7 @@ import Group37016 from "@/public/Group 37016.png";
 import Rectanglell from "@/public/Rectanglell.png";
 import asdfghjkl from "@/public/asdfghjkl.png";
 import box from "@/public/box.png";
-import Link from "@/public/Link.png";
+import Linkk from "@/public/Link.png";
 import nove from "@/public/nove.png";
 import abigail from "@/public/abigail.png";
 import africanprint from "@/public/africanprint.png";
@@ -801,39 +801,39 @@ export const AdvertSolutions = [
     id: "1",
     image: live,
     text: "Branded Content",
-    color: 'green'
+    color: "green",
   },
   {
     id: "2",
     image: search,
     text: "Insight",
-    color: 'red'
+    color: "red",
   },
 
   {
     id: "3",
     image: local,
     text: "Distribution",
-    color: 'green'
+    color: "green",
   },
 
   {
     id: "4",
     image: teacher,
     text: "Training",
-    color: 'red'
+    color: "red",
   },
   {
     id: "4",
     image: trending,
     text: "Accelerator Programs",
-    color: 'green'
+    color: "green",
   },
   {
     id: "6",
     image: movie,
     text: "Creative Studio",
-    color: 'red'
+    color: "red",
   },
 ];
 
@@ -933,16 +933,18 @@ export const StorehotDeal = [
     content: "Raffia Handbag(Box), Woven Shoulder Bag, Summer Bag",
     content1: "Jewelry Bags & Accessories",
     price: "$11.00",
+    discount: "-20%`",
     price1: "$8.80",
   },
 
   {
     id: "2",
-    image: Link,
+    image: Linkk,
     content: "Baba Onilu",
     content1: "Art & Collectibles",
     content2: "",
     price: "$200.00",
+    // discount: "-20%`",
     price1: "$160.00",
   },
 
@@ -952,6 +954,7 @@ export const StorehotDeal = [
     content: "African Print",
     content1: "Art & Collectibles",
     content2: "",
+    discount: "-20%`",
     price1: "$16.00",
   },
   {
@@ -961,6 +964,7 @@ export const StorehotDeal = [
     content1: "Tunde,Books & Magazines",
     content2: "",
     price: "$6.00",
+    // discount: "-20%`",
     price1: "$4.80",
   },
   {
@@ -969,6 +973,7 @@ export const StorehotDeal = [
     content: "",
     content1: "Books & Magazines Ebooks",
     content2: "Short Stories (Ebooks)",
+    // discount: "-20%`",
     price1: "$2.00",
   },
   {
@@ -976,6 +981,7 @@ export const StorehotDeal = [
     image: ace1,
     content: "Ace",
     content1: "Music & Entertainment",
+    discount: "-20%`",
     price1: "$4.00",
   },
 ];
@@ -1241,18 +1247,18 @@ export const Affrocategories = [
     image: fash1,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    discount: '-20%',
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
   {
     id: "2",
     image: fash2,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
 
   {
@@ -1260,9 +1266,9 @@ export const Affrocategories = [
     image: fash3,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    discount: '-20%',
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
 
   {
@@ -1271,8 +1277,7 @@ export const Affrocategories = [
     title: "Palm wine topper",
     description: "Art & collectibles",
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
 
   {
@@ -1280,9 +1285,9 @@ export const Affrocategories = [
     image: fash4,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    discount: '-20%',
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
 
   {
@@ -1291,17 +1296,16 @@ export const Affrocategories = [
     title: "Palm wine topper",
     description: "Art & collectibles",
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
   {
     id: "7",
     image: rectange5,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    discount: '-20%',
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
   {
     id: "8",
@@ -1309,17 +1313,16 @@ export const Affrocategories = [
     title: "Palm wine topper",
     description: "Art & collectibles",
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
   {
     id: "9",
     image: fash9,
     title: "Palm wine topper",
     description: "Art & collectibles",
+    discount: '-20%',
     price: "£36.00",
-    image1: review,
-    image2: Cta,
+    
   },
 ];
 
@@ -1330,8 +1333,44 @@ export const STORES = [
     image1: fash4,
     image2: image54,
     image3: rectan,
-    // image4: fash3,
-    // content:""
+    content:
+      "Ankara Alice band/ African Headband/ African Head wear/ Ankara Headwear",
+    image4: review,
+    rate: "4,917 ratings",
+    price: "$14.00",
+    price1: "-50% Off",
+    image5: price,
+    image6: Rectangle211,
+    image7: Rectangle212,
+    deliveryDate: "Delivery by 12 Mar, Sunday",
+    deliveryTime: "(if ordered before 1:48 PM)",
+    image8: Cta,
+  },
+  {
+    id: "2",
+    image: bonnet,
+    image1: fash4,
+    image2: image54,
+    image3: rectan,
+    content:
+      "Ankara Alice band/ African Headband/ African Head wear/ Ankara Headwear",
+    image4: review,
+    rate: "4,917 ratings",
+    price: "$14.00",
+    price1: "-50% Off",
+    image5: price,
+    image6: Rectangle211,
+    image7: Rectangle212,
+    deliveryDate: "Delivery by 12 Mar, Sunday",
+    deliveryTime: "(if ordered before 1:48 PM)",
+    image8: Cta,
+  },
+  {
+    id: "3",
+    image: bonnet,
+    image1: fash4,
+    image2: image54,
+    image3: rectan,
     content:
       "Ankara Alice band/ African Headband/ African Head wear/ Ankara Headwear",
     image4: review,
@@ -1547,47 +1586,45 @@ export const ShoppingBasket = [
   {
     id: "1",
     image: bonnet,
-    product1: "Ankara Alice band - Ankara Headwear",
+    productTitle: "Ankara Alice band - Ankara Headwear",
     size: "Size: L",
     color: "Color: Green",
-    price1: "$14.00",
+    price: "$14.00",
     subtotal: "$14.00",
     remove: "Remove",
   },
   {
     id: "2",
     image: rectanglefeet,
-    product1: "African Beaded Neckpiece",
+    productTitle: "African Beaded Neckpiece",
     size: "Size: Free",
     color: "Color: Multi",
-    price1: "$18.00",
+    price: "$18.00",
     subtotal: "$36.00",
     remove: "Remove",
   },
 ];
 
-export const orderSummary= [
+export const orderSummary = [
   {
     id: "1",
     image: bonnet,
-    product1: "Ankara Alice band - Ankara Headwear",
+    productTitle: "Ankara Alice band - Ankara Headwear",
     size: "Size: L",
     color: "Color: Green",
-    add:'X 1',
+    add: "X 1",
     price1: "$14.00",
-    delivery :'Delivery by Sat Mar 11'
+    delivery: "Delivery by Sat Mar 11",
   },
-  
+
   {
     id: "2",
     image: rectanglefeet,
     product1: "Ankara Alice band - Ankara Headwear",
     size: "Size: L",
     color: "Color: Green",
-    add:'X 2',
+    add: "X 2",
     price1: "$14.00",
-    delivery :'Delivery by Sat Mar 11'
+    delivery: "Delivery by Sat Mar 11",
   },
-  
-  ];
-  
+];

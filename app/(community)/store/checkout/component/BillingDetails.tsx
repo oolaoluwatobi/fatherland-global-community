@@ -8,18 +8,10 @@ import CheckoutSummary from "./CheckoutSummary";
 
 export default function BillingDetails() {
   return (
-    // <div className="mx-auto lg:w-full max-w-[97.813rem] bg-red-100 ">
-    //   <main className="lg:grid grid-cols-4 gap-6 px-10 h-fit mx-auto max-w-[97.813rem]   w-full ">
+    
         <div className=" mt[2.5rem] ml7 col-span-3  ">
           <div className="mb-6 pb-10 bg-[#FFFFFF] shadow-md ">
-            {/* <div className="bg-[#FF88001A] flex gap-2  py-[1rem] items-baseline">
-              <p className="bg-orange-600 rounded-full px-2  aspect-square flex place-items-center ml-[1.5rem] lg:text-center text-[#fff] font-[600]">
-                1
-              </p>
-              <p className=" font-[600] text-[#000] lg:text-xl text-sm">
-                Billing Details
-              </p>
-            </div> */}
+        
             <div className="px-10">
               <div className="w-full lg:mt[1.875rem] mt4 lg:flex lg:gap-[1.875rem]">
                 <div className=" w-full">

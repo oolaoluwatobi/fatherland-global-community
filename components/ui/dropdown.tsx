@@ -37,10 +37,10 @@ const Dropdown = () => {
       href: "/communityresources",
       label: "Community Resources",
     },
-    {
-      href: "/corporation",
-      label: "Corporation",
-    },
+    // {
+    //   href: "/corporation",
+    //   label: "Corporation",
+    // },
     {
       href: "/press",
       label: "Press",

@@ -10,7 +10,7 @@ import Corporate from './[pressId]/components/Corporate';
 // const vamp = <Image src= {Blog5} alt="" />
 export default function PressPage() {
   return (
-    <section className='max-w-[90rem] bg-[#F5F5F5] pb-32 mx-auto'>
+    <section className='max-w-[90rem] bg-[#FFF] pb-32 mx-auto'>
         <Mpress />
         <Education />
         <Realestate />

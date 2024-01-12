@@ -33,7 +33,7 @@ export default function Education() {
   
   }]
     return (
-      <div className='mx-auto max-w-[90rem]'>
+      <div className='mx-auto max-w-[80rem]'>
       
       <div className=' mx-auto container'>
          <div className='mx-auto'>
@@ -49,7 +49,7 @@ export default function Education() {
                         {educt.text}
                       </div>
                       <div  className='lg:flex justifyaround items-center px5 '>
-                      <Link href={`/press/${educt.id}`} className='lg:pl-[2.5rem] pl-[0.5rem] lg:text-base text-xs mt-3 mb-3 font-[600] text inline text-amber-500 underline decoration-orange-40'>{educt.goto}</Link>
+                      <Link href={`/press/${educt.id}`} className='lg:pl-7 pl-[0.5rem] lg:text-base text-xs mt-3 mb-3 font-[600] text inline text-amber-500 underline decoration-orange-40'>{educt.goto}</Link>
                       <div className='lg:ml-14 ml-5 lg:text-xs md:font-[00] text-[0.6rem] flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {educt.date}</div>
                       </div>
                       </div>

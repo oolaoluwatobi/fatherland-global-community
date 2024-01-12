@@ -11,15 +11,18 @@ import {
   MdQueueMusic,
 } from "react-icons/md";
 import Image from "next/image";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
+import ProductCardHotDeals from "./ProductCardHotDeals";
+import Link from "next/link";
 // import offerbanner from '@/public/OFFER-BANNER.png.png'
 
 export default function Storecategory() {
   return (
-    <div className={`${styles.griddisplay} grid lg:grid-cols-4 gap-3 mx-auto max-w-[97.813rem]   `}>
-      <div className="hidden xl:block ml-4 h-fit pb-5 grid-cols-1  pl-[1.125rem] shadow-lg mt-10 hover:border-primary">
-        <div className="flex gap-2  pt-4 h-14 border-b-2 ml[1.125rem]">
-          <HamburgerMenuIcon className="pt-1 font-bold h-[1.5rem] w-[1.5rem]" />
+    <div
+      className={`${styles.griddisplay} grid lg:grid-cols-4 gap-7 mx-auto max-w-[97.813rem] mt-10 bg-[#fff] `}>
+      <div className="hidden xl:block ml-4 h-fit pb-5 grid-cols-1  px-[1.125rem] shadow-lg  hover:border-primary">
+        <div className="flex gap-2  pt-4 h-14 border-b-2 ">
+          <HamburgerMenuIcon className=" font-bold h-[1.5rem] w-[1.5rem]" />
           <h1 className="text-xl ml-3 font-bold text-gray-800">Categories</h1>
         </div>
 
@@ -68,29 +71,16 @@ export default function Storecategory() {
           <p className="font-[600] text-[#14202D]"> Popular Gifts & Toy</p>
         </div>
       </div>
-      <main className=" w-full containr lg:grid">
-        <div  className=" pt-6 lg:flex flex gap[40rem] lg:px-12 px-6 justify-between py-5 shadow-lg mt-5 mb-5">
-          <h1 className="  text-2xl font-bold">Hot Deals</h1>
+      <main className=" w-full lg:grid mx-auto container">
+        <div className=" pt-6 lg:flex flex lg:px-12 px-6 justify-between py-5 shadow-md mb-5">
+          <h1 className="  lg:text-2xl text-lg font-bold">Hot Deals</h1>
           <p className=" text-lg text-gray-600">see all</p>
         </div>
-        <div className="lg:grid grid-cols-3 gap-4 object-cover w-full mx-auto cursor-pointer  ">
+        <div className="lg:grid grid-cols-3 gap-6 space-y-4 object-cover w-full mx-auto cursor-pointer  ">
           {StorehotDeal.map((store, i) => (
-            <div key={i} className=" shadow pb-7  ml-5  hover:border-secondary active:border active:border-primary hover:border ">
-              <Image src={store.image!!} alt="" className="w-full" />
-              <div className="ml-4">
-                <p className="font-[500] text-lg w-[18rem] pt-4">
-                  {store.content}
-                </p>
-                <p className="text-gray-400  lg:text-lg pt-1">
-                  {store.content1}
-                </p>
-                <p className="pt-1">{store.content2}</p>
-                <div className="lg:flex gap-2">
-                  <p className="">{store.price}</p>
-                  <p className="text-orange-400">{store.price1}</p>
-                </div>
-              </div>
-            </div>
+            <Link href={`/store/${store.id}`}>
+            <ProductCardHotDeals key={i} {...store}  />
+            </Link>
           ))}
         </div>
       </main>

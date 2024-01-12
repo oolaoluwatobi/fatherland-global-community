@@ -7,6 +7,7 @@ import mask from "@/public/categorie banner.png";
 import { storeHomes2 } from "@/lib/data";
 import Link from "next/link";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
+import ProductCard from "../clothing/component/ProductCard";
 
 export default function StoreHome({ params }: { params: { storeId: string } }) {
   const storehomes = () => {
@@ -52,33 +53,36 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
             />
           </button>
 
-          <aside id="store" className="lg:flex gap-6 overflow-x-auto no-scrollbar">
-            {StoreHomes.map((discoverhome) => ( 
+          <aside
+            id="store"
+            className="lg:flex gap-6 overflow-x-auto no-scrollbar">
+            {StoreHomes.map((discoverhome) => (
               <div
                 className="shadow-lg min-w-[17.188rem]"
                 key={discoverhome.id}>
-                  <Link href={`/store/${discoverhome.id}`} >
-                <Image
-                  src={discoverhome.image}
-                  alt=""
-                  className="lg:w-[17.188rem] mt-4 bg-"
-                />
-                <div className="p-5 mt-4">
-                  <p className="font-[800] text-lg">{discoverhome.title}</p>
-                  <p className="font-normal text-[#686868] pt-2">
-                    {discoverhome.description}
-                  </p>
+                <Link href={`/store/${discoverhome.id}`}>
+                <ProductCard {...discoverhome} />
+                  {/* <Image
+                    src={discoverhome.image}
+                    alt=""
+                    className="lg:w-[17.188rem] mt-4 bg-"
+                  />
+                  <div className="p-5 mt-4">
+                    <p className="font-[800] text-lg">{discoverhome.title}</p>
+                    <p className="font-normal text-[#686868] pt-2">
+                      {discoverhome.description}
+                    </p>
 
-                  <div className="lg:flex justify-between ">
-                    <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
-                      {discoverhome.price}
-                      <p className="font-normal">{discoverhome.price1}</p>
+                    <div className="lg:flex justify-between ">
+                      <div className="text-[#050A1E] font-[800] mb-5 pt-4 ">
+                        {discoverhome.price}
+                        <p className="font-normal">{discoverhome.price1}</p>
+                      </div>
+                      <div>
+                        <Image src={discoverhome.image2} alt="" className="" />
+                      </div>
                     </div>
-                    <div>
-                      <Image src={discoverhome.image2} alt="" className="" />
-                    </div>
-                  </div>
-                </div>
+                  </div> */}
                 </Link>
               </div>
             ))}
@@ -98,15 +102,16 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
               onClick={containers}
             />
           </button>
-            <div id="storehomes"
+          <div
+            id="storehomes"
             className="lg:flex gap-6 overflow-x-auto no-scrollbar">
-              <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
-            
+            <Image src={mask} alt="" className="h-[28.188rem] w-[16.25rem]" />
+
             {storeHomes2.map((storehome2, i) => (
-              
               <div key={i} className="shadow-lg min-w-[17.188rem]  ">
-                <Link href={`/store/${storehome2.id}`} >
-                <Image
+                <Link href={`/store/${storehome2.id}`}>
+                  <ProductCard {...storehome2} />
+                  {/* <Image
                   src={storehome2.image}
                   alt=""
                   className="h-[16.5rem] lg:w-[17.125rem] w-full "
@@ -130,11 +135,11 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
                     <Image src={storehome2.image2} alt="" className="" />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 </Link>
               </div>
             ))}
-            </div>
+          </div>
         </div>
       </div>
     </div>

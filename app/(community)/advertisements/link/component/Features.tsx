@@ -11,7 +11,6 @@ export default function Features() {
          
           
              <Image src={feat.image} alt=''  className=' lg:h[3.063rem lg:w[-1.238 mb-4'/>
-             {/* <Image src={feat.image} alt=''  className=' max-h[3.063rem] max-w[1.238] '/> */}
              <Image src={feat.image1} alt=''  className=' lg:w-[83.438 lg:h-[4.688 mb-4'/>
              <Image src={feat.image2} alt=''  className=' mb-4 '/>
              <Image src={feat.image3} alt=''  className=' mb-4 '/>

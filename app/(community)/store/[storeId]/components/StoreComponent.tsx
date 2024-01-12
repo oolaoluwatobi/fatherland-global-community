@@ -20,6 +20,7 @@ import creditstore from "@/public/credit_score.png";
 import { useState } from "react";
 import Agent from "@/public/support_agent.png";
 import packagee from "@/public/package.png";
+import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 
 const imageData = [
   {
@@ -40,11 +41,28 @@ const imageData = [
   },
 ];
 
+type BasketProps = {
+  id: string;
+  image: StaticImageData;
+  title: string;
+  description?: string;
+  price: string;
+  price1?: string;
+  discount?: string;
+  color?: string;
+  size?: string;
+  quantity?: string;
+};
+
+
 export default function StoreComponent({
+  
   params,
 }: {
   params: { storeId: string };
 }) {
+  
+  const {  addProduct } = useShoppingBasketStore()
   console.log(params.storeId, "ID============================");
   const renderStore = STORES.find(
     (item) => String(item.id) === String(params.storeId)
@@ -60,21 +78,45 @@ export default function StoreComponent({
     renderStore?.image!!
   );
 
+  const handleAddToBasket = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, { id, image, title, color, price }: any) => {
+    e.preventDefault()
+    // e.stopPropagation()
+    
+    // Add to basket logic here.
+    const newProduct = {
+      id: Date.now(),
+      productId: id,
+      image,
+      title,
+      color,
+      price,
+      // size,
+      // quantity
+    }
+
+    addProduct(newProduct)
+
+
+  };
+
+
   return (
     <div className=" mx-auto mb-24 lg:mb-24  w-full max-w-[97.813rem]  ">
-      <div className="mx-auto   ">
-        <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
+      <div className="mx-auto lg:px-0 px-4  ">
+        <div className="flex justify-center items-center mx-auto w-full  max-w-[97.813rem]  ">
           <input
             type="text"
             placeholder="Search for anything"
-            className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
+            className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-lg py-2 text-xs px-4 mt-10 pl-4"
           />
           <BiSearch
             className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
         :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
           />
-          <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
-          <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+          <HeartIcon className="text-black w-[1.5rem] h-[1.5rem] lg:ml-6 mt-10" />
+          <Link href={'/store/shopping-basket'}>
+            <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
+          </Link>
         </div>
         <div className="lg:flex justify-between">
           <div className=" ml-2 mt-10 flex mb-10 ">
@@ -90,12 +132,12 @@ export default function StoreComponent({
 
             <div className="flex">
               <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
-              <p className="font-rubik   font-normal ">Clothing</p>
+              <Link href={`/store/clothing`} className="font-rubik   font-normal ">Clothing</Link>
             </div>
             <div className="flex">
               <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
               <p className="font-rubik  text-primary font-normal ">
-                Ankara Headwear
+                {renderStore?.content.slice(0, 18)}...
               </p>
             </div>
           </div>
@@ -109,47 +151,47 @@ export default function StoreComponent({
           <div className="mt-6 w-[6.5rem] lg:h-[6.5rem] ">
             <button onClick={(e) => setImg(renderStore?.image)}>
               <Image
-                className="w-[6.5rem] h-[6.5rem] rounded-lg"
+                className="w-[6.5rem] h-[6.5rem] rounded-lg object-cover"
                 src={renderStore?.image!!}
                 alt=""
               />
             </button>
             <button onClick={(e) => setImg(renderStore?.image1)}>
               <Image
-                className="w-[7rem] h-[6.5rem] rounded-lg mt-2"
+                className="w-[6.5rem] h-[6.5rem] rounded-lg object-cover"
                 src={renderStore?.image1!!}
                 alt=""
               />
             </button>
             <button onClick={(e) => setImg(renderStore?.image2)}>
               <Image
-                className="w-[7rem] h-[6.5rem] rounded-lg mt-2"
+                className="w-[6.5rem] h-[6.5rem] rounded-lg object-cover"
                 src={renderStore?.image2!!}
                 alt=""
               />
             </button>
             <button onClick={(e) => setImg(renderStore?.image3)}>
               <Image
-                className="w-[7rem] h-[7rem] rounded-lg mt-2"
+                className="w-[6.5rem] h-[6.5rem] rounded-lg object-cover"
                 src={renderStore?.image3!!}
                 alt=""
               />
             </button>
           </div>
           <Image
-            className="w-[28rem] h-[28rem]  mt-7 ml2 pl-2  rounded-lg "
+            className="w-[28rem] h-[28rem] mt-0 lg:mt-7 lg:pl-2 pl-0  rounded-lg "
             src={img!!}
             alt=""
           />
-          <div className="ml-14">
+          <div className="lg:ml-14 ml-0 mt-5 lg:mt-0">
             <div>
               <p className="lg:text-lg font-[600]">
-                By <span className="text-primary">ForeMedia</span>
+                By <span className="text-primary">ForeMediassss</span>
               </p>
               <p className="lg:text-3xl text-[12px]  mt-2 font-[700]">
                 {renderStore?.content}
               </p>
-              <div className="lg:flex gap-4 mt-3  shadow-sm pb-4">
+              <div className="lg:flex gap-4 lg:mt-3 mt-0 px shadow-sm pb-4">
                 <Image
                   src={renderStore?.image4!!}
                   alt=""
@@ -171,7 +213,7 @@ export default function StoreComponent({
               <div className="lg:flex gap-20 mt-[1.063rem] ">
                 <p>Size</p>
 
-                <Link href={`/store/storeComponent`}>
+                {/* <Link href={`/store/storeComponent`}> */}
                   <div className="lg:flex gap-[0.625rem]">
                     <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#f6f8fc] text-[#686868] lg:text-xl ">
                       S
@@ -191,7 +233,7 @@ export default function StoreComponent({
                       XXL
                     </p>
                   </div>
-                </Link>
+                {/* </Link> */}
               </div>
               <div className="lg:flex gap-20 mt-[3.063rem] ">
                 <p>Color</p>
@@ -251,7 +293,7 @@ export default function StoreComponent({
             </div>
             <div className="lg:flex gap-8 mt-14">
               <div className="">
-                <Button className=" pl- px-[4rem] py-6 bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
+                <Button onClick={e => handleAddToBasket(e, { id: renderStore?.id, image: renderStore?.image, title: renderStore?.content, price: renderStore?.price})} className=" pl- px-[4rem] py-6 bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
                   <LuShoppingCart className="text-lg h-[1.25rem] w-[1.25rem] mr-2" />{" "}
                   ADD TO CART
                 </Button>
@@ -267,8 +309,8 @@ export default function StoreComponent({
         </div>
       </div>
 
-      <div className="lg:w-full lg:max-w-[90rem] mx-auto">
-        <div className=" ml4 lg:flex bg-orange-100 pt-3 pl-8 mt-5 py-3 lg:gap-24">
+      <div className="lg:w-full lg:max-w-[97.813rem] container mx-auto">
+        <div className=" lg:flex bg-orange-100 pt-3 pl-8 mt-5 py-3 lg:gap-24">
           <Link rel="stylesheet" href="description">
             <Button variant={"navlink"} className=" font-[500] ">
               Description
@@ -290,7 +332,7 @@ export default function StoreComponent({
           </Button>
           </Link>
         </div>
-        <div>
+        <div className="">
           <p className="text-[#949191] lg:text-lg text-sm ml-5 mt-5 lg:spacing-2 lg:leading-7">
             {renderStoredescription?.content}
           </p>
@@ -309,7 +351,7 @@ export default function StoreComponent({
         </div>
         <div className="mt-24 ">
           <div className="lg:flex gap-10">
-            <div className="lg:flex gap-4 ml-20">
+            <div className="lg:flex gap-4 ml-6">
               <MdOutlineLocalShipping className="h-[2.75rem] w-[3rem]" />
               <div>
                 {" "}

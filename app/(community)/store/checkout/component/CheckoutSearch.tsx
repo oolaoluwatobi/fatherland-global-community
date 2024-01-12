@@ -14,22 +14,25 @@ import {
 } from "@/components/ui/accordion";
 import BillingDetails from "./BillingDetails";
 import OrderSummary from "./OrderSummary";
+import Link from "next/link";
 
 export default function CheckoutSearch() {
   return (
     <div className="mx-auto lg:w-full max-w-[97.813rem]  ">
-      <div className="flex justify-center items-center mx-auto px-7 lg:w-full max-w-[97.813rem]  ">
+      <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[95rem] ml-2 pr-4  ">
         <input
           type="text"
           placeholder="Search for anything"
-          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
+          className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 "
         />
         <BiSearch
           className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
         :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
         />
-        <HeartIcon className="text-black  lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-6 mt-10" />
-        <LiaShoppingCartSolid className="lg:h-[3rem] lg:w-[3rem] w-[2rem] h-[1.5rem] lg:ml-4 mt-10" />
+        <HeartIcon className="text-black w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />{" "}
+        <Link href={"/store/shopping-basket"}>
+          <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
+        </Link>
       </div>
 
       <div className="flex justify-between px-10 mt-10 border-b-2 py-3">
@@ -46,7 +49,7 @@ export default function CheckoutSearch() {
         Checkout
       </p>
 
-      <div className="lg:grid grid-cols-4 gap-6 px-10 h-fit mx-auto max-w-[97.813rem]   w-full  bg-red-50 ">
+      <div className="lg:grid grid-cols-4 gap-6 px-10 h-fit mx-auto max-w-[97.813rem] w-full ">
         <div className="col-span-3 w-full">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
@@ -95,47 +98,47 @@ export default function CheckoutSearch() {
         </div>
 
         <div className="col-span-1">
-            <div className=" lg:pb-[1.25rem]  col-span-1 mt-4 h-fit bg-white  px-[0.938rem]">
-              <div className="text-[#686868] lg:text-lg font-[600]">
-                <p className="px-2 py-2 w-[1.875]">Price Details</p>
-              </div>
-              <div className=" shadow-sm border-t border-t-gray-200">
-                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
-                  <p className="text-[#686868] w-[10rem  font-[400]">
-                    Price (2 items)
-                  </p>
-                  <p className="text-[#686868]  font-[400]">$54.00</p>
-                </div>
-                <div className="lg:flex justify-between  pt-3 pb-2  px-3">
-                  <p className="text-[#686868] w-[3.688rem] font-[400]">
-                    Discount
-                  </p>
-                  <p className="text-[#686868] font-[400]">-$4.00</p>
-                </div>
-                <div className="lg:flex justify-between  pt-3 pb-2 px-3">
-                  <p className="text-[#686868] w-[10rem  font-[400]">
-                    Delivery Charges
-                  </p>
-                  <p className="text-[#686868]  font-[400]">$7.00</p>
-                </div>
-                <div className="lg:flex justify-between border  px-3 border-gray-200  pt-4 pb-4">
-                  <p className="text-[#686868]  font-[600]">Total Amount</p>
-                  <p className="text-[#686868] lg:text-lg font-[600]">$57.00</p>
-                </div>
-                <p className="text-[#FD6906] lg:text-sm px-3 py-3 font-[500]">
-                  You will save $4.00 on this order
-                </p>
-              </div>
-              {/* <Button className="px-5 py-7 w-full">Proceed to Checkout</Button> */}
+          <div className=" lg:pb-[1.25rem]  col-span-1 mt-4 h-fit bg-white  px-[0.938rem]">
+            <div className="text-[#686868] lg:text-lg font-[600]">
+              <p className="px-2 py-2 w-[1.875]">Price Details</p>
             </div>
-
-            <div className="flex mt-4 px-5 space-x-2">
-              <MdLocalPolice className="w-6 h-6 mt1" />
-              <p className="text-[10px]">
-                Safe and Secure Payments. Easy returns. 100% Authentic products.
+            <div className=" shadow-sm border-t border-t-gray-200">
+              <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                <p className="text-[#686868] w-[10rem  font-[400]">
+                  Price (2 items)
+                </p>
+                <p className="text-[#686868]  font-[400]">$54.00</p>
+              </div>
+              <div className="lg:flex justify-between  pt-3 pb-2  px-3">
+                <p className="text-[#686868] w-[3.688rem] font-[400]">
+                  Discount
+                </p>
+                <p className="text-[#686868] font-[400]">-$4.00</p>
+              </div>
+              <div className="lg:flex justify-between  pt-3 pb-2 px-3">
+                <p className="text-[#686868] w-[10rem  font-[400]">
+                  Delivery Charges
+                </p>
+                <p className="text-[#686868]  font-[400]">$7.00</p>
+              </div>
+              <div className="lg:flex justify-between border  px-3 border-gray-200  pt-4 pb-4">
+                <p className="text-[#686868]  font-[600]">Total Amount</p>
+                <p className="text-[#686868] lg:text-lg font-[600]">$57.00</p>
+              </div>
+              <p className="text-[#FD6906] lg:text-sm px-3 py-3 font-[500]">
+                You will save $4.00 on this order
               </p>
             </div>
+            {/* <Button className="px-5 py-7 w-full">Proceed to Checkout</Button> */}
           </div>
+
+          <div className="flex mt-4 px-5 space-x-2">
+            <MdLocalPolice className="w-6 h-6 mt1" />
+            <p className="text-[10px]">
+              Safe and Secure Payments. Easy returns. 100% Authentic products.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
