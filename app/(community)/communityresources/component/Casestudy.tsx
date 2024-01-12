@@ -14,9 +14,9 @@ const monserat= Montserrat({
 export default function Casestudy() {
    
   return (
-       <div className=' mx-auto container max-w-7xl lg:mt-[3.438rem]'>
+       <div className=' mx-auto container max-w-7xl mt-0 lg:mt-[3.438rem]'>
            <div className='mx-auto '>
-               <p className=' text-2xl font-[700] lg:mt10 mx-auto text-center lg:text-start lg:ps[0.5rem]'>Case Study  </p>
+               <p className=' lg:text-2xl text-lg font-[700] lg:mt10 mx-auto text-center lg:text-start lg:ps[0.5rem]'>Case Study  </p>
                <div className='mt5 mx-auto'>
                    
                   <div className=' lg:w-full grid lg:grid-cols-3 gap-4  mx-auto '>
