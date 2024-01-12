@@ -16,16 +16,16 @@ export default function Africans() {
       ]
 
   return (
-    <div className='lg:mt-32 mt-80 mx-12'>
-      <div className={`${style.bckg} mb-20  lg:mt-10 mt-5` } >
+    <div className='lg:mt-32 mt-80 mx12 '>
+      <div className={`${style.bckg} mb-20  lg:mt-10 mt-5 px-10` } >
       {AFRICAN.map((Afro)=>(
-      <div className='px-14 lg:py-10 lg:flex flex-rows-' key={Afro.id}>
+      <div className='lg:px-14 lg:py-10 lg:flex ' key={Afro.id}>
          <div className=' mx-auto lg:ml-[3rem]'>
              <div className='text-white pt-12 font-bold lg:text-3xl text-xl '>{Afro.text}</div>
-             <div  className='text-white lg:mt-7 font-[600] lg:text-xl text-sm lg:w-[27rem] text-cover'>{Afro.content}</div>
+             <div  className='text-white lg:mt-7 font-[600] lg:text-xl text-sm lg:w-[27rem] pt-5 text-cover'>{Afro.content}</div>
           </div>
           <div>
-               <Image src={Rectangle5825} alt=""  className=''/>
+               <Image src={Rectangle5825} alt=""  className='lg:mt-0 mt-7'/>
             </div>
        </div>
       ))}

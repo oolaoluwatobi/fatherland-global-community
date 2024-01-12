@@ -33,25 +33,25 @@ export default function Shopping() {
   return (
     <div className="max-w[97.813rem] wfull mx-auto lg:mb36 sm:mb-36">
       <div className="mx-auto">
-        <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">
-          <input
-            type="text"
-            placeholder="Search for anything"
-            className="bg-white w-full mxauto lg:py-2 pl5 text-gray-200 lg:text-xl py-2 text-xs px-4 mt-10 :pl-4"
-          />
-          <BiSearch
-            className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
+      <div className="flex justify-center items-center mx-auto lg:w-full px4 max-w-[97.813rem] container ">
+        <input
+          type="text"
+          placeholder="Search for anything"
+          className="bg-white w-full mxauto lg:py-2 text-gray-200 lg:text-lg py-2 text-xs px-4 mt-10 "
+        />
+        <BiSearch
+          className="bg-black text-[#ffffff] h-8 w-8 lg:h-11 lg
         :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
-          />
-          <HeartIcon className="text-black  lg:h[3rem] lg:w[3rem] w-[1.5rem] h-[1.5rem] lg:ml-6 mt-10" />
-          <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
-        </div>
+        />
+        <HeartIcon className="text-black w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
+        <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
+      </div>
         <div className="lg:flex justify-between px-10 mt-10">
           <p className="text-[#b3b0b0] lg:text-lg  font-[500]  ">
             Shopping Basket
           </p>
 
-          <div className="flex gap-2 mr-2 mt10">
+          <div className="flex gap-2 mt10">
             <p>Back to results</p>
             <IoIosArrowForward className="mt-1" />
           </div>
@@ -64,8 +64,6 @@ export default function Shopping() {
             <div className="lg:flex ">
               <ShoppingBasketTable />
             </div>
-
-            
           </div>
 
           <div className="col-span-2 ">

@@ -32,7 +32,7 @@ export default function Corporate() {
  
  }]
    return (
-    <div className='mx-auto max-w-[90rem]'>
+    <div className='mx-auto max-w-[80rem]'>
       
     <div className=' mx-auto container'>
        <div className='mx-auto '>
@@ -48,7 +48,7 @@ export default function Corporate() {
                       {corp.text}
                     </div>
                     <div  className='lg:flex justifyaround items-center px5 '>
-                    <Link href={`/press/${corp.id}`} className='lg:pl-[2.5rem] pl-[0.5rem] mt-3 mb-3 ps2 pl6 font-[600] lg:text-base text-xs  text inline text-amber-500 underline decoration-orange-40'>{corp.goto}</Link>
+                    <Link href={`/press/${corp.id}`} className='lg:pl-7 pl-[0.5rem] mt-3 mb-3 ps2 pl6 font-[600] lg:text-base text-xs  text inline text-amber-500 underline decoration-orange-40'>{corp.goto}</Link>
                     <div className='lg:ml-14 ml-5 lg:text-xs text-[0.6rem] md:font-[00]  flex flex-row mt-4 items-center pb-3'><span className='pr-1'><GoClock/></span> {corp.date}</div>
                     </div>
                     </div>

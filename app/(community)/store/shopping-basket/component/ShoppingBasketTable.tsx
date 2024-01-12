@@ -17,8 +17,12 @@ import {
 import Image from "next/image";
 import Shopping from "./Shopping";
 import { MdOutlineDeleteForever } from "react-icons/md";
+import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 
 export default function ShoppingBasketTable() {
+  const { products, addProducts } = useShoppingBasketStore()
+  console.log(products, '[PRODUCTS________]')
+  
   const [count, setCount] = useState(0);
 
   const plus = () => {
@@ -31,7 +35,7 @@ export default function ShoppingBasketTable() {
     }
   };
   return (
-    <div className=" lg:grid grid-cols4 gap6 px10 h-fit mx-auto max-w-[97.813rem] w-full " >
+    <div className=" lg:grid grid-cols4 gap6 px10 h-fit mx-auto max-w-[97.813rem]  bg-white w-full " >
       <table className=" w-full pr-4">
         <thead className="w-full gap5 bg-orange-100 pl4">
           <tr>
@@ -45,7 +49,7 @@ export default function ShoppingBasketTable() {
           </tr>
         </thead>
         <tbody className=" bgred-500 ">
-          {ShoppingBasket.map((shopping, i) => (
+          {products.map((shopping: any, i: any) => (
             <tr key={i} className="gap5 shadowlg border-b wfull  ">
               <td className=" pl4 lg:flex justifybetween gap-[1.25rem] lg:py-4">
                 <Image
@@ -59,7 +63,7 @@ export default function ShoppingBasketTable() {
                   <div className=" px2 ">
                     <p className="lg:text-lg mt-5 text-[#232323] w-[12.5rem] leading-7 font-[700]">
                       {" "}
-                      {shopping.product1}
+                      {shopping.title}
                     </p>
                     <p className="mt-2 font-[600] text-[#686868]">
                       {" "}
@@ -72,7 +76,7 @@ export default function ShoppingBasketTable() {
                   </div>
                 </div>
               </td>
-              <td className=" text-center">{shopping.price1}</td>
+              <td className=" text-center">${shopping.price}</td>
               <td className=" text-center">
                 <div className="lg:flex">
                   <p className="text-center mx-auto">
