@@ -17,17 +17,17 @@ export default function Hero() {
       <div className="hero_backgroun pt5 bg-red-20 container">
         <div className="gri sm:grid-cols1 lg:grid-cols2 gap10  px4 sm:px6 lg:px20 py20  bg-red-20 lg:flex justify-between itemscenter">
           <div className="gri gap10 lg:py20">
-            <article className="text-[#263238] myauto lg:mt-[14.563rem]">
+            <article className="text-[#263238] myauto lg:mt-[12rem]">
               <h1
-                className={`hero-heading ${raleway.className} max-w-[37.188rem] font-extrabold text-xl md:text-3xl lg:text-4xl
-                 xl:text5xl 2xl:text6xl leading[15rem]`}
+                className={`hero-heading ${raleway.className} max-w-[37.188rem] font-extrabold text-xl md:text-3xl lg:text-[60px]
+                 xl:text5xl 2xl:text6xl lg:leading-[72px]`}
               >
-                The #1 Global Afrocentric Community
+                The #1 Afrocentric <br /> Community
               </h1>
               <Button
                 size="lg"
                 className="font-[700] lg:mt-14 mt-8 mb-8 lg:mb-0 bg-[#ff8800] hover:bg-[#ff8800]"
-                onClick={()=>router.push('/')}
+                onClick={()=>router.push('/becomeamember')}
               >
                 Join Fatherland Now
               </Button>

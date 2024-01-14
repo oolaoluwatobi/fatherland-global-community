@@ -5,7 +5,7 @@ export default function OrderSummary() {
   return (
     <div className=" justify-between pl-6 pr-14   mb-4">
       {orderSummary.map((summary, i) => (
-        <div className=" lg:flex justify-between pl-6 pr-14 mb-4">
+        <div className=" lg:flex justify-between pl-6 pr-14 mb-4" key={i}>
           <Image
             src={summary.image}
             width={0}

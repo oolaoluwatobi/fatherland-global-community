@@ -7,3 +7,95 @@
 .win1::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
+.global{
+  background-image: url(../../public/campus//globalbg.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.id1{
+  background-image: url(../../public/campus/ticketsandevent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.id2{
+  background-image: url(../../public/campus/africantaste.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.id3{
+  background-image: url(../../public/campus/travel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.id4{
+  background-image: url(../../public/campus/store.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.id11{
+  background-image: url(../../public/campus/america.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.id22{
+  background-image: url(../../public/campus/africa.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.id33{
+  background-image: url(../../public/campus/europe.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.id44{
+  background-image: url(../../public/campus/asia.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.get{
+  background-image: url(../../public/campus/Frame\ 13418.png);
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.l1 {
+  background: linear-gradient(90deg, #F7B70D, #7FB432);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
