@@ -8,6 +8,8 @@ import ExclusiveProducts from "../components/ExclusiveProducts";
 // import AfricanAuthenticStore from "../components/AfricanAuthenticStore";
 // import DiscoverItems from "../components/DiscoverItems";
 import JoinConversation from "../components/JoinConversation";
+import Global from "../components/Global";
+import Getstarted from "../components/Getstarted";
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
       <Hero />
       <FatherlandConcept />
       <ExclusiveProducts />
-      <JoinConversation />
+      <Global />
+      <Getstarted />
+      {/* <JoinConversation /> */}
     </main>
   );
 }

@@ -15,71 +15,73 @@ import community from "@/public/assets/exclusiveproducts-bg-images/community-for
 import ExclusiveProductsCard from "./ExclusiveProductsCard";
 import { StaticImageData } from "next/image";
 
+import Xclusivecard from "./Xclusivecard";
+
 const raleway = Raleway({ subsets: ["latin"] });
 
 
-type Product = {
-  id: string;
-  name: string;
-  details: string;
-  bgImage: StaticImageData;
-};
+// type Product = {
+//   id: string;
+//   name: string;
+//   details: string;
+//   bgImage: StaticImageData;
+// };
 
-export type ProductArray = Product[];
+// export type ProductArray = Product[];
 
-const PRODUCTS: ProductArray = [
-  {
-    id: "1",
-    name: "Tickets and Events",
-    details:
-      "Join Unforgettable Celebration of Art, Music, Culture, Live Shows & many more. Experience Life`s Highlights by finding your perfect event and securing your tickets to series of Africa-inclined events throughout the entire year!",
-    bgImage: tickets_and_events,
-  },
-  {
-    id: "2",
-    name: "African Taste",
-    details:
-      "Get Up to 50% Discount off Food & Drinks at Over 50 Restaurants. Join Fatherland Community and enjoy discounted rich flavors of African cuisines in African Restaurants all over the world",
-    bgImage: african_taste,
-  },
-  {
-    id: "3",
-    name: "Arts and Crafts Store",
-    details:
-      "Fatherland Store is a destination for handcrafted unique and creative products inspired by Africans",
-    bgImage: store,
-  },
-  {
-    id: "4",
-    name: "Travel and Spirituality",
-    details:
-      "Our travel and spirituality feature adventourous travel offers transformative workshops designed to awaken your consciousness and elevate your soul.",
-    bgImage: spirituality,
-  },
-  {
-    id: "5",
-    name: "Community Forum",
-    details:
-      "Stay up to date by joining conversations with other members of Fatherland Community.",
-    bgImage: community,
-  },
-  {
-    id: "6",
-    name: "Explore Cultural Learning",
-    details:
-      "Browse through recordings of previous live sessions on Africa cultures and values from our world-class instructors & tutors.",
-    bgImage: cultural_learning,
-  },
-];
+// const PRODUCTS: ProductArray = [
+//   {
+//     id: "1",
+//     name: "Tickets and Events",
+//     details:
+//       "Join Unforgettable Celebration of Art, Music, Culture, Live Shows & many more. Experience Life`s Highlights by finding your perfect event and securing your tickets to series of Africa-inclined events throughout the entire year!",
+//     bgImage: tickets_and_events,
+//   },
+//   {
+//     id: "2",
+//     name: "African Taste",
+//     details:
+//       "Get Up to 50% Discount off Food & Drinks at Over 50 Restaurants. Join Fatherland Community and enjoy discounted rich flavors of African cuisines in African Restaurants all over the world",
+//     bgImage: african_taste,
+//   },
+//   {
+//     id: "3",
+//     name: "Arts and Crafts Store",
+//     details:
+//       "Fatherland Store is a destination for handcrafted unique and creative products inspired by Africans",
+//     bgImage: store,
+//   },
+//   {
+//     id: "4",
+//     name: "Travel and Spirituality",
+//     details:
+//       "Our travel and spirituality feature adventourous travel offers transformative workshops designed to awaken your consciousness and elevate your soul.",
+//     bgImage: spirituality,
+//   },
+//   {
+//     id: "5",
+//     name: "Community Forum",
+//     details:
+//       "Stay up to date by joining conversations with other members of Fatherland Community.",
+//     bgImage: community,
+//   },
+//   {
+//     id: "6",
+//     name: "Explore Cultural Learning",
+//     details:
+//       "Browse through recordings of previous live sessions on Africa cultures and values from our world-class instructors & tutors.",
+//     bgImage: cultural_learning,
+//   },
+// ];
 
 export default function ExclusiveProducts() {
-  const renderProducts = PRODUCTS.map((product) => {
-    return (
-      <div key={product.id}>
-        <ExclusiveProductsCard product={product} />
-      </div>
-    );
-  });
+  // const renderProducts = PRODUCTS.map((product) => {
+  //   return (
+  //     <div key={product.id}>
+  //       <ExclusiveProductsCard product={product} />
+  //     </div>
+  //   );
+  // });
 
   return (
     <section className="lg:mt-20 mt-8 lg:p-20 py-12 lg:pb-0 mx-auto bg-secondary-foreground bg-red-10">
@@ -89,17 +91,14 @@ export default function ExclusiveProducts() {
         </h1>
         <p className="lg:mt-7 lg:text-lg text-sm leading-9  max-w-2xl  font-[400]   ">
           By offering services and benefits, our goal is to provide
-          opp0rtunities for members from all walks of the life to embrace and
+          opportunities for members from all walks of the life to embrace and
           enjoy the True Africa Experience
         </p>
         <div className="bg-secondary h-[3px] w-28 rounded-full  mt-1" />
       </div>
 
-      <div className="pt-14 max-w-7xl container lg:pb-[6.688rem] pb-8  bg-red-20">
-        <div className="grid grid-cols-1 lg:gridcols-2 lg:grid-cols-3 space-y4 gap-4 bg-red-10">
-          {renderProducts}
-          
-        </div>
+      <div>
+          <Xclusivecard />
       </div>
     </section>
   );

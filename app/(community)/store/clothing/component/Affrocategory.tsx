@@ -151,7 +151,8 @@ export default function Affrocategory() {
 
         <div className="lg:grid grid-cols-3 gap-4 mt-8 mb-5 shadow-lg shadow-blue-50 w-full  ">
           {Affrocategories.map((Affrocategory, i) => (
-            <Link href={`/store/${Affrocategory.id}`}>
+            <Link href={`/store/${Affrocategory.id}`}
+            key={i}>
               <ProductCard {...Affrocategory} />
              </Link>
           ))}

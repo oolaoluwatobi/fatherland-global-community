@@ -78,8 +78,8 @@ export default function Storecategory() {
         </div>
         <div className="lg:grid grid-cols-3 gap-6 space-y-4 object-cover w-full mx-auto cursor-pointer  ">
           {StorehotDeal.map((store, i) => (
-            <Link href={`/store/${store.id}`}>
-            <ProductCardHotDeals key={i} {...store}  />
+            <Link href={`/store/${store.id}`} key={i}>
+            <ProductCardHotDeals  {...store}  />
             </Link>
           ))}
         </div>
