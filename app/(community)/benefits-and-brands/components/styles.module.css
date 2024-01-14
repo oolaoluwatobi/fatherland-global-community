@@ -1,0 +1,40 @@
+.get{
+    background-image: url(../../../../public/campus//ben\ hero.png);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  .l1 {
+    background: linear-gradient(90deg, #F7B70D, #7FB432);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+   /* .id1{
+    background-image: url(../../../../public/campus/ben\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .id2{
+    background-image: url(../../../../public/campus/ben\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .id3{
+    background-image: url(../../../../public/campus/ben\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .id4{
+    background-image: url(../../../../public/campus/ben\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+   */

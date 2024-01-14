@@ -1,40 +1,30 @@
-import Container from "@/components/ui/container";
+'use client'
 import React from "react";
 import videoPlaceholder from "@/public/assets/video-placeholder.png";
 import play from "@/public/assets/videoplay1.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+
 
 export default function FatherlandConcept() {
+  const router = useRouter()
   return (
     <section className="mt-20 max-w-7xl container">
       <div>
         <div className="lg:grid grid-cols-2 border-l-8 border-secondary rounded-l-xl    bg-red-20">
-          <div className="lg:p-10 p-4 flex flex-col justify-between text-dark ">
-            <Link  href="/about-us">
-              <Button
-                variant="secondaryAccent"
-                size="lg"
-                className="inline rounded-full text-black"
-              >
-                  About Us
-              </Button>
-            </Link>
-            <h1 className="lg:text-4xl text-2xl font-[800] leading-normal lg:w-[27rem]">
-              Fatherland{" "}
-              <span className="text-secondary ">
-                African  Forum{" "}
-              </span>{" "}
-              and <span className="text-secondary ">Marketplace</span>{" "}
+          <div className="lg:p-10 p-4 text-dark my-auto">
+            <h1 className="lg:text-[46px] text-2xl font-[800] lg:leading-[58px]">
+              Fatherland <span className="text-secondary ">Community</span>{" "}
             </h1>
-            <p className="lg:text-base text-sm">
+            <p className="lg:text-base text-sm font-normal lg:leading-6 break-words lg:mb-[2.25rem] mb-4">
               Fatherland unites Africans, providing an Afrocentric lifestyle and
-              diverse products. Members immerse in Africa’s rich heritage and
+              diverse products. Members immerse in Africa&apos;s rich heritage and
               experience
             </p>
             <div className=" flex justify-center lg:justify-start mt-4 lg:mt-0">
-              <Button variant="default" size="lg">
+              <Button onClick={()=>{router.push('/becomeamember')}} variant="default" size="lg" className="bg-secondary hover:bg-secondary">
                 Join Now
               </Button>
             </div>
