@@ -29,7 +29,7 @@ export default function Loginform() {
           </label>{" "}
           <br />
           <input
-            type="text"
+            type="email"
             className="bg-[#F7F9FB] outline-0 w-full lg:w-[47.063rem] lg:mb-[2.688rem] mb-4 lg:h-[5rem] h-12 mx-auto placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
             placeholder=" example@gmail.com"
           />
