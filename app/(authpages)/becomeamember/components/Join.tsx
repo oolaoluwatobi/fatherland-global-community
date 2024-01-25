@@ -35,7 +35,7 @@ export default function Join() {
                 </label>{" "}
                 <br />
                 <input
-                  type="text"
+                  type="first_name"
                   className="w-full lg:w-[20rem] lg:h-[65px] h-12 mb-4 bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px] lg:mb-0 placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                 />
               </div>
@@ -45,7 +45,7 @@ export default function Join() {
                 </label>{" "}
                 <br />
                 <input
-                  type="text"
+                  type="last_name"
                   className=" w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                 />
               </div>
@@ -55,7 +55,7 @@ export default function Join() {
             </label>{" "}
             <br />
             <input
-              type="text"
+              type="email"
               className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
             />
             <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
@@ -63,7 +63,7 @@ export default function Join() {
             </label>{" "}
             <br />
             <input
-              type="text"
+              type="phome_number"
               className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
             />
             <label htmlFor="" className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
@@ -71,7 +71,7 @@ export default function Join() {
             </label>{" "}
             <br />
             <input
-              type="text"
+              type="dob"
               className="bg-[#f4f4f4] w-full lg:h-[65px] h-12 mb-4 lg:mb-[2.688rem] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
             />
             <div className="lg:flex justify-between mx-auto gap-4 pb-[2.688rem]">
@@ -81,7 +81,7 @@ export default function Join() {
                 </label>{" "}
                 <br />
                 <input
-                  type="text"
+                  type="country"
                   className="w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4  bg-[#f4f4f4] rounded-[6px]  mb-4 lg:mb-0 placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                 />
               </div>
@@ -91,7 +91,7 @@ export default function Join() {
                 </label>{" "}
                 <br />
                 <input
-                  type="text"
+                  type="state"
                   className=" w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4 bg-[#f4f4f4] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                 />
               </div>
