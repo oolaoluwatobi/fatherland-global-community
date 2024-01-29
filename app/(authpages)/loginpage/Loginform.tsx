@@ -51,7 +51,7 @@ export default function Loginform({error}: any) {
   return (
     <main
       className={`${styles.login_backgrounds} pt-[9rem] pb-[120px container mx-auto pb-[120px]`}>
-      <div className="border border-[#1ABC94] rounded-[15px] mx-auto bg-white max-w-[51.813rem] lg:h-[41.813rem] mb-[20rem">
+      <div className="border border-[#1ABC94] rounded-[15px] mx-auto bg-white max-w-[51.813rem] lg:h-[41.813rem lg:pb-[4.375rem] pb-4 mb-[20rem">
         <div>
           <p className="text-[#333333] lg:text-3xl text-xl container font-bold break-words text-center lg:pt-[4.188rem] pt-8 pb-[0.5rem]">
             Login to Fatherland Community
