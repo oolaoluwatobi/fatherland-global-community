@@ -37,7 +37,7 @@ export default function Join() {
     //   phone_number
     // );
     setIsPending(true);
-    // toast.loading('Signing up...')
+    // toast.loading('Signing up...') 
 
     try {
       const data = {
