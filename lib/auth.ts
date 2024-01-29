@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from "next-auth/providers/credentials";
 
@@ -20,18 +21,23 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials, req) {
         // Add logic here to look up the user from the credentials supplied
 
-        const res = await fetch("https://dev.fatherlandancestry.com/api/v1/login", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: credentials?.email,
-            password: credentials?.password,
-          }),
-        });
-        const user = await res.json();
-        
+        // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/v1/login`, {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify({
+        //     email: credentials?.email,
+        //     password: credentials?.password,
+        //   }),
+        // });
+        // const user = await res.json();
+        const data = {
+          email: credentials?.email,
+          password: credentials?.password,
+        }
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/v1/login`, data)
+        const user = res.data
         console.log(user, 'auth 31')
         
         if(user.message === 'Credentials do not match our system') {
@@ -60,7 +66,7 @@ export const authOptions: NextAuthOptions = {
     },
   },
   pages: {
-    signIn: "/signin",
-    error: "/signin"
+    signIn: "/loginpage",
+    error: "/loginpage"
   },
 };
