@@ -19,7 +19,7 @@ type props = {
   quantity?: string;
 };
 
-export default function ProductCard({
+export default function  ProductCard({
   image,
   id,
   title,
@@ -33,7 +33,7 @@ export default function ProductCard({
   
   const handleAddToBasket = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, { id, image, title, color, price }: props) => {
     e.preventDefault()
-    // e.stopPropagation()
+    e.stopPropagation()
     
     // Add to basket logic here.
     const newProduct = {

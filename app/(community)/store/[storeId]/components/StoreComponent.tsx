@@ -2,12 +2,14 @@
 import Link from "next/link";
 import bonnet from "@/public/fashionbonnet.png";
 import fash4 from "@/public/fas4.png";
-import image54 from "@/public/image 54.png";
+// import rectangle211 from "@/public/rectangle211.png";
 import rectan from "@/public/Rectangle 210.png";
-import React from "react";
-import { STORES, storeHomes2 } from "@/lib/data";
+// import rectangle212 from "@/public/rectangle212.png";
+import React, { useEffect } from "react";
+import { STORES } from "@/lib/data";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image, { StaticImageData } from "next/image";
-import { BiPackage, BiSearch, BiVector } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 import { HeartIcon, HomeIcon } from "@radix-ui/react-icons";
 import { LiaShoppingCartSolid } from "react-icons/lia";
 import { IoIosArrowForward } from "react-icons/io";
@@ -21,25 +23,36 @@ import { useState } from "react";
 import Agent from "@/public/support_agent.png";
 import packagee from "@/public/package.png";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
+import { Router } from "lucide-react";
 
-const imageData = [
+const colorVariants = [
   {
     id: "1",
-    image: fash4,
+    image: bonnet,
+    color: "Green",
   },
   {
     id: "2",
-    image: bonnet,
+    image: fash4,
+    color: "Orange",
   },
   {
     id: "3",
-    image: image54,
-  },
-  {
-    id: "4",
     image: rectan,
+    color: "Purple",
   },
+  // {
+  //   id: "4",
+  //   image:  rectangle211,
+  //   color:"Lime"
+  // },
+  // {
+  //   id: "5",
+  //   image: rectangle212,
+  //   color:"Multi"
+  // },
 ];
+const sizeVariants = ["XS", "S", "MD", "L", "XL"];
 
 type BasketProps = {
   id: string;
@@ -54,15 +67,12 @@ type BasketProps = {
   quantity?: string;
 };
 
-
 export default function StoreComponent({
-  
   params,
 }: {
   params: { storeId: string };
 }) {
-  
-  const {  addProduct } = useShoppingBasketStore()
+  const { addProduct } = useShoppingBasketStore();
   console.log(params.storeId, "ID============================");
   const renderStore = STORES.find(
     (item) => String(item.id) === String(params.storeId)
@@ -77,11 +87,14 @@ export default function StoreComponent({
   const [img, setImg] = useState<StaticImageData | undefined>(
     renderStore?.image!!
   );
-
-  const handleAddToBasket = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, { id, image, title, color, price }: any) => {
-    e.preventDefault()
+const router = useRouter();
+  const handleAddToBasket = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    { id, image, title, color, price }: any
+  ) => {
+    e.preventDefault();
     // e.stopPropagation()
-    
+
     // Add to basket logic here.
     const newProduct = {
       id: Date.now(),
@@ -92,13 +105,29 @@ export default function StoreComponent({
       price,
       // size,
       // quantity
-    }
+    };
 
-    addProduct(newProduct)
-
-
+    addProduct(newProduct);
   };
+    const searchParams= useSearchParams();
+    const selectedColor = searchParams.get("color")
+    const selectedSize = searchParams.get("size")
+    
+  // const [selectedSize, setSelectectedSize] = useState("MD");
+  // const [selectedColor, setSelectectedColor] = useState("orange");
 
+  // useEffect(() => {
+  //   //  window.history.pushState(
+  //   //    null,
+  //   //    "",
+       
+  //   //     `?color=${selectedColor}&size=${selectedSize}`
+  //   router.push(
+  //     `?color=${selectedColor}&size=${selectedSize}`,{
+  //       scroll: false,
+  //     })
+  //     window.location.search
+  // }, [selectedColor, selectedSize,router]);
 
   return (
     <div className=" mx-auto mb-24 lg:mb-24  w-full max-w-[97.813rem]  ">
@@ -114,7 +143,7 @@ export default function StoreComponent({
         :w-11 p-0.5 lg:p-1  aspect-square mt-10  "
           />
           <HeartIcon className="text-black w-[1.5rem] h-[1.5rem] lg:ml-6 mt-10" />
-          <Link href={'/store/shopping-basket'}>
+          <Link href={"/store/shopping-basket"}>
             <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
           </Link>
         </div>
@@ -132,7 +161,11 @@ export default function StoreComponent({
 
             <div className="flex">
               <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
-              <Link href={`/store/clothing`} className="font-rubik   font-normal ">Clothing</Link>
+              <Link
+                href={`/store/clothing`}
+                className="font-rubik   font-normal ">
+                Clothing
+              </Link>
             </div>
             <div className="flex">
               <IoIosArrowForward className=" ml-2 text-pt-1 bg-red-00 text-[#525258] h-6 w-6 " />
@@ -186,7 +219,7 @@ export default function StoreComponent({
           <div className="lg:ml-14 ml-0 mt-5 lg:mt-0">
             <div>
               <p className="lg:text-lg font-[600]">
-                By <span className="text-primary">ForeMediassss</span>
+                By <span className="text-primary">ForeMedia</span>
               </p>
               <p className="lg:text-3xl text-[12px]  mt-2 font-[700]">
                 {renderStore?.content}
@@ -213,32 +246,48 @@ export default function StoreComponent({
               <div className="lg:flex gap-20 mt-[1.063rem] ">
                 <p>Size</p>
 
-                {/* <Link href={`/store/storeComponent`}> */}
-                  <div className="lg:flex gap-[0.625rem]">
-                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#f6f8fc] text-[#686868] lg:text-xl ">
-                      S
-                    </p>
-                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                      M
-                    </p>
-                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                      L
-                    </p>
-                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#686868] lg:text-xl ">
-                      {" "}
-                      XL
-                    </p>
-                    <p className="h-[2.375rem] w-[4.375rem] border-2 text-center pt-1 font-[600] bg-[#fff] text-[#c9c7c7] lg:text-xl ">
-                      {" "}
-                      XXL
-                    </p>
-                  </div>
-                {/* </Link> */}
+                <div className="lg:flex gap-[0.625rem] ">
+                  {sizeVariants.map((size, index) => (
+                    <Link   href={`?color=${selectedColor}$size=${size}`}
+                      key={index}
+                      className={`bg-gray-50 text-[#686868] font-[600] rounded-full px-4 py-1 border-2  ${
+                        selectedSize === size
+                          ? "border-orange-400"
+                          : "border-gray-300"
+                      }`}
+                      >
+                      {size}
+                    </Link>
+                  ))}
+                </div>
               </div>
               <div className="lg:flex gap-20 mt-[3.063rem] ">
                 <p>Color</p>
-
                 <div className="lg:flex gap-[0.625rem]">
+                  {colorVariants.map((color: any, index) => (
+                    <Link href={`?color=${color}&size=${selectedSize}`}
+                      key={index}
+                      className="bg-gray-50 text-[#686868] font-[600] roundedfull px-4 py-1 border">
+                      <Image
+                        src={color?.image}
+                        alt=""
+                        className="h-[4.375rem] w-[4.375rem] bg-red-800"
+                      />
+
+                      <button
+                        className={`text-[] text-sm pl-3 ${
+                          selectedColor === color
+                            ? "border-blue-400"
+                            : "border-gray-300"
+                        }`}
+                        >
+                        {color.color}
+                      </button>
+                    </Link>
+                  ))}
+                </div>
+
+                {/* <div className="lg:flex gap-[0.625rem]">
                   <div>
                     {" "}
                     <Image
@@ -284,7 +333,7 @@ export default function StoreComponent({
                     />
                     <p className="text-[#A6A6A6] text-sm pl-3">Multi</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="lg:flex gap-14 mt-9 ">
                 <p className="text-sm">{renderStore?.deliveryDate}</p>
@@ -293,7 +342,16 @@ export default function StoreComponent({
             </div>
             <div className="lg:flex gap-8 mt-14">
               <div className="">
-                <Button onClick={e => handleAddToBasket(e, { id: renderStore?.id, image: renderStore?.image, title: renderStore?.content, price: renderStore?.price})} className=" pl- px-[4rem] py-6 bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
+                <Button
+                  onClick={(e) =>
+                    handleAddToBasket(e, {
+                      id: renderStore?.id,
+                      image: renderStore?.image,
+                      title: renderStore?.content,
+                      price: renderStore?.price,
+                    })
+                  }
+                  className=" pl- px-[4rem] py-6 bg-gradient-to-r from-cyan-500 to-green-500 text-sm ">
                   <LuShoppingCart className="text-lg h-[1.25rem] w-[1.25rem] mr-2" />{" "}
                   ADD TO CART
                 </Button>
@@ -317,19 +375,19 @@ export default function StoreComponent({
             </Button>
           </Link>
           <Link rel="stylesheet" href="specifications">
-          <Button variant={"navlink"} className=" text-[#b8b4b4]">
-            Specifications
-          </Button>
+            <Button variant={"navlink"} className=" text-[#b8b4b4]">
+              Specifications
+            </Button>
           </Link>
           <Link rel="stylesheet" href="review">
-          <Button variant={"navlink"} className="text-[#b8b4b4]">
-            review
-          </Button>
+            <Button variant={"navlink"} className="text-[#b8b4b4]">
+              review
+            </Button>
           </Link>
           <Link rel="stylesheet" href="Questions">
-          <Button variant={"navlink"} className="text-[#b8b4b4]">
-            Questions
-          </Button>
+            <Button variant={"navlink"} className="text-[#b8b4b4]">
+              Questions
+            </Button>
           </Link>
         </div>
         <div className="">

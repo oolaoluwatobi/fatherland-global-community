@@ -1609,7 +1609,7 @@ export const orderSummary = [
   {
     id: "1",
     image: bonnet,
-    productTitle: "Ankara Alice band - Ankara Headwear",
+    productTitle: "Ankara Alice band-Ankara Headwear",
     size: "Size: L",
     color: "Color: Green",
     add: "X 1",
@@ -1620,7 +1620,7 @@ export const orderSummary = [
   {
     id: "2",
     image: rectanglefeet,
-    product1: "Ankara Alice band - Ankara Headwear",
+    productTitle: "African Bead-African Beaded Neckpeice",
     size: "Size: L",
     color: "Color: Green",
     add: "X 2",

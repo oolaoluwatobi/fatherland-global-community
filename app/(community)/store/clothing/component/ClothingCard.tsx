@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./styles.module.css";
 
-export default function Affrocard() {
+export default function ClothingCard() {
   return (
     <div
     className={`${style.Afrobg} w-full max-w[97.813rem] ax-w-7xl h-[27rem] mx-auto mb-5 hidden lg:inline-block`}>
