@@ -15,6 +15,7 @@ import {
 import BillingDetails from "./BillingDetails";
 import OrderSummary from "./OrderSummary";
 import Link from "next/link";
+import PaymentOption from "./PaymentOption";
 
 export default function CheckoutSearch() {
   return (
@@ -35,15 +36,12 @@ export default function CheckoutSearch() {
         </Link>
       </div>
 
-      <div className="flex justify-between px-10 mt-10 border-b-2 py-3">
-        <p className="text-[#b3b0b0] text-xs lg:text-lg  font-[500] pl ">
+      <div className="flex px-10 mt-10 border-b-2 py-3">
+        <p className="lg:text-lg text-sm ">Back to results</p>
+        <IoIosArrowForward className="mt-1  mx-4" />
+        <p className="text-[#b3b0b0] text-sm lg:text-lg  font-[500] pl ">
           checkout
         </p>
-
-        <div className="flex gap-2 mr-2 mt10">
-          <p className="lg:text-lg text-sm">Back to results</p>
-          <IoIosArrowForward className="mt-1" />
-        </div>
       </div>
       <p className="lg:text-2xl px-10 text-sm text-[#232323] font-[700]  mt-[2rem] ">
         Checkout
@@ -86,15 +84,24 @@ export default function CheckoutSearch() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-
-          <div className="bg-[#fff] flex gap-2  py-[1rem] items-baseline w-full">
-            <p className="bg-[#e6e6e6] rounded-full px-2  aspect-square flex place-items-center ml-[1.5rem] lg:text-center text-[#878787] font-[600]">
-              3
-            </p>
-            <p className=" font-[600] text-[#878787] lg:text-xl text-sm">
-              Payment Options
-            </p>
-          </div>
+         
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <div className="bg-[#FF88001A] flex gap-2  py-[1rem] items-baseline w-full">
+                  <p className="bg-orange-600 rounded-full px-2  aspect-square flex place-items-center ml-[1.5rem] lg:text-center text-[#fff] font-[600]">
+                    3
+                  </p>
+                  <p className=" font-[600] text-[#000] lg:text-xl text-sm">
+                    Payment Options
+                  </p>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <PaymentOption />
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
 
         <div className="col-span-1">

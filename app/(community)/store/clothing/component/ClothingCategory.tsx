@@ -9,7 +9,7 @@ import Link from "next/link";
 import ProductCard from "./ProductCard";
 // import { BarChartIcon } from "@radix-ui/react-icons";
 
-export default function Affrocategory() {
+export default function ClothingCategory() {
   return (
     <div className="w-full max-w-[90rem] mx-auto container ">
       <div className="flex justify-between py-4 lg:px-7 px-3 bg-[#FFFFFF]  mx-auto border:active border-primary ">
