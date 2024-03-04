@@ -16,7 +16,7 @@ export default function FatherlandConcept() {
         <div className="lg:grid grid-cols-2 border-l-8 border-secondary rounded-l-xl    bg-red-20">
           <div className="lg:p-10 p-4 text-dark my-auto">
             <h1 className="lg:text-[46px] text-2xl font-[800] lg:leading-[58px]">
-              Fatherland <span className="text-secondary ">Community</span>{" "}
+              Fatherland <br /> <span className="text-secondary ">Community</span>{" "}
             </h1>
             <p className="lg:text-base text-sm font-normal lg:leading-6 break-words lg:mb-[2.25rem] mb-4">
               Fatherland unites Africans, providing an Afrocentric lifestyle and
@@ -25,7 +25,7 @@ export default function FatherlandConcept() {
             </p>
             <div className=" flex justify-center lg:justify-start mt-4 lg:mt-0">
               <Button onClick={()=>{router.push('/becomeamember')}} variant="default" size="lg" className="bg-secondary hover:bg-secondary">
-                Join Now
+                Join Conversation Now
               </Button>
             </div>
           </div>
