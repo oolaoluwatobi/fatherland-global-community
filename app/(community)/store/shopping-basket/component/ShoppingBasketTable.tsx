@@ -5,17 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBasket } from "@/lib/data";
 import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
 
-// import {
-//   Table,
-//   TableBody,
-//   TableCaption,
-//   TableCell,
-//   TableHead,
-//   TableHeader,
-//   TableRow,
-// } from "@/components/ui/table";
+
 import Image from "next/image";
-// import Shopping from "./Shopping";
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 

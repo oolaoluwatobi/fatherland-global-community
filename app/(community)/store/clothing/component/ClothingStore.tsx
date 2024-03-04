@@ -3,14 +3,12 @@ import { BiSearch } from "react-icons/bi";
 import { HeartIcon, HomeIcon } from "@radix-ui/react-icons";
 import { LiaShoppingCartSolid } from "react-icons/lia";
 import style from "./styles.module.css";
-// import { Fair Prosper } from 'next/font/google';
 import Image from "next/image";
-import { IoIosArrowForward } from "react-icons/io"; // MdArrowForwardIos
+import { IoIosArrowForward } from "react-icons/io"; 
 
 import image54 from "@/public/image 54.png";
-import { MdArrowForward, MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
-export default function Affrostore() {
+export default function ClothingStore() {
   return (
     <div className="mx-auto max-w-[90rem] lg:mb-14 mb-14">
       <div className="flex justify-center items-center mx-auto lg:w-full px-4 max-w-[97.813rem]  ">

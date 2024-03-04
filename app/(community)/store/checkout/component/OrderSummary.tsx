@@ -15,9 +15,10 @@ export default function OrderSummary() {
             alt="woman"
           />
           <div className="flex">
+                     
             <div className="flex flex-col justify-between ml-5">
-              <p className="font-[600] text-lg  ">
-                {summary.product1}
+              <p className="font-[600] text-lg -ml-5">
+                {summary.productTitle}
               </p>
               <p className="font-[600] text-lg text-[#686868] ">{summary.size}</p>
               <p className="font-[600] text-lg  text-[#686868]">

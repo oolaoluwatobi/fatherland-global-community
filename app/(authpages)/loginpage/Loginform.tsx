@@ -65,7 +65,7 @@ export default function Loginform({error}: any) {
           {error?.error}
         </p>
       )}
-        <form
+       <form
           onSubmit={(e) => handleSubmit(e)}
           action=""
           className="lg:mt-[3.125rem] mt-4 md:ms-[2.375rem] mx-[1rem] md:mx-auto">

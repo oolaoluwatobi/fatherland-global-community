@@ -46,7 +46,7 @@ export default function Shopping() {
         <HeartIcon className="text-black w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
         <LiaShoppingCartSolid className=" w-[1.5rem] h-[1.5rem] lg:ml-4 mt-10" />
       </div>
-        <div className="lg:flex justify-between px-10 mt-10">
+        <div className="lg:flex justify-between px-10 mt-10"> 
           <p className="text-[#b3b0b0] lg:text-lg  font-[500]  ">
             Shopping Basket
           </p>
