@@ -29,7 +29,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
           </p>
         </div>
 
-        <div className=" relative mt-5 shadow-xl shado   bg-red-500">
+        <div className=" relative mt-5 shadow-xl">
           <Carousel>
             <aside className="lg:flex gap-6 overflow-x-auto no-scrollbar">
               <CarouselContent>
