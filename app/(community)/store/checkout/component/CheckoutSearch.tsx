@@ -1,10 +1,8 @@
 import React from "react";
-// import Image from "next/image";
 import { BiSearch, BiVector } from "react-icons/bi";
 import { HeartIcon } from "@radix-ui/react-icons";
 import { LiaShoppingCartSolid } from "react-icons/lia";
 import { IoIosArrowForward } from "react-icons/io";
-// import { Poppins, Inter } from "next/font/google";
 import { MdLocalPolice, MdOutlineArrowDropDown } from "react-icons/md";
 import {
   Accordion,
