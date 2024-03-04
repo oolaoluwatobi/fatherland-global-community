@@ -6,6 +6,7 @@ import { MdCalendarMonth } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import DialogPage from "../components/Dialog";
 
 export default function EventPage({ params }: { params: { eventId: string } }) {
   const router=useRouter()
@@ -34,6 +35,9 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
         <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md" onClick={()=>router.push(`${event.id}`)}>
           <Link href="#">Buy Tickets</Link>
         </button>
+
+
+
       </div>
     </div>
   ));
@@ -78,9 +82,12 @@ export default function EventPage({ params }: { params: { eventId: string } }) {
               </span>
             </div>
             <div className="">
-              <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md" onClick={()=>router.push('/book-a-ticket')}>
+              {/* <button className="mt-auto text-sm px-3  font-medium bg-[#26D44B] text-white p-[0.5rem] border rounded-md" onClick={()=>router.push('/book-a-ticket')}>
                 Buy Tickets
-              </button>
+              </button> */}
+
+
+<DialogPage />
             </div>
           </div>
         </div>
