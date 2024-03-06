@@ -25,33 +25,33 @@ import packagee from "@/public/package.png";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 import { Router } from "lucide-react";
 
-const colorVariants = [
-  {
-    id: "1",
-    image: bonnet,
-    color: "Green",
-  },
-  {
-    id: "2",
-    image: fash4,
-    color: "Orange",
-  },
-  {
-    id: "3",
-    image: rectan,
-    color: "Purple",
-  },
-  // {
-  //   id: "4",
-  //   image:  rectangle211,
-  //   color:"Lime"
-  // },
-  // {
-  //   id: "5",
-  //   image: rectangle212,
-  //   color:"Multi"
-  // },
-];
+// const colorVariants = [
+//   {
+//     id: "1",
+//     image: bonnet,
+//     color: "Green",
+//   },
+//   {
+//     id: "2",
+//     image: fash4,
+//     color: "Orange",
+//   },
+//   {
+//     id: "3",
+//     image: rectan,
+//     color: "Purple",
+//   },
+//   // {
+//   //   id: "4",
+//   //   image:  rectangle211,
+//   //   color:"Lime"
+//   // },
+//   // {
+//   //   id: "5",
+//   //   image: rectangle212,
+//   //   color:"Multi"
+//   // },
+// ];
 const sizeVariants = ["XS", "S", "MD", "L", "XL"];
 
 type BasketProps = {
@@ -246,11 +246,11 @@ const router = useRouter();
               <div className="lg:flex gap-20 mt-[1.063rem] ">
                 <p>Size</p>
 
-                <div className="lg:flex gap-[0.625rem] ">
+                <div className="lg:flex gap mt-5  gap-6  ">
                   {sizeVariants.map((size, index) => (
                     <Link   href={`?color=${selectedColor}$size=${size}`}
                       key={index}
-                      className={`bg-gray-50 text-[#686868] font-[600] rounded-full px-4 py-1 border-2  ${
+                      className={`bg-gray-50 text-[#686868] font-[600] rounded-full px-4 py-1 border-2 ${
                         selectedSize === size
                           ? "border-orange-400"
                           : "border-gray-300"
@@ -263,7 +263,7 @@ const router = useRouter();
               </div>
               <div className="lg:flex gap-20 mt-[3.063rem] ">
                 <p>Color</p>
-                <div className="lg:flex gap-[0.625rem]">
+                {/* <div className="lg:flex gap-[0.625rem]">
                   {colorVariants.map((color: any, index) => (
                     <Link href={`?color=${color}&size=${selectedSize}`}
                       key={index}
@@ -285,9 +285,9 @@ const router = useRouter();
                       </button>
                     </Link>
                   ))}
-                </div>
+                </div> */}
 
-                {/* <div className="lg:flex gap-[0.625rem]">
+                <div className="flex gap-[0.625rem]">
                   <div>
                     {" "}
                     <Image
@@ -333,7 +333,9 @@ const router = useRouter();
                     />
                     <p className="text-[#A6A6A6] text-sm pl-3">Multi</p>
                   </div>
-                </div> */}
+                </div>
+
+
               </div>
               <div className="lg:flex gap-14 mt-9 ">
                 <p className="text-sm">{renderStore?.deliveryDate}</p>
@@ -408,8 +410,8 @@ const router = useRouter();
           </p>
         </div>
         <div className="mt-24 ">
-          <div className="lg:flex gap-10">
-            <div className="lg:flex gap-4 ml-6">
+          <div className="lg:flex gap-10 mx-10">
+            <div className="lg:flex gap-4 ml-20">
               <MdOutlineLocalShipping className="h-[2.75rem] w-[3rem]" />
               <div>
                 {" "}

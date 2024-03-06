@@ -14,7 +14,7 @@ export default function PaymentOption() {
     setIscheckedd(!isCheckedd)
   }
   return (
-      <div className="flex mr-4 bg-white items-center px-10 rounded-xl  gap-8 py-5">
+      <div className="lg:flex mr-4 bg-white items-center px-10 rounded-xl  gap-8 py-5">
         <div className="inline-flex items-center gap-4">
           <input
             type="checkbox"
