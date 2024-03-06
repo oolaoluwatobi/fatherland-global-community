@@ -54,7 +54,7 @@ export default function  ProductCard({
 
   return (
     <div
-      className="shadow-lg hover:border-secondary active:border active:border-primary hover:border bg-white "
+      className="shadowlg hover:border-secondary active:border active:border-primary hover:border bg-white "
       key={id}>
       <div className="relative">
         <Image
