@@ -21,9 +21,9 @@ export default function StoreComponentRelated() {
     <div className='w-full mb-14 max-w-[90rem] mx-auto'>
       <div className="mt-24">
           <div>
-            <p className="text-2xl font-[700]">Related Products</p>
+            <p className="text-2xl font-[700] px-10">Related Products</p>
 
-            <div className=" relative mt-5 shadow-xl shadow-blue-50">
+            <div className=" relative mt-5 shadow-lg shadow-blue-0">
               <button className="absolute left-2 top-0 bottom-0 my-auto hidden lg:inline-block">
                 <BsArrowLeftSquareFill
                   onClick={() => storehomes()}
@@ -39,7 +39,7 @@ export default function StoreComponentRelated() {
 
               <main
                 id="store"
-                className="lg:flex gap-6 overflow-x-auto no-scrollbar ">
+                className="lg:flex gap-6 overflow-x-auto no-scrollbar px-16 ">
                   {/* <Link href={`/store/storeComponent`}> */}
                 {StoreRelate.map((storesrelate) => (
                   <div

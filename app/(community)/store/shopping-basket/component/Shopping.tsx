@@ -31,7 +31,7 @@ export default function Shopping() {
   };
 
   return (
-    <div className="max-w[97.813rem] wfull mx-auto lg:mb36 sm:mb-36">
+    <div className="max-w[97.813rem] wfull mx-auto lg:mb36 sm:mb-34">
       <div className="mx-auto">
       <div className="flex justify-center items-center mx-auto lg:w-full px4 max-w-[97.813rem] container ">
         <input
@@ -103,7 +103,7 @@ export default function Shopping() {
           </div>
         </div>
         <div className="mt-24 ">
-          <div className="flex gap-10">
+          <div className="lg:flex lg:gap-10 gap-6">
             <div className="flex gap-4 ml-20">
               <MdOutlineLocalShipping className="h-[2.75rem] w-[3rem]" />
               <div>
