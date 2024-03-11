@@ -49,8 +49,7 @@ export default function ShoppingBasketTable() {
                   className="w-[7.5rem] h[9rem] mt3  pt3 object-cover "
                 />
                 <div
-                  className="lg:flex
-               flex-col ">
+                  className="lg:flex flex-col">
                   <div className=" px2 ">
                     <p className="lg:text-lg mt-5 text-[#232323] w-[12.5rem] leading-7 font-[700]">
                       {" "}

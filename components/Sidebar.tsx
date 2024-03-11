@@ -109,7 +109,7 @@ const Sidebar = (props: Props) => {
               <div>
                 <Link
                   href={route.href}
-                  className={`text-xs font-medium transition-colors text-black  flex flex-row w-full ${pathname.includes(route.href) ? 
+                   className={`text-xs font-medium transition-colors text-black  flex flex-row w-full ${pathname.includes(route.href) ? 
                     'bg-[#26D44B33] border-[3px] border-secondary border-t-0 border-b-0 border-r-0 p-2' : ''}`}
                 >
                   {route.label}
