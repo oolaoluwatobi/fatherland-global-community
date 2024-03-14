@@ -3,6 +3,7 @@ import { immer } from "zustand/middleware/immer";
 import rectange6 from "@/public/Rectangle 23 (2).png";
 import rectange1 from "@/public/palm wine.png";
 import { StaticImageData } from "next/image";
+import { toast } from "react-toastify";
 
 type Product = {
   id: string;
@@ -34,7 +35,7 @@ export const useShoppingBasketStore: UseBoundStore<StoreApi<any>> = create(
         quantity: 2,
         color: "Green",
         subtotal: 72.0,
-        size: "l",
+        size: "L",
       },
       {
         id: "2",
@@ -52,15 +53,31 @@ export const useShoppingBasketStore: UseBoundStore<StoreApi<any>> = create(
     addProduct: (newProduct: Product) => {
       set((state: any) => {
         
-        console.log(state.products.find((item: any) => item.productId ===  newProduct.productId));
-        console.log(state.products, newProduct);
+        // console.log(state.products.find((item: any) => item.productId ===  newProduct.productId));
+        // console.log(state.products, newProduct);
         if (state.products.find((item: any) => item.productId ===  newProduct.productId)) {
-          console.log('includes');
+         toast.success("item already in cart")
+          // console.log('includes');
           return { products: [...state.products] }
         } else {
-          console.log('does not include');
+          // console.log('does not include');
+          toast.success("item  added to cart ")
           return { products: [...state.products, newProduct] };
-        }
+        } 
+      });
+    },
+
+    deleteProduct: (productId: string) => {
+      set((state: any) => {
+        
+        console.log(state.products, 'state products')
+        const filteredProduct = state.products.filter((item: any) => item.id !==  productId)
+        
+    
+          toast.success("item Removed from Cart.")
+          
+          console.log(filteredProduct, 'filter products')
+         return { products: [...filteredProduct] }
       });
     },
   })

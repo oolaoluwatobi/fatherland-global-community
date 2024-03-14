@@ -12,7 +12,7 @@ export default function Header() {
   const router = useRouter();
   return (
     <div className="mx-auto w-full bg-white sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between justifyaround px-4 lg:px-0 items-center">
+      <div className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between justifyaround px-4 lg:px-0 items-center">
         <Link href="/" className="ml4 lg:ml-0">
           <Image src={logo} alt="" className="w-32 lg:w-full" />
         </Link>
@@ -37,7 +37,7 @@ export default function Header() {
               <Sidebar />
               </div>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }
