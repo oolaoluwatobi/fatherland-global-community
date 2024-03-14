@@ -11,7 +11,7 @@ import { MdOutlineDeleteForever } from "react-icons/md";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 
 export default function ShoppingBasketTable() {
-  const { products, addProducts } = useShoppingBasketStore()
+  const { products, addProducts, deleteProduct } = useShoppingBasketStore()
   console.log(products, '[PRODUCTS________]')
   
   const [count, setCount] = useState(0);
@@ -25,6 +25,13 @@ export default function ShoppingBasketTable() {
       setCount(0);
     }
   };
+  
+  
+  const handleDeleteProduct = (productId: string ) => {
+    deleteProduct(productId)
+  }
+
+  
   return (
     <div className=" lg:grid grid-cols4 gap6 px10 h-fit mx-auto max-w-[97.813rem]  bg-white w-full " >
       <table className=" w-full pr-4">
@@ -40,11 +47,11 @@ export default function ShoppingBasketTable() {
           </tr>
         </thead>
         <tbody className=" bgred-500 ">
-          {products.map((shopping: any, i: any) => (
+          {products.map((item: any, i: any) => (
             <tr key={i} className="gap5 shadowlg border-b wfull  ">
               <td className=" pl4 lg:flex justifybetween gap-[1.25rem] lg:py-4">
                 <Image
-                  src={shopping.image!!}
+                  src={item.image!!}
                   alt=""
                   className="w-[7.5rem] h[9rem] mt3  pt3 object-cover "
                 />
@@ -53,20 +60,20 @@ export default function ShoppingBasketTable() {
                   <div className=" px2 ">
                     <p className="lg:text-lg mt-5 text-[#232323] w-[12.5rem] leading-7 font-[700]">
                       {" "}
-                      {shopping.title}
+                      {item.title}
                     </p>
                     <p className="mt-2 font-[600] text-[#686868]">
                       {" "}
-                      {shopping.size}
+                      {item.size}
                     </p>
                     <p className="mt-2 font-[600]  text-[#686868]">
                       {" "}
-                      {shopping.color}
+                      {item.color}
                     </p>
                   </div>
                 </div>
               </td>
-              <td className=" text-center">${shopping.price}</td>
+              <td className=" text-center">${item.price}</td>
               <td className=" text-center">
                 <div className="lg:flex">
                   <p className="text-center mx-auto">
@@ -83,12 +90,12 @@ export default function ShoppingBasketTable() {
                 </div>
               </td>
 
-              <td className="text-center">{shopping.subtotal!!}</td>
+              <td className="text-center">{item.subtotal!!}</td>
 
               <td className=" items-center">
                 <p className="flex items-center gap-2 justify-center">
-                  <MdOutlineDeleteForever className="w-5 h-5" />
-                  {shopping.remove}
+                  <MdOutlineDeleteForever onClick={() => handleDeleteProduct(item.id)} className="w-5 h-5" />
+                  {/* {item.remove} */}
                 </p>
               </td>
             </tr>
