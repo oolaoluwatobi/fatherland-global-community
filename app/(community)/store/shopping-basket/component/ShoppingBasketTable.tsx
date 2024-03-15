@@ -5,15 +5,14 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBasket } from "@/lib/data";
 import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
 
-
 import Image from "next/image";
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 
 export default function ShoppingBasketTable() {
-  const { products, addProducts, deleteProduct } = useShoppingBasketStore()
-  console.log(products, '[PRODUCTS________]')
-  
+  const { products, addProducts, deleteProduct } = useShoppingBasketStore();
+  console.log(products, "[PRODUCTS________]");
+
   const [count, setCount] = useState(0);
 
   const plus = () => {
@@ -25,15 +24,13 @@ export default function ShoppingBasketTable() {
       setCount(0);
     }
   };
-  
-  
-  const handleDeleteProduct = (productId: string ) => {
-    deleteProduct(productId)
-  }
 
-  
+  const handleDeleteProduct = (productId: string) => {
+    deleteProduct(productId);
+  };
+
   return (
-    <div className=" lg:grid grid-cols4 gap6 px10 h-fit mx-auto max-w-[97.813rem]  bg-white w-full " >
+    <div className=" lg:grid grid-cols4 gap6 px10 h-fit mx-auto max-w-[97.813rem]  bg-white w-full ">
       <table className=" w-full pr-4">
         <thead className="w-full gap5 bg-orange-100 pl4">
           <tr>
@@ -55,8 +52,7 @@ export default function ShoppingBasketTable() {
                   alt=""
                   className="w-[7.5rem] h[9rem] mt3  pt3 object-cover "
                 />
-                <div
-                  className="lg:flex flex-col">
+                <div className="lg:flex flex-col">
                   <div className=" px2 ">
                     <p className="lg:text-lg mt-5 text-[#232323] w-[12.5rem] leading-7 font-[700]">
                       {" "}
@@ -94,7 +90,12 @@ export default function ShoppingBasketTable() {
 
               <td className=" items-center">
                 <p className="flex items-center gap-2 justify-center">
-                  <MdOutlineDeleteForever onClick={() => handleDeleteProduct(item.id)} className="w-5 h-5" />
+                  <MdOutlineDeleteForever
+                    onClick={() => {
+                      handleDeleteProduct(item.id)
+                    }}
+                    className="w-5 h-5"
+                  />
                   {/* {item.remove} */}
                 </p>
               </td>
@@ -102,7 +103,6 @@ export default function ShoppingBasketTable() {
           ))}
         </tbody>
       </table>
-
     </div>
   );
 }
