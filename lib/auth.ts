@@ -1,11 +1,10 @@
-import axios from 'axios';
-import { NextAuthOptions } from 'next-auth';
+import { NextAuthOptions } from "next-auth";
+import GithubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
-
 export const authOptions: NextAuthOptions = {
   // Secret for Next-auth, without this JWT encryption/decryption won't work
   secret: process.env.NEXTAUTH_SECRET,
-  
+
   providers: [
     CredentialsProvider({
       // The name to display on the sign in form (e.g. "Sign in with...")
@@ -21,30 +20,37 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials, req) {
         // Add logic here to look up the user from the credentials supplied
 
-        // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/v1/login`, {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify({
-        //     email: credentials?.email,
-        //     password: credentials?.password,
-        //   }),
-        // });
-        // const user = await res.json();
-        const data = {
-          email: credentials?.email,
-          password: credentials?.password,
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/login`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: credentials?.email,
+              password: credentials?.password,
+            }),
+          }
+        );
+        const user = await res.json();
+
+        console.log(user, "auth 31");
+
+        if (
+          user.message === "Credentials do not match our system" ||
+          user.message === "Email does not exist"
+        ) {
+          throw new Error("Wrong password or email");
         }
-        const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/v1/login`, data)
-        const user = res.data
-        console.log(user, 'auth 31')
-        
-        if(user.message === 'Credentials do not match our system') {
-          throw new Error('Credentials do not match our system')
+        if (user.message === "Please verify your email") {
+          throw new Error("Please verify your email");
         }
-        
-        if (user) {
+        if (user.status === false) {
+          throw new Error("Something went wrong, Login failed!");
+        }
+
+        if (user.message === "Login Succesfully") {
           // Any object returned will be saved in `user` property of the JWT
           return user;
         } else {
@@ -57,16 +63,22 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   callbacks: {
-    async jwt({ token, user }) {
-      return { ...token, ...user };
+    async jwt({ token, user, trigger, session }) {
+      if (trigger === "update") {
+        return { ...token, ...session.user };
+      } else {
+        return { ...token, ...user };
+      }
     },
     async session({ session, token, user }) {
       session.user = token as any;
       return session;
     },
+    
   },
   pages: {
-    signIn: "/loginpage",
-    error: "/loginpage"
+    signIn: "/signin",
+    error: "/signin",
+    newUser: "/joinnow",
   },
 };

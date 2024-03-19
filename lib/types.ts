@@ -1,23 +1,41 @@
-{
-    "data": {
-        "id": 1,
-        "first_name": "olawale",
-        "middle_name": "kudirat",
-        "last_name": "funmilayo",
-        "email": "folawale119@gmail.com",
-        "email_verified_at": "2024-03-15 12:07:54",
-        "date_of_birth": "2006-10-23",
-        "country": "Nigeria",
-        "state": "Oyo",
-        "city": "Ibadan",
-        "phone_number": "08067522171",
-        "membership_id": null,
-        "profile_picture": null,
-        "career_status": "Employed",
-        "created_at": "2024-03-15 12:07:08",
-        "updated_at": "2024-03-15 12:08:34",
-        "deleted_at": null
-    },
-    "token": "10|8RNBguYAnFolBhYC6XIcCfhxM5ColsI1763EHGwKd6d3dc58",
-    "message": "Login Succesfully"
-}
+import { User } from "next-auth";
+
+export interface IResponse {
+    data: User;
+    token: string;
+    message: string;
+  }
+  
+  export interface IUser {
+    id: number;
+    first_name: string;
+    middle_name: string;
+    last_name: string;
+    email: string;
+    email_verified_at: string;
+    date_of_birth: string;
+    country: string;
+    state: string;
+    city: string;
+    phone_number: string;
+    membership_id?: any;
+    profile_picture?: any;
+    career_status: string;
+    created_at: string;
+    updated_at: string;
+    deleted_at?: any;
+  }
+
+
+  interface SignupResponse {
+    data: TSignupUser;
+    status: boolean;
+    message: string;
+  }
+  
+  interface TSignupUser {
+    name: string;
+    email: string;
+    date_of_birth: string;
+    phone_number: string;
+  }
