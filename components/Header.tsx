@@ -1,4 +1,5 @@
-"use client";
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import logo from "@/public/WhatsApp_Image_2023-11-15_at_09.58 1 (1).png";
