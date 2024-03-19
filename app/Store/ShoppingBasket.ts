@@ -80,5 +80,11 @@ export const useShoppingBasketStore: UseBoundStore<StoreApi<any>> = create(
         return { products: [...filteredProduct] };
       });
     },
+
+    // ProductQuantity:(productId: string) =>{
+    //   set((state:any)=>{
+    //     if(state.products. )
+    //   })
+    // }
   })
 );
