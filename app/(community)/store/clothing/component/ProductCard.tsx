@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import { useShoppingBasketStore } from "@/app/Store/ShoppingBasket";
 import { Button } from "@/components/ui/button";
+// import useCart from "@/hooks/use-cart";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { LiaShoppingCartSolid } from "react-icons/lia";
@@ -19,7 +20,7 @@ type props = {
   quantity?: string;
 };
 
-export default function  ProductCard({
+export default function ProductCard({
   image,
   id,
   title,
@@ -28,13 +29,15 @@ export default function  ProductCard({
   price1,
   discount,
 }: props) {
-  const {  addProduct } = useShoppingBasketStore()
+  const { addProduct } = useShoppingBasketStore();
 
-  
-  const handleAddToBasket = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, { id, image, title, color, price }: props) => {
-    e.preventDefault()
-    e.stopPropagation()
-    
+  const handleAddToBasket = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    { id, image, title, color, price }: props
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+
     // Add to basket logic here.
     const newProduct = {
       id: Date.now(),
@@ -45,13 +48,12 @@ export default function  ProductCard({
       price,
       // size,
       // quantity
-    }
+    };
 
-    addProduct(newProduct)
-
-
+    addProduct(newProduct);
   };
 
+  
   return (
     <div
       className="shadowlg hover:border-secondary active:border active:border-primary hover:border bg-white "
@@ -90,9 +92,9 @@ export default function  ProductCard({
               </div>
             )}
           </div>
-          <button onClick={e => handleAddToBasket(e, {id, image, title, price})}>
+          <button
+            onClick={(e) => handleAddToBasket(e, { id, image, title, price })}>
             <LiaShoppingCartSolid className="  w-12 h-12 p-2 bg-[#F0F2EE] hover:bg-gradient-to-r  transition-all  from-[#0A9FBF] to-[#28D744] hover:text-white rounded-full lg:ml-2 mt-3" />
-
           </button>
         </div>
       </div>

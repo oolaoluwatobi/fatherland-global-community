@@ -1,4 +1,5 @@
-"use client";
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import logo from "@/public/WhatsApp_Image_2023-11-15_at_09.58 1 (1).png";
@@ -12,7 +13,7 @@ export default function Header() {
   const router = useRouter();
   return (
     <div className="mx-auto w-full bg-white sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between justifyaround px-4 lg:px-0 items-center">
+      <div className="max-w-7xl mx-auto bg-red400 py-[10px] flex justify-between justifyaround px-4 lg:px-0 items-center">
         <Link href="/" className="ml4 lg:ml-0">
           <Image src={logo} alt="" className="w-32 lg:w-full" />
         </Link>
@@ -35,9 +36,9 @@ export default function Header() {
           </Button>
           <div className="lg:hidden mr-4">
               <Sidebar />
-              </div>
+            </div>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

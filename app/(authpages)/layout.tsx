@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${raleway.className} min-h-screen fle flex-col justifybetween bg-red500 mx-auto bg-[#D9D9D97D]`}>
         <Toaster />
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>

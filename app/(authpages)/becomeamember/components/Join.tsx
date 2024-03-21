@@ -8,7 +8,7 @@ import card2 from "@/public/card2.png";
 import Link from "next/link";
 import axios from "axios";
 import { Loader } from "lucide-react";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function Join() {
@@ -19,11 +19,14 @@ export default function Join() {
   const [date_of_birth, setDob] = useState("");
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
+  const [city, setCity] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const [isPending, setIsPending] = useState(false);
   const [errorMessage, setErrorMesage] = useState("");
+
+  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -37,7 +40,7 @@ export default function Join() {
     //   phone_number
     // );
     setIsPending(true);
-    // toast.loading('Signing up...') 
+    // toast.loading('Signing up...')
 
     try {
       const data = {
@@ -48,24 +51,30 @@ export default function Join() {
         date_of_birth,
         country,
         state,
+        city,
         phone_number,
       };
       console.log("[USERDATA]", data);
+
+      // if (password !== confirmPassword) {
+      //   return toast.error("Passwords do not match!")
+      // }
       const res = await axios.post(
         `${process.env.NEXT_PUBLIC_BASE_URL}/register`,
         data
       );
-      // addUserData(data);
-      // replace("/checkemail");
-      // const res: any = formAction(formData);
-      console.log(data, res, "[SIGNUP_INIT_RES]");
-      toast.success("Signed up successfully")
-      if(res.data.status === 200) {
-        redirect('/payment-details')
-      }
       
-    } catch (error: any) {
-      toast.error("Something went wrong, Signed up failed")
+      console.log(data, res, "[SIGNUP__________INIT_RES]");
+      toast.success(res?.data?.message);
+      console.log(res.data.status)
+      if (res.data.status) {
+        toast.success("Signed up successfully");
+        router.replace ("/payment-details");
+      }
+      } catch (error: any) {
+      console.log(error.response?.data?.message)
+      toast.error(`${error.response?.data?.message ? error.response?.data?.message : "Something went wrong, Signed up failed" }`);
+      // toast.error("Something went wrong, Signed up failed");
       console.log("Error", error);
       if (error?.response?.data?.message)
         setErrorMesage(error?.response?.data?.message);
@@ -158,7 +167,7 @@ export default function Join() {
             </label>{" "}
             <br />
             <input
-              type="number"
+              type="tel"
               id="phone_number"
               name="phone_number"
               value={phone_number}
@@ -210,6 +219,22 @@ export default function Join() {
                   name="state"
                   value={state}
                   onChange={(e) => setState(e.target.value)}
+                  className=" w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4 bg-[#f4f4f4] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="city"
+                  className="text-[#333333] lg:text-base text-sm font-normal leading-6 break-words">
+                  CIty/State/Province
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
                   className=" w-full lg:w-[20rem] lg:h-[65px] h-12 bg-[#f4f4f4 bg-[#f4f4f4] rounded-[6px] placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
                 />
               </div>
@@ -273,11 +298,11 @@ export default function Join() {
             />
             <div className="flex justify-center">
               <button className=" py-[0.646rem] px-[1.375rem] rounded-[5px] bg-[#FF8800] text-white text-base font-semibold break-words mx-auto">
-        {isPending ? (
-          <Loader className="animate-spin h-4 w-4" />
-        ) : (
-          "Continue"
-        )}
+                {isPending ? (
+                  <Loader className="animate-spin h-4 w-4" />
+                ) : (
+                  "Continue"
+                )}
               </button>
             </div>
           </form>

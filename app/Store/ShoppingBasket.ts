@@ -1,55 +1,90 @@
 import { StoreApi, UseBoundStore, create } from "zustand";
-
 import rectange6 from "@/public/Rectangle 23 (2).png";
 import rectange1 from "@/public/palm wine.png";
 import { StaticImageData } from "next/image";
+import { toast } from "react-toastify";
 
 type Product = {
-    id: string;
-    productId?: string;
-    image:string | StaticImageData;
-    title:string;
-    description?:string;
-    price: number;
-    quantity: number;
-    color: string;
-    subtotal: number;
-    size: string
-}
+  id: string;
+  productId?: string;
+  image: string | StaticImageData;
+  title: string;
+  description?: string;
+  price: number;
+  quantity: number;
+  color: string;
+  subtotal: number;
+  size: string;
+};
 
 type ShoppingBasket = {
-    products: Product;
-    addProduct: (newProduct: Product) => void
-}
+  products: Product;
+  addProduct: (newProduct: Product) => void;
+};
 
-export const useShoppingBasketStore: UseBoundStore<StoreApi<any>> = create((set) => ({
-  products: [
-    {
-      id: "1",
-      image: rectange1,
-      title: "Palm wine topper",
-      description: "Art & collectibles",
-      price: 36.00,
-      quantity: 2,
-      color: "Green",
-      subtotal: 72.00,
-      size: 'l'
+export const useShoppingBasketStore: UseBoundStore<StoreApi<any>> = create(
+  (set) => ({
+    products: [
+      {
+        id: "1",
+        image: rectange1,
+        title: "Palm wine topper",
+        description: "Art & collectibles",
+        price: 36.0,
+        quantity: 2,
+        color: "Green",
+        subtotal: 72.0,
+        size: "L",
+      },
+      {
+        id: "2",
+        image: rectange6,
+        title: "Topper",
+        description: "Art & collectibles",
+        price: 25.0,
+        quantity: 3,
+        color: "Green",
+        subtotal: 5.0,
+        size: "m",
+      },
+    ],
+
+    addProduct: (newProduct: Product) => {
+      set((state: any) => {
+        if (
+          state.products.find(
+            (item: any) => item.productId === newProduct.productId
+          )
+        ) {
+          toast.success("Item already in cart.");
+          return { products: [...state.products] };
+        } else {
+          toast.success("Item added to cart.");
+          return {
+            products: [...state.products, newProduct],
+          };
+        }
+      });
     },
-    {
-      id: "2",
-      image: rectange6,
-      title: "Topper",
-      description: "Art & collectibles",
-      price: 25.00,
-      quantity: 3,
-      color: "Green",
-      subtotal: 5.00,
-      size: 'm'
+
+    deleteProduct: (productId: string) => {
+      set((state: any) => {
+        // console.log(state.products, 'state products')
+        const filteredProduct = state.products.filter(
+          (item: any) => item.id !== productId
+        );
+
+        toast.success("item Removed from Cart.");
+
+        console.log(filteredProduct, "filter products");
+        return { products: [...filteredProduct] };
+      });
     },
-  ],
-  addProduct: (newProduct: Product) => {
-    set((state: any) => {
-        return { products: [...state.products, newProduct]}
-    })
-  }
-}));
+
+    // ProductQuantity:(productId: string) =>{
+    //   set((state:any)=>{
+    //     if(state.products. )
+    //   })
+    // }
+  })
+);

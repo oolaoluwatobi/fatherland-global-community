@@ -33,11 +33,11 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
           <Carousel className="hidden lg:block">
             <aside className="lg:flex gap-6 overflow-x-auto no-scrollbar">
               <CarouselContent>
-                {StoreHomes.map((discoverhome) => (
-                  <CarouselItem className="lg:basis-1/5">
+                {StoreHomes.map((discoverhome,i) => (
+                  <CarouselItem key={i} className="lg:basis-1/5">
                     <div
                       className="shadow-lg min-w-[17.188rem]"
-                      key={discoverhome.id}>
+                      >
                       <Link href={`/store/${discoverhome.id}`}>
                         <ProductCard {...discoverhome} />
                       </Link>
@@ -56,11 +56,11 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
             className=" relative mt-5 shadow-xl shadow-blue-50"
             id="storehomes">
             <div className="lg:flex gap6 overflow-x-auto no-scrollbar ">
-              <Image src={mask} alt="" className="h-[30.3rem] w-[16.25rem]" />
+              <Image src={mask} alt="" className="h-[30.3rem] w-[16.25rem]" /> 
               <CarouselContent className="">
                 {storeHomes2.map((storehome2, i) => (
-                  <CarouselItem className="lg:basis-1/4 gap-6 ">
-                    <div key={i} className="shadow-lg min-w-[17.188rem] gap-8 ">
+                  <CarouselItem key={i} className="lg:basis-1/4 gap-6 ">
+                    <div className="shadow-lg min-w-[17.188rem] gap-8 ">
                       <Link href={`/store/${storehome2.id}`}>
                         <ProductCard {...storehome2} />
                       </Link>

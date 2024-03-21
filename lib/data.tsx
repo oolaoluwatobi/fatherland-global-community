@@ -754,30 +754,6 @@ export const SPECIAL_OFFER = [
   },
 ];
 
-//  export const DESTINATION =[
-//       {
-//         id:'1',
-//         image:des1,
-//         label:'Badagry Historical & Tourist Places',
-//         text:'Discover the Enigmatic History of Badagry, Lagos: Unveiling the Stories of Resilience and Heritage, Journey with us as we delve into the captivating history of this ancient city, where echoes of the past intertwine with the vibrant present.',
-//       },
-
-//       {
-//         id:'2',
-//         image:des2,
-//         label:'Abeokuta Historical & Tourist Places',
-//         text:'The historic city steeped in a tapestry of captivating stories and cultural heritage. Prepare to embark on a thrilling exploration of the past as we unveil the remarkable history of this enchanting city in Ogun State, Nigeria.',
-//       },
-
-//       {
-//         id:'3',
-//         image:des3,
-//         label:'Lagos Historical & Tourist Places',
-//         text:"Venture into the city of Lagos, a city that pulsates with the rhythm of history, culture, and diversity. Join us on a captivating journey as we explore the vibrant past of this metropolis, tracing its roots from humble beginnings to becoming one of Africa's most dynamic and cosmopolitan centers.",
-//       },
-
-//  ]
-
 export const ADVERTISE = [
   {
     id: "1",

@@ -42,3 +42,16 @@ type User = {
     date_of_birth?: string;
 
 }
+
+export interface Product  {
+  id: string;
+  productId?: string;
+  image: string ;
+  title: string;
+  description?: string;
+  price: number;
+  quantity: number;
+  color: string;
+  subtotal: number;
+  size: string;
+};

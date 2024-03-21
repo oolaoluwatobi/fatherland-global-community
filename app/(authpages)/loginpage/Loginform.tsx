@@ -4,6 +4,7 @@ import styles from "../loginpage/styles.module.css";
 import { signIn } from "next-auth/react";
 import { Loader } from "lucide-react";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const initState = {
   email: "",
@@ -15,8 +16,9 @@ export default function Loginform({error}: any) {
   const [data, setData] = useState(initState);
   const [errorMessage, setErrorMesage] = useState("");
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    // e.preventDefault(); 
 
     console.log(data);
     setIsFetching(true);
@@ -26,10 +28,9 @@ export default function Loginform({error}: any) {
       const result = await signIn("credentials", {
         email,
         password,
-        // redirect: true,
-        // callbackUrl: "/store",
-      });
-      
+        redirect: true,
+        callbackUrl: "/store",
+      });  
     } catch (error: any) {
       console.log(error, 'ERROR')
       toast.error(`${error?.response?.data?.message}`)
@@ -65,9 +66,9 @@ export default function Loginform({error}: any) {
           {error?.error}
         </p>
       )}
-       <form
-          onSubmit={(e) => handleSubmit(e)}
-          action=""
+       <div
+          //  onSubmit={e => handleSubmit(e)}
+          // action=""
           className="lg:mt-[3.125rem] mt-4 md:ms-[2.375rem] mx-[1rem] md:mx-auto">
           <label
             htmlFor=""
@@ -99,11 +100,12 @@ export default function Loginform({error}: any) {
             onChange={handleChange}
             required
             className="bg-[#F7F9FB] outline-0 w-full lg:w-[47.063rem] mb-[2.688rem lg:h-[5rem] h-12 mx-auto placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
-            placeholder=" *************"
+            placeholder="*************"
           />{" "}
-          <br />
+          <br /> 
           <div className="flex justify-center lg:mt-[7.625rem] mb-4 mt-4">
             <button
+              onClick={handleSubmit}
               disabled={isFetching}
               className="text-white text-base font-semibold break-words bg-[#FF8800] px-[2.375rem] py-[0.6888rem] rounded-[5px] mx-auto disabled:bg-gray-500">
               {isFetching ? (
@@ -113,7 +115,7 @@ export default function Loginform({error}: any) {
               )}
             </button>
           </div>
-        </form>
+        </div>
       </div>
     </main>
   );
