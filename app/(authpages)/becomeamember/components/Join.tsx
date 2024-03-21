@@ -8,7 +8,7 @@ import card2 from "@/public/card2.png";
 import Link from "next/link";
 import axios from "axios";
 import { Loader } from "lucide-react";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function Join() {
@@ -25,6 +25,8 @@ export default function Join() {
 
   const [isPending, setIsPending] = useState(false);
   const [errorMessage, setErrorMesage] = useState("");
+
+  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -54,21 +56,24 @@ export default function Join() {
       };
       console.log("[USERDATA]", data);
 
-      if (password !== confirmPassword) {
-        toast.error("Passwords do not match!")
-      }
+      // if (password !== confirmPassword) {
+      //   return toast.error("Passwords do not match!")
+      // }
       const res = await axios.post(
         `${process.env.NEXT_PUBLIC_BASE_URL}/register`,
         data
       );
       
       console.log(data, res, "[SIGNUP__________INIT_RES]");
-      // toast.success("Signed up successfully");
-      // if (res.data.status === 200) {
-      //   redirect("/payment-details");
-      // }
-    } catch (error: any) {
-      toast.error(`${error.response.data.message ? error.response.data.message : "Something went wrong, Signed up failed" }`);
+      toast.success(res?.data?.message);
+      console.log(res.data.status)
+      if (res.data.status) {
+        toast.success("Signed up successfully");
+        router.replace ("/payment-details");
+      }
+      } catch (error: any) {
+      console.log(error.response?.data?.message)
+      toast.error(`${error.response?.data?.message ? error.response?.data?.message : "Something went wrong, Signed up failed" }`);
       // toast.error("Something went wrong, Signed up failed");
       console.log("Error", error);
       if (error?.response?.data?.message)

@@ -30,10 +30,7 @@ export default function Loginform({error}: any) {
         password,
         redirect: true,
         callbackUrl: "/store",
-      });
-
-    
-      
+      });  
     } catch (error: any) {
       console.log(error, 'ERROR')
       toast.error(`${error?.response?.data?.message}`)
@@ -103,7 +100,7 @@ export default function Loginform({error}: any) {
             onChange={handleChange}
             required
             className="bg-[#F7F9FB] outline-0 w-full lg:w-[47.063rem] mb-[2.688rem lg:h-[5rem] h-12 mx-auto placeholder-[#666666] font-normal lg:text-base text-sm lg:ps-[2.688rem] ps-4"
-            placeholder=" *************"
+            placeholder="*************"
           />{" "}
           <br /> 
           <div className="flex justify-center lg:mt-[7.625rem] mb-4 mt-4">

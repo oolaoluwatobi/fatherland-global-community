@@ -36,7 +36,7 @@ export default function Header() {
           </Button>
           <div className="lg:hidden mr-4">
               <Sidebar />
-              </div>
+            </div>
         </div>
       </div>
     </div>
