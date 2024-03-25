@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import Link from 'next/link'

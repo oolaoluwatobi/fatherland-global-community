@@ -56,7 +56,7 @@ export default function StoreHome({ params }: { params: { storeId: string } }) {
             className=" relative mt-5 shadow-xl shadow-blue-50"
             id="storehomes">
             <div className="lg:flex gap6 overflow-x-auto no-scrollbar ">
-              <Image src={mask} alt="" className="h-[30.3rem] w-[16.25rem]" /> 
+              <Image src={mask} alt="" className="h-[30.3rem] w-[16.25rem]" width={0} height={0} priority /> 
               <CarouselContent className="">
                 {storeHomes2.map((storehome2, i) => (
                   <CarouselItem key={i} className="lg:basis-1/4 gap-6 ">

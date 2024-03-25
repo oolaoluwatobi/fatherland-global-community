@@ -19,13 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${raleway.className} min-h-screen flex flex-col justifybetween bg-red500 mx-auto bg-[#D9D9D97D]`}>
+      <div className={`${raleway.className} min-h-screen flex flex-col  mx-auto bg-[#D9D9D97D]`}>
         <Toaster />
         <Header />
         {children}
         <Footer />
-      </body>
-    </html>
+      </div>
   );
 }

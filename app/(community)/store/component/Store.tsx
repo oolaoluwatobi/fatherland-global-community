@@ -28,11 +28,11 @@ export default function Store() {
       </div>
       <div
         className={`${style.storebg} mt-10 container object-cover lg:w-full lg:max-w-[97.813rem]  mx-auto  `}>
-        <p className="text-bold font-bold lg:text-5xl text-xl pt-28 pl-[2.188rem] ">
+        <p className="text-bold font-bold lg:text-5xl text-3xl pt-28 pl-[2.188rem] ">
           Handcrafted products <br /> inspired by{" "}
           <span className="text-[#DA5001]">Africans</span>{" "}
         </p>
-        <p className=" pt-5 lg:text-bold font-[500] lg:pl-[2.188rem] container lg:text-lg text-xs text-gray-500">
+        <p className=" pt-5 lg:text-bold font-[500] lg:pl-[2.188rem] container lg:text-xl text-lg text-gray-500">
           Fatherland Store is a destination for unique and creative products.
         </p>
       </div>

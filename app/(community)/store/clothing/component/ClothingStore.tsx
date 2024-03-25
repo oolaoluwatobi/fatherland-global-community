@@ -41,7 +41,7 @@ export default function ClothingStore() {
             src={image54}
             alt=""
             className="mt-24 ml-5 w-[36.563rem] h-[20.875rem]  "
-          />
+            width={0} height={0} priority />
         </div>
       </div>
 
