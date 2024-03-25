@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -18,25 +18,29 @@ export default function Header() {
           <Image src={logo} alt="" className="w-32 lg:w-full" />
         </Link>
         <div className="flex justify-between items-center gap-8">
-          <Link  href='/about-us' className="hidden lg:inline">Who we are</Link>
-          <div className="hidden lg:inline"><Dropdown /></div>
-          <Link href='/membershipplans'  className="hidden lg:inline">Benefits & Brands</Link>
+          <Link href="/about-us" className="hidden lg:inline">
+            Who we are
+          </Link>
+          <div className="hidden lg:inline">
+            <Dropdown />
+          </div>
+          <Link href="/membershipplans" className="hidden lg:inline">
+            Benefits & Brands
+          </Link>
           <Button
             className="bg-[#FF8800] text-white hidden lg:inline hover:bg-[#ff8800d9] text-sm font-medium transition-colors"
-            onClick={() => router.push("/becomeamember")}
-          >
+            onClick={() => router.push("/becomeamember")}>
             Become a Member
           </Button>
           <Button
             variant="outline"
             className="border-[#FF8800] hover:bg-white hidden lg:inline text-sm font-medium transition-colors text-[#ff8800]"
-            onClick={() => router.push("/loginpage")}
-          >
+            onClick={() => router.push("/loginpage")}>
             Log In
           </Button>
           <div className="lg:hidden mr-4">
-              <Sidebar />
-            </div>
+            {/* <Sidebar /> */}
+          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,6 @@ const initState = {
 export default function Loginform({error}: any) {
   const [isFetching, setIsFetching] = useState(false);
   const [data, setData] = useState(initState);
-  const [errorMessage, setErrorMesage] = useState("");
 
   const handleSubmit = async () => {
   // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

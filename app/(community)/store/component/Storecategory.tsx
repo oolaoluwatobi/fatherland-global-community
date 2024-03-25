@@ -14,14 +14,47 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import ProductCardHotDeals from "./ProductCardHotDeals";
 import Link from "next/link";
+import Categories from "@/app/(culturallearning)/exploreculturallearning/components/Categories";
+import { title } from "process";
 // import offerbanner from '@/public/OFFER-BANNER.png.png'
+
+const StoreCategory = [
+  {
+    id: "1",
+    icon: <HamburgerMenuIcon />,
+    title: "Categories"
+  },
+
+  { id: "2", icon: <MdMenuBook />, title: "Books & Magazines" },
+
+  { id: "3", icon: <BiPalette />, title: "Crafts & Supplies" },
+
+  { id: "4", icon: <MdQueueMusic />, title: "Music & Entertainment" },
+
+  { id: "5", icon: <BiPalette />, title: "Art & Collectibles" },
+
+  { id: "6", icon: <MdLocalMall />, title: " Jewelry Bags & Accessories" },
+
+  { id: "7", icon: <MdLocalOffer />, title: " Clothing" },
+
+  { id: "8", icon: <MdLocalMovies />, title: "Vintage" },
+
+  { id: "9", icon: <MdCardGiftcard />, title: " Popular Gifts & Toy" },
+];
 
 export default function Storecategory() {
   return (
     <div
-      className={`${styles.griddisplay} grid lg:grid-cols-4 gap-7 mx-auto max-w-[97.813rem] mt-10 bg-[#fff] `}>
-      <div className="hidden xl:block ml-4 h-fit pb-5 grid-cols-1  px-[1.125rem] shadow-lg  hover:border-primary">
-        <div className="flex gap-2  pt-4 h-14 border-b-2 ">
+      className={` grid grid-cols-4 gap-7 mx-auto max-w-[97.813rem] mt-10 bg-[#fff bg-red200 `}>
+      <div className="hidden xl:block ml-4 h-fit pb-5 col-span-1  px-[1.125rem] shadow-lg  hover:border-primary">
+        {StoreCategory.map((item) => (
+          <div className="flex gap-2 pt-2 py-8 ">
+            <p className="font-[900] px-4 text-[#232323]"> {item.icon}</p>
+            <p className="text-xl font-[600] text-[#232323]"> {item.title}</p>
+          </div>
+        ))}
+
+        {/* <div className="flex gap-2  pt-4 h-14 border-b-2 ">
           <HamburgerMenuIcon className=" font-bold h-[1.5rem] w-[1.5rem]" />
           <h1 className="text-xl ml-3 font-bold text-gray-800">Categories</h1>
         </div>
@@ -69,17 +102,17 @@ export default function Storecategory() {
         <div className="flex gap-3 mt-[1.875rem]">
           <MdCardGiftcard className="pt-1 font-bold h-[1.5rem] w-[1.5rem]" />
           <p className="font-[600] text-[#14202D]"> Popular Gifts & Toy</p>
-        </div>
+        </div> */}
       </div>
-      <main className=" w-full lg:grid mx-auto container">
+      <main className=" w-full col-span-4 lg:col-span-4 xl:col-span-3 mx-auto containe ">
         <div className=" pt-6 lg:flex flex lg:px-12 px-6 justify-between py-5 shadow-md mb-5">
           <h1 className="  lg:text-2xl text-lg font-bold">Hot Deals</h1>
           <p className=" text-lg text-gray-600">see all</p>
         </div>
-        <div className="lg:grid grid-cols-3 gap-6 space-y-4 object-cover w-full mx-auto cursor-pointer  ">
+        <div className=" gap-6 grid grid-cols-span-1 md:grid-cols-2 xl:grid-cols-3 space-y-4 w-full mx-auto cursor-pointer">
           {StorehotDeal.map((store, i) => (
-            <Link href={`/store/${store.id}`} key={i}>
-            <ProductCardHotDeals  {...store}  />
+            <Link className="w-full " href={`/store/${store.id}`} key={i}>
+              <ProductCardHotDeals {...store} />
             </Link>
           ))}
         </div>

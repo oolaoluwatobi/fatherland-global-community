@@ -13,7 +13,7 @@ const raleway = Raleway({
 export default function Hero() {
   const router =useRouter()
   return (
-    <section className="bg-red-10 py[7rem] pt-[4rem] pb-[5rem] hero_background max-w-[90rem mx-auto ">
+    <section className="bg-red-300 py[7rem] pt-[4rem] pb-[5rem] hero_background max-w-[90rem mx-auto ">
       <div className="hero_backgroun pt5 bg-red-20 container">
         <div className="gri sm:grid-cols1 lg:grid-cols2 gap10  px4 sm:px6 lg:px20 py20  bg-red-20 lg:flex justify-between itemscenter">
           <div className="gri gap10 lg:py20">

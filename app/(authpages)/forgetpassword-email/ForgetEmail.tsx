@@ -35,8 +35,7 @@ export default function ForgetEmail() {
       console.log(error.response?.data?.message);
       toast.error(
         `${
-          error.response?.data?.message
-            ? error.response?.data?.message
+          error.response?.data?.message ? error.response?.data?.message
             : "Something went wrong, Signed up failed"
         }`
       );
